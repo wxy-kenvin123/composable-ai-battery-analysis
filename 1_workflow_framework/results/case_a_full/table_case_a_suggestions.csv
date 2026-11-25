@@ -1,0 +1,20 @@
+﻿rank,composition,rule_id,condition,action,citations
+1,Li2B1S2,family-route,the card cites at least one same-family study,reuse the cited family's characterisation route instead of designing one,[@liu2021recent]
+1,Li2B1S2,structure-check,the release enumerated no structure for this composition,"run the upstream pipeline's own next stage, structure enumeration: the executed model is composition-level and cannot see structure",
+1,Li2B1S2,convention-note,the executed prediction sits above the 1e-4 S/cm field convention,"report the convention as an annotation, never as a passed criterion: neither upstream tool published it as a threshold",
+1,Li2B1S2,family-simulated,the release ran AIMD on same-system compositions but not on this one,reuse the published AIMD protocol for this stoichiometry before considering synthesis,[@kang2023discovery]
+2,Li1B1S2,no-precedent,the card cites no same-family study,no corpus precedent to lean on; enumerate structures and simulate transport before spending any synthesis effort,
+2,Li1B1S2,structure-reuse,the release already enumerated structures for this composition,check the composition-level prediction against the released structures with a structure-aware method,
+2,Li1B1S2,family-simulated,the release ran AIMD on same-system compositions but not on this one,reuse the published AIMD protocol for this stoichiometry before considering synthesis,[@kang2023discovery]
+3,Li2P2S1,no-precedent,the card cites no same-family study,no corpus precedent to lean on; enumerate structures and simulate transport before spending any synthesis effort,
+3,Li2P2S1,structure-check,the release enumerated no structure for this composition,"run the upstream pipeline's own next stage, structure enumeration: the executed model is composition-level and cannot see structure",
+4,Li2P6S1,family-route,the card cites at least one same-family study,reuse the cited family's characterisation route instead of designing one,[@ko2025ion];[@chen2023deciphering];[@li2025mechanistic];[@li2025atomistic]
+4,Li2P6S1,screen-failure-modes,the card reports failure modes for this family,screen for the cited family failure modes before cell assembly,[@shim2022optimal];[@li2025atomistic];[@li2025mechanistic]
+4,Li2P6S1,structure-check,the release enumerated no structure for this composition,"run the upstream pipeline's own next stage, structure enumeration: the executed model is composition-level and cannot see structure",
+5,Li17S6I5,family-route,the card cites at least one same-family study,reuse the cited family's characterisation route instead of designing one,[@lu2023realizing];[@shanbhag2025bromine];[@an2025corner]
+5,Li17S6I5,screen-failure-modes,the card reports failure modes for this family,screen for the cited family failure modes before cell assembly,[@shanbhag2025bromine];[@holekevichandrappa2022thermodynamics];[@sun2025understanding]
+5,Li17S6I5,structure-check,the release enumerated no structure for this composition,"run the upstream pipeline's own next stage, structure enumeration: the executed model is composition-level and cannot see structure",
+40,Li1Al1S2,family-route,the card cites at least one same-family study,reuse the cited family's characterisation route instead of designing one,[@holekevichandrappa2022thermodynamics]
+40,Li1Al1S2,screen-failure-modes,the card reports failure modes for this family,screen for the cited family failure modes before cell assembly,[@holekevichandrappa2022thermodynamics]
+40,Li1Al1S2,structure-reuse,the release already enumerated structures for this composition,check the composition-level prediction against the released structures with a structure-aware method,
+40,Li1Al1S2,condition-mismatch-recheck,"a published AIMD study covers this exact composition under conditions the executed estimate does not share (high-temperature, structure-specific vs composition-level)",re-assess under aligned conditions with a structure-aware method before acting on either number,[@kang2023discovery]

@@ -1,0 +1,17 @@
+﻿"matrix","row","row_label","core_algorithms","sector_total","C1","C2","C3","C4","C5","C6","C7","C8"
+"shared_core_algorithms","C1","C1 Atomistic dynamics & transport",3,13,0,2,3,1,1,2,2,2
+"shared_core_algorithms","C2","C2 Molecular & polymer properties",12,52,2,0,11,5,9,10,8,7
+"shared_core_algorithms","C3","C3 Solid-material properties",16,61,3,11,0,5,10,13,11,8
+"shared_core_algorithms","C4","C4 Microstructure & manufacturing",10,36,1,5,5,0,5,10,5,5
+"shared_core_algorithms","C5","C5 Materials design & optimization",10,51,1,9,10,5,0,10,9,7
+"shared_core_algorithms","C6","C6 Battery state & lifetime",23,66,2,10,13,10,10,0,12,9
+"shared_core_algorithms","C7","C7 Electrode performance prediction",15,54,2,8,11,5,9,12,0,7
+"shared_core_algorithms","C8","C8 Structural stability & mechanisms",9,45,2,7,8,5,7,9,7,0
+"jaccard","C1","C1 Atomistic dynamics & transport",3,,0,0.154,0.188,0.083,0.083,0.083,0.125,0.2
+"jaccard","C2","C2 Molecular & polymer properties",12,,0.154,0,0.647,0.294,0.692,0.4,0.421,0.5
+"jaccard","C3","C3 Solid-material properties",16,,0.188,0.647,0,0.238,0.625,0.5,0.55,0.471
+"jaccard","C4","C4 Microstructure & manufacturing",10,,0.083,0.294,0.238,0,0.333,0.435,0.25,0.357
+"jaccard","C5","C5 Materials design & optimization",10,,0.083,0.692,0.625,0.333,0,0.435,0.562,0.583
+"jaccard","C6","C6 Battery state & lifetime",23,,0.083,0.4,0.5,0.435,0.435,0,0.462,0.391
+"jaccard","C7","C7 Electrode performance prediction",15,,0.125,0.421,0.55,0.25,0.562,0.462,0,0.412
+"jaccard","C8","C8 Structural stability & mechanisms",9,,0.2,0.5,0.471,0.357,0.583,0.391,0.412,0

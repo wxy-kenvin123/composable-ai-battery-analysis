@@ -1,0 +1,37 @@
+composition,rank,station_index,station,role,grade,fact,source,citation,baseline_stops_after_station,posthoc_deep_dive_admission,same_formula_in_both_artifacts
+Li2B1S2,1,1,served,PropertyScreener,lookup,"published electrochemical survivor, carried unchanged",ML-HTVS release,,,False,True
+Li2B1S2,1,2,executed,ExecutedToolScreener,executed,log10 sigma = -3.80 (rank 1/56); the one prediction above the 1e-4 S/cm convention,ML-SSE model.joblib,,,False,True
+Li2B1S2,1,3,virtual experiment,SimulationFeedback,simulation,"family AIMD only: B7Li5S13,B2Li2S5 (mp-532413,mp-29410); not this stoichiometry",LiSSE-MP AIMD trajectories,[@kang2023discovery],,False,True
+Li2B1S2,1,4,retrieval,KnowledgeMiner,retrieval,11 papers above the relevance floor; 0 cited failure modes; family precedent cited,authors' 723-paper corpus,[@liu2021recent],,False,True
+Li2B1S2,1,5,structures,MechanismSimulator,lookup,no structure in the release; its record stops here,ML-HTVS release,,,False,True
+Li2B1S2,1,6,action,FormulationDesigner,rule,enumerate structures first (family-route;structure-check;convention-note;family-simulated),fixed rule set (exported),[@kang2023discovery];[@liu2021recent],,False,True
+Li1B1S2,2,1,served,PropertyScreener,lookup,"published electrochemical survivor, carried unchanged",ML-HTVS release,,,False,False
+Li1B1S2,2,2,executed,ExecutedToolScreener,executed,log10 sigma = -4.37 (rank 2/56),ML-SSE model.joblib,,,False,False
+Li1B1S2,2,3,virtual experiment,SimulationFeedback,simulation,"family AIMD only: B7Li5S13,B2Li2S5 (mp-532413,mp-29410); not this stoichiometry",LiSSE-MP AIMD trajectories,[@kang2023discovery],,False,False
+Li1B1S2,2,4,retrieval,KnowledgeMiner,retrieval,11 papers above the relevance floor; 0 cited failure modes; no family precedent,authors' 723-paper corpus,,,False,False
+Li1B1S2,2,5,structures,MechanismSimulator,lookup,3 released structures,ML-HTVS release,,,False,False
+Li1B1S2,2,6,action,FormulationDesigner,rule,check against released structures (no-precedent;structure-reuse;family-simulated),fixed rule set (exported),[@kang2023discovery],,False,False
+Li2P2S1,3,1,served,PropertyScreener,lookup,"published electrochemical survivor, carried unchanged",ML-HTVS release,,,False,False
+Li2P2S1,3,2,executed,ExecutedToolScreener,executed,log10 sigma = -4.44 (rank 3/56),ML-SSE model.joblib,,,False,False
+Li2P2S1,3,3,virtual experiment,SimulationFeedback,simulation,no published simulation for this composition or its system,LiSSE-MP AIMD trajectories,,,False,False
+Li2P2S1,3,4,retrieval,KnowledgeMiner,retrieval,14 papers above the relevance floor; 0 cited failure modes; no family precedent,authors' 723-paper corpus,,,False,False
+Li2P2S1,3,5,structures,MechanismSimulator,lookup,no structure in the release; its record stops here,ML-HTVS release,,,False,False
+Li2P2S1,3,6,action,FormulationDesigner,rule,enumerate structures first (no-precedent;structure-check),fixed rule set (exported),,,False,False
+Li2P6S1,4,1,served,PropertyScreener,lookup,"published electrochemical survivor, carried unchanged",ML-HTVS release,,,False,False
+Li2P6S1,4,2,executed,ExecutedToolScreener,executed,log10 sigma = -4.59 (rank 4/56),ML-SSE model.joblib,,,False,False
+Li2P6S1,4,3,virtual experiment,SimulationFeedback,simulation,no published simulation for this composition or its system,LiSSE-MP AIMD trajectories,,,False,False
+Li2P6S1,4,4,retrieval,KnowledgeMiner,retrieval,14 papers above the relevance floor; 3 cited failure modes; family precedent cited,authors' 723-paper corpus,[@ko2025ion];[@chen2023deciphering];[@li2025mechanistic];[@li2025atomistic];[@muy2025optimizing];[@shim2022optimal],,False,False
+Li2P6S1,4,5,structures,MechanismSimulator,lookup,no structure in the release; its record stops here,ML-HTVS release,,,False,False
+Li2P6S1,4,6,action,FormulationDesigner,rule,screen cited failure modes first (family-route;screen-failure-modes;structure-check),fixed rule set (exported),[@chen2023deciphering];[@ko2025ion];[@li2025atomistic];[@li2025mechanistic];[@shim2022optimal],,False,False
+Li17S6I5,5,1,served,PropertyScreener,lookup,"published electrochemical survivor, carried unchanged",ML-HTVS release,,,False,False
+Li17S6I5,5,2,executed,ExecutedToolScreener,executed,log10 sigma = -4.68 (rank 5/56),ML-SSE model.joblib,,,False,False
+Li17S6I5,5,3,virtual experiment,SimulationFeedback,simulation,no published simulation for this composition or its system,LiSSE-MP AIMD trajectories,,,False,False
+Li17S6I5,5,4,retrieval,KnowledgeMiner,retrieval,13 papers above the relevance floor; 3 cited failure modes; family precedent cited,authors' 723-paper corpus,[@lu2023realizing];[@shanbhag2025bromine];[@an2025corner];[@holekevichandrappa2022thermodynamics];[@sun2025understanding],,False,False
+Li17S6I5,5,5,structures,MechanismSimulator,lookup,no structure in the release; its record stops here,ML-HTVS release,,,False,False
+Li17S6I5,5,6,action,FormulationDesigner,rule,screen cited failure modes first (family-route;screen-failure-modes;structure-check),fixed rule set (exported),[@an2025corner];[@holekevichandrappa2022thermodynamics];[@lu2023realizing];[@shanbhag2025bromine];[@sun2025understanding],,False,False
+Li1Al1S2,40,1,served,PropertyScreener,lookup,"published electrochemical survivor, carried unchanged",ML-HTVS release,,2,True,False
+Li1Al1S2,40,2,executed,ExecutedToolScreener,executed,log10 sigma = -5.74 (rank 40/56),ML-SSE model.joblib,,2,True,False
+Li1Al1S2,40,3,virtual experiment,SimulationFeedback,simulation,"exact AIMD match (mp-1106183); the release labels it among nine superionic conductors (800-1700 K, structure-specific); sigma(800 K) = 0.26 mS/cm from the authors' own analysis objects",LiSSE-MP AIMD trajectories,[@kang2023discovery],2,True,False
+Li1Al1S2,40,4,retrieval,KnowledgeMiner,retrieval,14 papers above the relevance floor; 1 cited failure modes; family precedent cited,authors' 723-paper corpus,[@holekevichandrappa2022thermodynamics],2,True,False
+Li1Al1S2,40,5,structures,MechanismSimulator,lookup,3 released structures,ML-HTVS release,,2,True,False
+Li1Al1S2,40,6,action,FormulationDesigner,rule,re-assess under aligned conditions (condition-mismatched AIMD) (family-route;screen-failure-modes;structure-reuse;condition-mismatch-recheck),fixed rule set (exported),[@holekevichandrappa2022thermodynamics];[@kang2023discovery],2,True,False

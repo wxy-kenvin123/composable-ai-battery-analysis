@@ -1,0 +1,123 @@
+{
+  "purpose": "Mix the conductivity prior toward the observed mean using the anion rule.",
+  "acquisition_influence_design": {
+    "mechanism": "prior_shift_scale"
+  },
+  "sources": [
+    {
+      "citekey": "nakamura2026oedb",
+      "title": "Open electrolyte database generated via an automated molecular dynamics simulation framework",
+      "authors_first": "Kou Nakamura et al.",
+      "venue": "npj Computational Materials",
+      "year": 2026,
+      "doi": "10.1038/s41524-026-02093-y"
+    },
+    {
+      "citekey": "atkins2018physical",
+      "title": "Atkins' Physical Chemistry, 11th edition",
+      "authors_first": "P. Atkins, J. de Paula, J. Keeler",
+      "venue": "Oxford University Press, Oxford",
+      "year": 2018,
+      "doi": null
+    },
+    {
+      "citekey": "mcquarrie2000statistical",
+      "title": "Statistical Mechanics",
+      "authors_first": "D. A. McQuarrie",
+      "venue": "University Science Books, Sausalito",
+      "year": 2000,
+      "doi": null
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "KM-R1-nernst-einstein-coupling",
+      "statement": "Ionic conductivity and Li+ diffusivity are strongly positively coupled, so a Nernst-Einstein estimate built from already-observed diffusivities is an admissible prior for conductivity.",
+      "citekeys": [
+        "nakamura2026oedb",
+        "atkins2018physical",
+        "mcquarrie2000statistical"
+      ],
+      "verbatim_support": "A strong positive correlation is observed between σ and D Li , reflecting the close correspondence between ion diffusion and ionic transport, in agreement with the Nernst–Einstein relation",
+      "support_location": "Results, section 'Correlations among electrolyte properties', sentence introducing Fig. 4",
+      "affects_acquisition": true,
+      "applicability_bounds": {
+        "cation": [
+          "Li"
+        ]
+      },
+      "executable_effect": {
+        "quantity": "prior_shift_scale",
+        "base_value": 1.0
+      }
+    },
+    {
+      "rule_id": "KM-R2-stokes-einstein-breaks-at-high-concentration",
+      "statement": "The inverse conductivity-viscosity relationship implied by Stokes-Einstein holds at 1.0 mol/kg but breaks down at 4.0 mol/kg because ion-ion correlations strengthen. The mechanism prior must therefore be trusted less as concentration rises.",
+      "citekeys": [
+        "nakamura2026oedb"
+      ],
+      "verbatim_support": "comparison between low and high concentrations reveals that this relationship holds at 1.0 mol kg –1 but breaks down at 4.0 mol kg –1 due to stronger ion–ion correlations",
+      "support_location": "Results, section 'Correlations among electrolyte properties', sentence referring to Fig. S3",
+      "affects_acquisition": false,
+      "applicability_bounds": {
+        "concentration_mol_per_kg": {
+          "trusted_at_or_below": 1.0,
+          "documented_breakdown_at_or_above": 4.0
+        }
+      },
+      "executable_effect": {
+        "quantity": "prior_shift_scale",
+        "form": "linear_ramp",
+        "value_at_or_below_1.0": 1.0,
+        "value_at_or_above_4.0": 0.25,
+        "interpolation": "linear in concentration between 1.0 and 4.0 mol/kg",
+        "not_applied": true
+      }
+    },
+    {
+      "rule_id": "KM-R3-correlation-panel-derived-from-lifsi-subset",
+      "statement": "The pairwise property correlations that justify the mechanism prior were established on LiFSI-based systems, so the prior carries less evidential weight for other anions.",
+      "citekeys": [
+        "nakamura2026oedb"
+      ],
+      "verbatim_support": "lithium bis(fluorosulfonyl)imide (LiFSI)-based electrolyte systems were analyzed to evaluate correlations among ionic conductivity ( σ ), Li⁺ diffusion coefficient ( D Li ), viscosity ( η ), density ( ρ ), and the coordination numbers of solvent molecules and anions around Li⁺",
+      "support_location": "Results, section 'Correlations among electrolyte properties', opening sentence",
+      "affects_acquisition": true,
+      "applicability_bounds": {
+        "anion_full_confidence": [
+          "FSI"
+        ],
+        "anion_attenuated": [
+          "BETI",
+          "BF4",
+          "ClO4",
+          "DFOB",
+          "OTf",
+          "PF6",
+          "TFA",
+          "TFSI"
+        ]
+      },
+      "executable_effect": {
+        "quantity": "prior_shift_scale",
+        "value_for_fsi": 1.0,
+        "value_for_other_anions": 0.5
+      }
+    },
+    {
+      "rule_id": "KM-R4-classical-force-field-scope-caveat",
+      "statement": "The labels are classical MD results with uniformly scaled ionic charges for concentrated systems, so absolute values carry force-field error. This bounds what the Case D result may be said to mean; it is not a reason to prefer or avoid any candidate.",
+      "citekeys": [
+        "nakamura2026oedb"
+      ],
+      "verbatim_support": "ionic charges were uniformly scaled by a factor of 0.8",
+      "support_location": "Methods, force-field paragraph, in the sentence beginning 'Following established practices for concentrated (or ionic liquid) electrolytes'. The reference superscripts inside that sentence are omitted from the stored fragment so that it matches both the HTML and the PDF rendering.",
+      "affects_acquisition": false,
+      "applicability_bounds": {
+        "applies_to": "interpretation of the final result only"
+      },
+      "executable_effect": null
+    }
+  ]
+}

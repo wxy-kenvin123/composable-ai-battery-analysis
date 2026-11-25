@@ -1,0 +1,4 @@
+﻿stage,gate,entering,survived,published_survivors,rejected,set_identical_to_published,source
+thermodynamic,htvs-thermodynamic,438,319,319,119,True,SeoinBack/ML-HTVS-Li-SE @ c13da8e9 02_1_e_above_hull_roost.ipynb cell[30] line 1; [@kim2023accelerating] doi:10.1021/acsami.3c10798
+electronic,htvs-electronic,319,306,306,13,True,SeoinBack/ML-HTVS-Li-SE @ c13da8e9 02_2_band_gap_roost.ipynb cell[8] line 1; [@kim2023accelerating] doi:10.1021/acsami.3c10798
+electrochemical,htvs-electrochemical,306,56,56,250,True,SeoinBack/ML-HTVS-Li-SE @ c13da8e9 02_3_stability_window.ipynb cell[7] line 1; [@kim2023accelerating] doi:10.1021/acsami.3c10798

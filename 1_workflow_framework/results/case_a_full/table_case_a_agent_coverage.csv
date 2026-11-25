@@ -1,0 +1,7 @@
+﻿role,modules,status,steps,basis
+HT Predictor,PropertyScreener (lookup) + ExecutedToolScreener (executed),ran,112,"published survivor rows, then the released ML-SSE model executed"
+Process Coordinator,ProcessCoordinator,ran,80,field translation between every adjacent pair of stages
+Knowledge Miner,KnowledgeMiner,ran,6,BatteryQA retrieval over the authors' corpus for the 6-composition deep-dive set (top 5 + 1 AIMD exact match)
+Mechanism Simulator,MechanismSimulator,ran,6,"the structures the ML-HTVS release enumerated, or the recorded absence"
+Formulation Designer,FormulationDesigner,ran,6,"fixed rules over the executed metrics, the retrieved card, and the published virtual feedback"
+Experiment Feedback,SimulationFeedback (published AIMD),ran (simulation-grade),6,"published AIMD trajectories (LiSSE-MP) served as virtual experiments; this run used no measurement, the linked releases provided none that is used here, and every row is labelled simulation, not measurement"

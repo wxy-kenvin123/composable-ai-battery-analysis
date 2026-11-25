@@ -1,0 +1,431 @@
+city,country,latitude,longitude,Total
+Beijing,China,39.93,116.4,107
+Shanghai,China,31.23,121.47,71
+Seoul,South Korea,37.56,126.99,65
+Guangzhou,China,23.12,113.25,27
+Shenzhen,China,22.53,114.13,25
+Xian,China,34.27,108.9,25
+Hangzhou,China,30.25,120.17,22
+Nanjing,China,32.05,118.78,22
+Singapore,Singapore,1.3,103.85,20
+Wuhan,China,30.58,114.27,18
+Chengdu,China,30.67,104.07,17
+Taejon,South Korea,36.33,127.43,16
+Xiamen,China,24.45,118.08,16
+London,United Kingdom,51.52,-0.1,15
+Cambridge,United States,42.38,-71.12,14
+Changsha,China,28.2,112.97,14
+Hefei,China,31.85,117.28,14
+Berkeley,United States,37.87,-122.27,13
+Nanchang,China,28.68,115.88,13
+Tokyo,Japan,35.67,139.77,13
+Julich,Germany,50.93,6.36,12
+Lemont,United States,41.674,-88.002,12
+Tianjin,China,39.13,117.2,12
+Chongqing,China,29.57,106.58,11
+Harbin,China,45.75,126.65,11
+Hong Kong,China,22.32,114.17,11
+Nagoya,Japan,35.15,136.91,11
+Shenyang,China,41.8,123.45,11
+Changchun,China,43.87,125.35,9
+Didcot,United Kingdom,51.6,-1.25,9
+Taiyuan,China,37.87,112.55,9
+Tsukuba,Japan,36.21,140.09,9
+Coventry,United Kingdom,52.42,-1.5,8
+Livermore,United States,37.69,-121.76,8
+Moscow,Russian Federation,55.75,37.62,8
+Munich,Germany,48.14,11.58,8
+Richland,United States,46.29,-119.29,8
+Suwon,South Korea,37.26,127.01,8
+Sydney,Australia,-33.87,151.21,8
+Chennai,India,13.09,80.27,7
+Chicago,United States,41.84,-87.68,7
+Jinan,China,36.67,117,7
+Oxford,United Kingdom,51.76,-1.26,7
+Pohang,South Korea,36.03,129.37,7
+Stanford,United States,37.424,-122.166,7
+Suzhou,China,31.3,120.62,7
+Ulm,Germany,48.4,9.97,7
+Uppsala,Sweden,59.86,17.64,7
+Aachen,Germany,50.77,6.09,6
+Dalian,China,38.92,121.65,6
+Indore,India,22.72,75.86,6
+Sendai,Japan,38.26,140.89,6
+Taegu,South Korea,35.87,128.6,6
+Upton,United States,40.869,-72.886,6
+Xiangtan,China,27.85,112.9,6
+Cambridge,United Kingdom,52.21,0.13,5
+Darmstadt,Germany,49.87,8.64,5
+Eggenstein-Leopoldshafen,Germany,49.09,8.38,5
+Fuzhou,China,26.08,119.3,5
+Irvine,United States,33.66,-117.8,5
+Kunming,China,25.05,102.7,5
+Munster,Germany,51.96,7.62,5
+New York,United States,40.67,-73.94,5
+Oak Ridge,United States,36.01,-84.27,5
+Paris,France,48.86,2.34,5
+Philadelphia,United States,40.01,-75.13,5
+Pusan,South Korea,35.11,129.03,5
+Rome,Italy,41.89,12.5,5
+San Francisco,United States,37.77,-122.45,5
+Taipei,Taiwan,25.02,121.45,5
+Yongin,South Korea,37.28,127.12,5
+Aalborg,Denmark,57.03,9.93,4
+Al-Khobar,Saudi Arabia,26.279,50.208,4
+Amiens,France,49.9,2.3,4
+Bangalore,India,12.97,77.56,4
+Bebek,Turkey,41.078,29.044,4
+Birmingham,United Kingdom,52.48,-1.91,4
+Columbia,United States,34.04,-80.89,4
+Eindhoven,Netherlands,51.44,5.47,4
+Geelong,Australia,-38.14,144.32,4
+Ghaziabad,India,28.66,77.41,4
+Grenoble,France,45.19,5.72,4
+Karlsruhe,Germany,49,8.4,4
+La Jolla,United States,32.842,-117.258,4
+Menlo Park,United States,37.453,-122.182,4
+Montreal,Canada,45.52,-73.57,4
+Ningbo,China,29.88,121.55,4
+Ningde,China,26.667,119.517,4
+Qingdao,China,36.07,120.32,4
+Saarbrucken,Germany,49.25,6.97,4
+Sunchon,South Korea,34.95,127.49,4
+Toronto,Canada,43.65,-79.38,4
+Xuzhou,China,34.27,117.18,4
+Yibin,China,28.77,104.57,4
+Ben Guerir,Morocco,32.25,-7.96,3
+Berlin,Germany,52.52,13.38,3
+Bilbao,Spain,43.25,-2.93,3
+Boston,United States,42.34,-71.02,3
+Brussels,Belgium,50.83,4.33,3
+Delft,Netherlands,52.01,4.36,3
+Delhi,India,28.67,77.21,3
+Dhahran,Saudi Arabia,26.27,50.151,3
+Enschede,Netherlands,52.22,6.89,3
+Evanston,United States,42.05,-87.69,3
+Fukuoka,Japan,33.59,130.41,3
+Gandhinagar,India,23.3,72.63,3
+Guiyang,China,26.58,106.72,3
+Gyeonggido,South Korea,37.414,127.519,3
+Jiddah,Saudi Arabia,21.5,39.17,3
+Knoxville,United States,35.97,-83.95,3
+Kolkata,India,22.573,88.364,3
+Los Angeles,United States,34.11,-118.41,3
+Lyngby,Denmark,55.77,12.504,3
+Macau,Macao,22.199,113.544,3
+Madison,United States,43.08,-89.39,3
+Mexico City,Mexico,19.43,-99.14,3
+Princeton,United States,40.357,-74.667,3
+Providence,United States,41.82,-71.42,3
+Sapporo,Japan,43.06,141.34,3
+Seattle,United States,47.62,-122.35,3
+Shanwei,China,22.78,115.35,3
+Songnam,South Korea,37.44,127.15,3
+Stony Brook,United States,40.926,-73.141,3
+Tehran,Iran,35.67,51.43,3
+Waterloo,Canada,45.35,-72.52,3
+Xinyang,China,32.13,114.07,3
+Yangzhou,China,32.4,119.43,3
+Yokohama,Japan,35.47,139.62,3
+Zhenjiang,China,32.22,119.43,3
+Abu Dhabi,United Arab Emirates,24.48,54.37,2
+Albuquerque,United States,35.12,-106.62,2
+Alexandria,Egypt,31.22,29.95,2
+Ames,United States,42.02,-93.63,2
+Ann Arbor,United States,42.28,-83.73,2
+Ansan,South Korea,37.35,126.86,2
+Astana,Kazakhstan,51.17,71.47,2
+Atlanta,United States,33.76,-84.42,2
+Bangkok,Thailand,13.73,100.5,2
+Baoding,China,38.87,115.48,2
+Bayreuth,Germany,49.95,11.58,2
+Belfast,United Kingdom,54.6,-5.93,2
+Bhubaneswar,India,20.27,85.84,2
+Bournemouth,United Kingdom,50.73,-1.88,2
+Brasilia,Brazil,-15.78,-47.91,2
+Brunswick,Germany,52.27,10.51,2
+Changzhou,China,31.78,119.97,2
+Chinju,South Korea,35.19,128.08,2
+Chonju,South Korea,35.83,127.14,2
+Detroit,United States,42.38,-83.1,2
+Dongguan,China,23.05,113.73,2
+Donostia-San Sebastian,Spain,43.32,-1.985,2
+Dublin,Ireland,53.33,-6.25,2
+Florham Park,United States,40.787,-74.388,2
+Gainesville,United States,29.67,-82.34,2
+Goteborg,Sweden,57.72,12.01,2
+Guangdong,China,23.13,113.26,2
+Ha Noi,Viet Nam,21.03,105.84,2
+Hohhot,China,40.82,111.64,2
+Hsinchu,Taiwan,24.82,120.98,2
+Huzhou,China,30.87,120.1,2
+Istanbul,Turkey,41.1,29,2
+Jilin,China,43.85,126.55,2
+Karlstad,Sweden,59.38,13.51,2
+Kowloon,China,22.318,114.182,2
+Kuala Lumpur,Malaysia,3.16,101.71,2
+Kwangju,South Korea,35.16,126.91,2
+Kyoto,Japan,35.01,135.75,2
+Lahore,Pakistan,31.56,74.35,2
+Lausanne,Switzerland,46.52,6.62,2
+Leioa,Spain,43.33,-3,2
+Lincoln,United States,40.82,-96.69,2
+Los Altos,United States,37.381,-122.114,2
+Loughborough,United Kingdom,52.77,-1.22,2
+Louvain-la-Neuve,Belgium,50.668,4.612,2
+Maanshan,China,31.73,118.48,2
+Matsumoto,Japan,36.24,137.97,2
+Medina,Saudi Arabia,24.47,39.612,2
+Melbourne,Australia,-37.81,144.96,2
+Mendaro,Spain,43.238,-2.389,2
+Mianyang,China,31.47,104.77,2
+Minato,Japan,35.658,139.751,2
+Moffett Field,United States,37.414,-122.048,2
+Naju,South Korea,35.02,126.72,2
+New Haven,United States,41.31,-72.92,2
+Olen,Belgium,51.15,4.85,2
+Pittsburgh,United States,40.44,-79.98,2
+Poole,United Kingdom,50.72,-1.98,2
+Qinhuangdao,China,39.93,119.62,2
+Rabat,Morocco,34.02,-6.84,2
+Rolla,United States,37.951,-91.771,2
+Saint-Martin-d'Heres,France,45.17,5.75,2
+San Jose,United States,37.3,-121.85,2
+Shaoxing,China,30,120.57,2
+Southampton,United Kingdom,50.91,-1.41,2
+Stockholm,Sweden,59.33,18.07,2
+Stuttgart,Germany,48.79,9.19,2
+Suwon-si,South Korea,37.263,127.029,2
+Swansea,United Kingdom,51.63,-3.96,2
+Taizhou,China,32.49,119.9,2
+Torino,Italy,45.07,7.687,2
+Ulsan,South Korea,35.55,129.31,2
+Vienna,Austria,48.22,16.37,2
+Wenzhou,China,28.02,120.65,2
+West Lafayette,United States,40.426,-86.908,2
+Woburn,United States,42.479,-71.152,2
+Yantai,China,37.53,121.4,2
+Yerevan,Armenia,40.17,44.52,2
+Zhengzhou,China,34.75,113.67,2
+'Amman,Jordan,31.95,35.93,1
+Aalen,Germany,48.85,10.09,1
+Abakan,Russian Federation,53.72,91.43,1
+Aberdeen,United Kingdom,57.15,-2.1,1
+Abuja,Nigeria,9.18,7.17,1
+Adelaide,Australia,-34.93,138.6,1
+Ahmadabad,India,23.03,72.58,1
+Ambon,Indonesia,-3.7,128.16,1
+Amethi,India,26.156,81.811,1
+Amiens Cedex,France,49.894,2.302,1
+Amsterdam,Netherlands,52.37,4.89,1
+Anshan,China,41.12,122.95,1
+Arar,Saudi Arabia,30.975,41.038,1
+Asan-si,South Korea,36.79,127.002,1
+Aubervilliers,France,48.92,2.39,1
+Aveiro,Portugal,40.65,-8.66,1
+Baku,Azerbaijan,40.39,49.86,1
+Baltimore,United States,39.3,-76.61,1
+Bandung,Indonesia,-6.91,107.6,1
+Bathinda,India,30.17,74.97,1
+Bellaterra,Spain,41.502,2.09,1
+Bellevue,United States,47.6,-122.16,1
+Bethesda,United States,38.99,-77.12,1
+Bethlehem,United States,40.63,-75.37,1
+Bochum,Germany,51.48,7.2,1
+Bologna,Italy,44.5,11.34,1
+Bombay,India,18.96,72.82,1
+Boulder,United States,40.03,-105.25,1
+Bremen,Germany,53.08,8.81,1
+Brisbane,Australia,-27.46,153.02,1
+Budapest,Hungary,47.51,19.08,1
+Buffalo,United States,42.89,-78.86,1
+Cairo,Egypt,30.06,31.25,1
+Calabar,Nigeria,4.96,8.31,1
+Canberra,Australia,-35.31,149.13,1
+Cancun,Mexico,21.17,-86.83,1
+Casablanca,Morocco,33.6,-7.62,1
+Cerdanyola del Valles,Spain,41.491,2.141,1
+Changhua,Taiwan,24.076,120.542,1
+Changwon,South Korea,35.27,128.62,1
+Charlottesville,United States,38.029,-78.477,1
+Chelyabinsk,Russian Federation,55.15,61.43,1
+Chiba,Japan,35.61,140.11,1
+Chilton,United Kingdom,51.573,-1.316,1
+Christchurch,New Zealand,-43.53,172.64,1
+Cleveland,United States,41.48,-81.68,1
+Cologne,Germany,50.95,6.97,1
+Columbus,United States,39.99,-82.99,1
+Dallas,United States,32.79,-96.77,1
+Dehra Dun,India,30.34,78.05,1
+Douliou,Taiwan,23.707,120.544,1
+Dublin,United States,37.72,-121.91,1
+Dundee,United Kingdom,56.47,-3,1
+Durham,United States,35.98,-78.91,1
+Edmonton,Canada,53.57,-113.54,1
+El Jadida,Morocco,33.26,-8.51,1
+Eugene,United States,44.05,-123.11,1
+Exeter,United Kingdom,50.73,-3.54,1
+Fez-Atlas,Morocco,34.033,-5,1
+Florence,Italy,43.78,11.24,1
+Fusionopolis,Singapore,1.299,103.788,1
+Gaithersburg,United States,39.14,-77.22,1
+Geesthacht,Germany,53.45,10.37,1
+Genova,Italy,44.405,8.946,1
+Giessen,Germany,50.58,8.68,1
+Goa,India,15.491,73.828,1
+Golden,United States,39.756,-105.221,1
+Granada,Spain,37.17,-3.59,1
+Graz,Austria,47.08,15.42,1
+Greenbelt,United States,38.998,-76.881,1
+Guanajuato,Mexico,21.02,-101.28,1
+Guanghan,China,30.976,104.282,1
+Guildford,United Kingdom,51.24,-0.58,1
+Guilin,China,25.28,110.28,1
+Haikou,China,20.05,110.32,1
+Halle,Germany,51.48,11.96,1
+Hamburg,Germany,53.55,10,1
+Hamilton,Canada,43.26,-79.85,1
+Hawthorn,Australia,-37.822,145.035,1
+Hayama,Japan,35.26,139.59,1
+Hengyang,China,26.89,112.62,1
+Houston,United States,29.77,-95.39,1
+Huainan,China,32.63,116.98,1
+Hyderabad,India,17.4,78.48,1
+IKKEM,China,24.48,118.089,1
+Idaho Falls,United States,43.49,-112.03,1
+Ilmenau,Germany,50.69,10.91,1
+Inchon,South Korea,37.48,126.64,1
+Isparta,Turkey,37.77,30.55,1
+Ithaca,United States,42.44,-76.497,1
+Ivanovo,Russian Federation,57.01,40.99,1
+Jaipur,India,26.92,75.8,1
+Jena,Germany,50.93,11.58,1
+Jeonbuk,South Korea,35.82,127.108,1
+Jieyang,China,23.543,116.373,1
+Jinju-si,South Korea,35.18,128.108,1
+Jinzhou,China,41.12,121.1,1
+Jodhpur,India,26.29,73.02,1
+Johannesburg,South Africa,-26.19,28.04,1
+Jorhat,India,26.76,94.2,1
+Kaifeng,China,34.85,114.35,1
+Kajang,Malaysia,2.993,101.791,1
+Kano,Nigeria,12,8.52,1
+Karachi,Pakistan,24.86,67.01,1
+Kassel,Germany,51.32,9.48,1
+Kensington,Australia,-33.917,151.231,1
+Kermanshah,Iran,34.38,47.06,1
+Kiel,Germany,54.32,10.12,1
+Kochi,India,10.02,76.22,1
+Korea,South Korea,37.566,126.978,1
+Kumasi,Ghana,6.69,-1.63,1
+Kumi,South Korea,36.13,128.35,1
+Kuwait,Kuwait,29.376,47.977,1
+Kyongsan,South Korea,35.82,128.73,1
+Laghouat,Algeria,33.8,2.865,1
+Lanzhou,China,36.05,103.68,1
+Leicester,United Kingdom,52.64,-1.13,1
+Leipzig,Germany,51.35,12.4,1
+Leoben,Austria,47.38,15.09,1
+Liaocheng,China,36.43,115.97,1
+Lincoln,United Kingdom,53.25,-0.55,1
+Liyang,China,31.43,119.48,1
+Longyan,China,25.18,117.03,1
+Los Alamos,United States,35.888,-106.307,1
+Louisville,United States,38.22,-85.74,1
+Lubbock,United States,33.58,-101.88,1
+Madinah,Saudi Arabia,24.47,39.612,1
+Madrid,Spain,40.42,-3.71,1
+Manchester,United Kingdom,53.48,-2.25,1
+Marburg,Germany,50.8,8.77,1
+Meknes,Morocco,33.9,-5.56,1
+Minsk,Belarus,53.91,27.55,1
+Modena,Italy,44.65,10.92,1
+Mohali,India,30.78,76.69,1
+Montclair,United States,40.82,-74.21,1
+Nagano,Japan,36.65,138.18,1
+Nanning,China,22.82,108.32,1
+Newark,United States,40.72,-74.17,1
+Nibong Tebal,Malaysia,5.17,100.48,1
+Nice,France,43.7,7.27,1
+Nomi,Japan,36.445,136.564,1
+North York,Canada,43.761,-79.411,1
+Notre Dame,United States,41.703,-86.239,1
+Oberkochen,Germany,48.784,10.1,1
+Oliveira de Azemeis,Portugal,40.83,-8.47,1
+Orlando,United States,28.5,-81.37,1
+Orleans,France,47.9,1.9,1
+Osaka,Japan,34.68,135.5,1
+Ostrava,Czech Republic,49.83,18.27,1
+Ottawa,Canada,45.42,-75.71,1
+Pasadena,United States,34.16,-118.14,1
+Pathum Thani,Thailand,14.02,100.52,1
+Pavia,Italy,45.2,9.15,1
+Pessac,France,44.8,-0.66,1
+Piscataway,United States,40.549,-74.459,1
+Portici,Italy,40.81,14.34,1
+Portland,United States,45.54,-122.66,1
+Prague,Czech Republic,50.08,14.43,1
+Probolinggo,Indonesia,-7.76,113.2,1
+Provo,United States,40.25,-111.64,1
+Pune,India,18.53,73.84,1
+Purísima del Rincón,Mexico,21.032,-101.859,1
+Qingdao Institution-Tech Co.,China,36.067,120.383,1
+Quzhou,China,28.97,118.87,1
+Rabigh,Saudi Arabia,22.798,39.035,1
+Ranchi,India,23.36,85.33,1
+Rapid City,United States,44.08,-103.23,1
+Richardson,United States,32.97,-96.71,1
+Rimouski,Canada,48.44,-68.54,1
+Rio de Janeiro,Brazil,-22.91,-43.2,1
+Riyadh,Saudi Arabia,24.65,46.77,1
+Roorkee,India,29.856,77.888,1
+Rupnagar,India,30.98,76.52,1
+Samara,Russian Federation,53.2,50.15,1
+San Diego,United States,32.81,-117.14,1
+San Sebastian,Spain,43.32,-1.98,1
+San Sebastián-Donostia,Spain,43.32,-1.985,1
+Sangareddy,India,17.619,78.082,1
+Santa Clara,United States,37.37,-121.97,1
+Santa Cruz,United States,36.97,-122.04,1
+Sao Paulo,Brazil,-23.53,-46.63,1
+Shah Alam,Malaysia,3.07,101.56,1
+Shaqra,Saudi Arabia,25.249,45.251,1
+Shiyan,China,32.57,110.78,1
+Shizuoka,Japan,34.98,138.39,1
+Stillwater,United States,36.13,-97.07,1
+Storrs,United States,41.808,-72.25,1
+Suita,Japan,34.75,135.52,1
+Surat,India,21.2,72.82,1
+Tallahassee,United States,30.46,-84.28,1
+Tangshan,China,39.62,118.19,1
+Taoyuan,Taiwan,25,121.31,1
+Thiruvananthapuram,India,8.51,76.95,1
+Tokai,Japan,35.03,136.89,1
+Trondheim,Norway,63.44,10.4,1
+Troy,United States,42.58,-83.14,1
+Turin,Italy,45.08,7.68,1
+Tuscaloosa,United States,33.24,-87.54,1
+Urmia,Iran,37.553,45.076,1
+Utica,United States,43.1,-75.23,1
+Vadodara,India,22.31,73.18,1
+Victoria,Canada,48.43,-123.37,1
+Villigen,Switzerland,47.527,8.214,1
+Vitznau,Switzerland,47.02,8.48,1
+Wako,Japan,35.78,139.61,1
+Weissach,Germany,48.848,8.928,1
+West Nusa Tenggara,Indonesia,-8.65,116.324,1
+Wolfsburg,Germany,52.43,10.78,1
+Wollongong,Australia,-34.42,150.87,1
+Worcester,United States,42.27,-71.81,1
+Wuxi,China,31.58,120.3,1
+Xinxiang,China,35.32,113.87,1
+Yinchuan,China,38.47,106.32,1
+Yokosuka,Japan,35.27,139.67,1
+York,United Kingdom,53.96,-1.11,1
+Yorktown Heights,United States,41.271,-73.778,1
+Zapopan,Mexico,20.72,-103.4,1
+Zhuhai,China,22.28,113.57,1
+Zunyi,China,27.7,106.92,1
+Zurich,Switzerland,47.38,8.54,1
+al-Majma'ah,Saudi Arabia,25.9,45.35,1
+s-Gravenhage,Netherlands,52.07,4.3,1

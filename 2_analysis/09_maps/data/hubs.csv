@@ -1,0 +1,12 @@
+dataset,label,group,institution,city,host_country,lat,lon,source_url
+Materials Project database,Materials Project,Crystals & solids,Lawrence Berkeley National Laboratory,Berkeley CA,United States,37.876,-122.247,https://newscenter.lbl.gov/2023/11/29/google-deepmind-new-compounds-materials-project/
+PubChem,PubChem,Molecules & liquids,"National Center for Biotechnology Information, NLM, NIH",Bethesda MD,United States,38.995,-77.100,https://pmc.ncbi.nlm.nih.gov/articles/PMC8363119/
+ICSD,ICSD,Crystals & solids,FIZ Karlsruhe – Leibniz Institute for Information Infrastructure,Eggenstein-Leopoldshafen,Germany,49.096,8.431,https://www.fiz-karlsruhe.de/en/produkte-und-dienstleistungen/inorganic-crystal-structure-database-icsd
+OQMD,OQMD,Crystals & solids,Northwestern University (Wolverton group),Evanston IL,United States,42.056,-87.675,https://oqmd.org/
+QM9,QM9,Molecules & liquids,University of Basel (von Lilienfeld group),Basel,Switzerland,47.563,7.582,https://www.nature.com/articles/sdata201422
+AFLOW,AFLOW,Crystals & solids,Duke University (Curtarolo group),Durham NC,United States,36.001,-78.938,https://materials.duke.edu/aflow.html
+ILThermo,ILThermo,Molecules & liquids,NIST Thermodynamics Research Center,Boulder CO,United States,39.995,-105.261,https://www.nist.gov/mml/acmd/trc/ionic-liquids-database
+Liverpool Ionics Dataset (LiIon),Liverpool Ionics,Crystals & solids,University of Liverpool,Liverpool,United Kingdom,53.406,-2.966,https://pcwww.liv.ac.uk/~msd30/lmds/LiIonDatabase.html
+NASA,NASA PCoE,Battery cycling,NASA Ames Research Center (Prognostics Center of Excellence),Moffett Field CA,United States,37.415,-122.064,https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/
+ZINC,ZINC,Molecules & liquids,University of California San Francisco (Irwin and Shoichet labs),San Francisco CA,United States,37.768,-122.392,https://zinc20.docking.org/
+COD,COD,Crystals & solids,"Vilnius University, Institute of Biotechnology (Life Sciences Center)",Vilnius,Lithuania,54.722,25.326,https://www.re3data.org/repository/r3d100010213

@@ -1,0 +1,57 @@
+rank,composition,baseline_reading,deep_dive,ood_elements,ood_flag_origin,aimd_evidence,condition_mismatched_evidence,n_family_precedent,n_failure_modes,structures_published,rules_fired,n_rule_citations,disposition,primary_role_displayed,roles_involved,change_class
+1,Li2B1S2,top 5: examine further,True,,,"family: mp-532413,mp-29410",False,1,0,0,family-route;structure-check;convention-note;family-simulated,2,enumerate structures first,MechanismSimulator,ExecutedToolScreener;KnowledgeMiner;MechanismSimulator;SimulationFeedback,downstream disposition added
+2,Li1B1S2,top 5: examine further,True,,,"family: mp-532413,mp-29410",False,0,0,3,no-precedent;structure-reuse;family-simulated,1,check against released structures,MechanismSimulator,KnowledgeMiner;MechanismSimulator;SimulationFeedback,downstream disposition added
+3,Li2P2S1,top 5: examine further,True,,,none,False,0,0,0,no-precedent;structure-check,0,enumerate structures first,MechanismSimulator,KnowledgeMiner;MechanismSimulator,downstream disposition added
+4,Li2P6S1,top 5: examine further,True,,,none,False,4,3,0,family-route;screen-failure-modes;structure-check,5,screen cited failure modes first,KnowledgeMiner,KnowledgeMiner;MechanismSimulator,downstream disposition added
+5,Li17S6I5,top 5: examine further,True,,,none,False,3,3,0,family-route;screen-failure-modes;structure-check,5,screen cited failure modes first,KnowledgeMiner,KnowledgeMiner;MechanismSimulator,downstream disposition added
+6,Li2Sn1S2,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+7,Li6Sn1S4,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+8,Li17S6Cl5,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+9,Li6S1Cl4,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+10,Li6Hg1S4,below the fold: not examined,False,Hg,continuation export (pre-existing),,,,,,,0,carried baseline warning (out-of-training element),ExecutedToolScreener,ExecutedToolScreener,carried baseline warning
+11,Li6Cd1S4,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+12,Li2B6S1,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+13,Li2Hg1S2,below the fold: not examined,False,Hg,continuation export (pre-existing),,,,,,,0,carried baseline warning (out-of-training element),ExecutedToolScreener,ExecutedToolScreener,carried baseline warning
+14,Li6Ca1S4,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+15,Li6Pb1S4,below the fold: not examined,False,Pb,continuation export (pre-existing),,,,,,,0,carried baseline warning (out-of-training element),ExecutedToolScreener,ExecutedToolScreener,carried baseline warning
+16,Li2As1S2,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+17,Li2Ge1S2,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+18,Li6S1I4,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+19,Li2In1S6,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+20,Li17S6F5,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+21,Li2Pb1S2,below the fold: not examined,False,Pb,continuation export (pre-existing),,,,,,,0,carried baseline warning (out-of-training element),ExecutedToolScreener,ExecutedToolScreener,carried baseline warning
+22,Li2Cd1S2,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+23,Li6Mg1S4,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+24,Li6Zn1S4,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+25,Li2As2S1,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+26,Li2Ga1S6,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+27,Ba1Li6S4,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+28,Li2S1Cl6,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+29,Li2Ca1S2,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+30,Li2Al1S6,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+31,Li3In5S8,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+32,Sr1Li6S4,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+33,Li2Mg1S2,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+34,Li1In1S2,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+35,Li1In5S2,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+36,Li2As1S6,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+37,Li2Zn1S2,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+38,Ba1Li2S2,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+39,Li2In6S1,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+40,Li1Al1S2,below the fold: not examined,True,,,exact: mp-1106183,True,1,1,3,family-route;screen-failure-modes;structure-reuse;condition-mismatch-recheck,2,re-assess under aligned conditions (condition-mismatched AIMD),SimulationFeedback,KnowledgeMiner;MechanismSimulator;SimulationFeedback,post-hoc illustrative addition
+41,Li1Ga1S2,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+42,Li1Ga5S2,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+43,Li3Ga5S8,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+44,Li2Ga6S1,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+45,Sr1Li2S2,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+46,Li1Al5S2,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+47,Li1Ge2S1,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+48,Li2As6S1,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+49,Li1As1S2,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+50,Li1As2S1,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+51,Li3As5S8,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+52,Li2Zn6S1,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+53,Li2S1N6,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+54,Li6S1F4,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+55,Li1S2O5,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged
+56,Li2S1F6,below the fold: not examined,False,,,,,,,,,0,executed rank only,,,unchanged

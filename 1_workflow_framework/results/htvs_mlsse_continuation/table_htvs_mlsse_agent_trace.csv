@@ -1,0 +1,169 @@
+﻿candidate_id,stage,kind,agent,action,passed,selected_tool,decision_source,backend,metrics_source,execution,mapped_fields
+htvs-cont:Li6Pb1S4,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li6Pb1S4,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li6Pb1S4,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li1Ga1S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li1Ga1S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li1Ga1S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Ba1Li2S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Ba1Li2S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Ba1Li2S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li6Zn1S4,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li6Zn1S4,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li6Zn1S4,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li6Sn1S4,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li6Sn1S4,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li6Sn1S4,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li1Al5S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li1Al5S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li1Al5S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Sr1Li6S4,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Sr1Li6S4,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Sr1Li6S4,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li1S2O5,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li1S2O5,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li1S2O5,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2B6S1,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2B6S1,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2B6S1,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li1As1S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li1As1S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li1As1S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Ba1Li6S4,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Ba1Li6S4,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Ba1Li6S4,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2P2S1,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2P2S1,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2P2S1,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2S1Cl6,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2S1Cl6,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2S1Cl6,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li6S1Cl4,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li6S1Cl4,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li6S1Cl4,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li17S6F5,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li17S6F5,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li17S6F5,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li3In5S8,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li3In5S8,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li3In5S8,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2P6S1,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2P6S1,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2P6S1,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li1In1S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li1In1S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li1In1S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li1B1S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li1B1S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li1B1S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2As1S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2As1S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2As1S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li3Ga5S8,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li3Ga5S8,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li3Ga5S8,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li6Hg1S4,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li6Hg1S4,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li6Hg1S4,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li3As5S8,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li3As5S8,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li3As5S8,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li6S1I4,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li6S1I4,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li6S1I4,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2As1S6,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2As1S6,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2As1S6,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li6S1F4,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li6S1F4,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li6S1F4,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2Ga6S1,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2Ga6S1,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2Ga6S1,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2Ge1S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2Ge1S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2Ge1S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2Sn1S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2Sn1S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2Sn1S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2S1N6,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2S1N6,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2S1N6,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2B1S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2B1S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2B1S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2In1S6,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2In1S6,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2In1S6,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li1As2S1,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li1As2S1,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li1As2S1,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2Mg1S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2Mg1S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2Mg1S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2Zn1S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2Zn1S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2Zn1S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2Cd1S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2Cd1S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2Cd1S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li1In5S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li1In5S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li1In5S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li6Mg1S4,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li6Mg1S4,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li6Mg1S4,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2Ca1S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2Ca1S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2Ca1S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li1Ge2S1,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li1Ge2S1,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li1Ge2S1,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li1Al1S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li1Al1S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li1Al1S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2As6S1,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2As6S1,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2As6S1,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li1Ga5S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li1Ga5S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li1Ga5S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2Pb1S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2Pb1S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2Pb1S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2As2S1,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2As2S1,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2As2S1,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2S1F6,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2S1F6,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2S1F6,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2Ga1S6,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2Ga1S6,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2Ga1S6,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Sr1Li2S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Sr1Li2S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Sr1Li2S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li17S6I5,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li17S6I5,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li17S6I5,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2Al1S6,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2Al1S6,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2Al1S6,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2Hg1S2,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2Hg1S2,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2Hg1S2,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li6Ca1S4,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li6Ca1S4,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li6Ca1S4,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li6Cd1S4,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li6Cd1S4,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li6Cd1S4,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li17S6Cl5,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li17S6Cl5,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li17S6Cl5,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2Zn6S1,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2Zn6S1,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2Zn6S1,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,
+htvs-cont:Li2In6S1,PropertyScreener,agent,HTPredictor,predict_material_properties,True,,published-row lookup (ML-HTVS-Li-SE),,published: ML-HTVS-Li-SE @ c13da8e9 data/04_2_after_stability_window_screening.csv,False,
+htvs-cont:Li2In6S1,handoff:PropertyScreener->ExecutedToolScreener,handoff,ProcessCoordinator,resolve_handoff,,,,,,,1
+htvs-cont:Li2In6S1,ExecutedToolScreener,agent,ExecutedToolScreener,predict_ionic_conductivity,True,ML-SSE,executed released model (fixed at batch prediction),,executed: model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f,True,

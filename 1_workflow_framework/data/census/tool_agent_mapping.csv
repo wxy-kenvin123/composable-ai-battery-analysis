@@ -1,0 +1,69 @@
+paper_id,tool,main_input,main_output,agent,rationale
+10015,LiPS,SSE atomic structure / MD config,Li-ion transport and diffusion (MD),MechanismSimulator,Runs MD to obtain ion transport in solid electrolyte
+10018,AL-anode-free,Solvent candidate library,Screened/ranked solvents (active learning),HTPredictor,Active-learning virtual screening predicts and ranks solvents
+10020,IBM_SMI-TED-IC,Molecular structure (SMILES),Predicted ionic conductivity,HTPredictor,Foundation-model forward property prediction
+10060,HPG,Polymer descriptors,Predicted ionic conductivity,HTPredictor,Deep-learning property prediction (material-level screening)
+10102,ML-SSE,Composition/structure descriptors,Predicted ionic conductivity,HTPredictor,ML screening for ionic conductors
+10106,SHAFT-Density,Target property / chemical space,Generated candidate SSE structures,FormulationDesigner,Physics-informed generative search proposes new candidates
+10113,multi-agent-electrolyte-discovery,Design objective,Proposed electrolyte ideas/candidates,FormulationDesigner,Multi-agent idea generator proposes candidates
+10130,ML-DFT-AP-SSE-Screening,Composition space,Screened/predicted SSE candidates,HTPredictor,Compositional ML plus high-throughput screening
+10152,DataSet,Literature corpus,Structured material-property dataset,KnowledgeMiner,Knowledge-acquisition pipeline mines literature into data
+10164,mlyzed,MD trajectories,Diffusion coeff / migration barrier,MechanismSimulator,Analyzes MD trajectories for transport quantities
+10171,Data-Driven-Framework-for-Divalent-Electrolytes,Descriptors,Predicted electrolyte properties,HTPredictor,Data-driven forward property prediction
+10173,RedCat,Candidate space (SMILES),Discovered aqueous organic electrolyte candidates,FormulationDesigner,Automated discovery workflow proposes/ranks new candidates
+10179,Machine-Learning-Driven-AIMD-of-AP-SSEs,Atomic structure,AIMD transport properties,MechanismSimulator,ML-driven ab initio MD simulation
+10207,ann-lipon,Atomic structure,Ionic diffusivity (MLIP-MD),MechanismSimulator,ML interatomic potential MD for diffusivity
+10208,Solid-Polymer-Electrolytes-in-Lithium-Metal-Batteries,Solvent candidates,Screened advantageous solvents,HTPredictor,ML-guided solvent screening
+10213,Electrolyte-based-K-ion-compensation,Electrolyte data,Predicted compensation performance,HTPredictor,Data-driven prediction supporting electrolyte choice
+10228,ai2-kit,Atomic structure / MD setup,MLIP-MD trajectories and solvation,MechanismSimulator,AI-times-MD toolkit for force-field MD workflows
+10245,OptiANN_BatteryCapPred,Composite cathode microstructure/params,Predicted battery capacity (cell-level),ExperimentFeedback,Predicts cell-level capacity from electrode micromechanics
+10258,bamboo,Atomic structure,ML force field for liquid electrolyte,MechanismSimulator,Predictive ML force-field framework
+10259,Scalable-Electrolyte-Simulation,Atomic structure,QM-accurate electrolyte simulation,MechanismSimulator,Scalable electrolyte MD simulation
+10264,AutoBADDIE,Atomic config,Classical interatomic potentials,MechanismSimulator,End-to-end learning of interatomic potentials
+10265,LJ_paramopt_framework,Force-field params,Optimized force-field parameters,MechanismSimulator,Active-learning force-field parameterization for MD
+10269,metal_organic_ML,Solvent descriptors,Predicted solvent properties,HTPredictor,ML modeling/prediction guiding solvent design
+10291,SE-buffer-layer,Interface descriptors,Predicted SEI buffer-layer suitability,HTPredictor,Transfer-learning prediction for SEI buffer layers
+10307,DN-Prediction-Model,Solvent descriptors,Predicted donor number,HTPredictor,ML prediction of donor numbers
+10309,ActiveLearning-LiBattery,Descriptors,Predicted physicochemical properties,HTPredictor,Active-learning property prediction
+10347,BatteryLifeCycle,Early cycling data,Predicted cycle life (cell-level),ExperimentFeedback,Cell-level early cycle-life prediction from cycling data
+10383,pymatcc,Composition/structure,Screened candidates (clustering),HTPredictor,Unsupervised screening of solid electrolytes
+10389,CNN_for_NCM-composition-and-state-prediction,Cathode microscopy images,Composition/state (morphology),ExperimentFeedback,Image-based characterization of NCM particles
+10391,AL-HTE-Electrolyte,Robotic HTE experiments,Measured electrolyte data + AL recommendation,ExperimentFeedback,Integrated high-throughput robotic experimentation platform (Noh et al.)
+10613,mosaics,Chemical space,Generated/optimized molecules,FormulationDesigner,Evolutionary Monte Carlo molecular generation
+10614,DES-MLIP,Atomic structure,MD trajectories (DeePMD),MechanismSimulator,ML interatomic potential MD of deep eutectic solvents
+10632,ILP,Polymer candidate space,Screened ionic polymer electrolytes,HTPredictor,ML-guided screening of ionic polymer electrolytes
+10635,allegro,Atomic structure,Equivariant MLIP dynamics,MechanismSimulator,Equivariant neural-network potential for MD
+10664,LiSSE-MP,Materials Project structures,Screened superionic SSE,HTPredictor,ML screening over MP database
+10771,ML-HTVS-Li-SE,Chemical space,High-throughput virtual screening hits,HTPredictor,ML high-throughput virtual screening
+10797,Clio-LabViewControl,Robotic platform commands,Autonomous electrolyte experiments,ExperimentFeedback,Robotic experimentation control/automation
+10799,polymernet,Polymer descriptors,Predicted polymer-electrolyte properties,HTPredictor,ML screening of amorphous polymer electrolytes
+10810,optimization,Candidate structures,Optimal configs for DFT/AIMD,MechanismSimulator,Configuration determination feeding DFT/AIMD
+10816,electrolyte_optimization_one_shot_active_learning,Electrolyte formulation space,Globally optimal formulation (AL),FormulationDesigner,One-shot active learning proposes optimal formulation
+10834,SR-electrolytes,Transport data,Symbolic predictive law,HTPredictor,Symbolic regression yields predictive transport model
+10914,xgboost,Descriptors,Predicted/identified solid electrolytes,HTPredictor,Gradient-boosting property prediction/identification
+20010,Energy-GNoME,Material structures,Predicted properties / screened database,HTPredictor,GNN property prediction and screening database
+20018,ML-LNMO-additives,Additive descriptors,Screened electrolyte additives,HTPredictor,Material-level additive screening
+20035,Mn-Based-Cathode,Cathode descriptors,Predicted/mapped cathode properties,HTPredictor,Interpretable ML cathode property mapping
+20064,NaFePO4_potential,Atomic structure,Interatomic potential / ion conduction,MechanismSimulator,ML interatomic potential for NaFePO4
+20079,InterOptimus,Two material structures,Screened ground-state interface,HTPredictor,AI workflow screens heterogeneous interfaces by stability
+20102,dnn_combine_-tl,Cathode composition,HT-screened Ni-rich cathodes,HTPredictor,Transfer-learning high-throughput screening
+20160,genAI4LIBs,Chemical space,Generated battery-material candidates,FormulationDesigner,Generative models mine chemical space for new candidates
+20174,voltage_mining_model_demo,Cathode structure,Predicted voltage,HTPredictor,ML voltage prediction
+20176,mod,Manufacturing parameters,Optimized composite-cathode manufacturing,ExperimentFeedback,ML for electrode manufacturing/processing feedback
+20180,ai4mat,Cathode descriptors,Predicted cathode properties,HTPredictor,ML property prediction for Na-ion cathodes
+20188,cathodedataextractor,Cathode literature documents,Extracted structured cathode data,KnowledgeMiner,Document-level literature information extraction
+20197,Gomez-Flores-etal_12,Process signals,Predicted flotation separation,HTPredictor,LSTM prediction of electrode flotation separation
+20199,MBVGNN,Cathode structure,Predicted cathode properties,HTPredictor,Bond-valence GNN property prediction
+20206,Swin-Fuse,FIB-SEM images,Reconstructed 3D microstructure,ExperimentFeedback,Image-based microstructure reconstruction
+20211,Synthesizability-PU-CGCNN,Electrode structure,Predicted synthesizability,HTPredictor,CGCNN synthesizability prediction
+20229,dftfe,Atomic structure,DFT electronic-structure results,MechanismSimulator,Large-scale DFT simulation code
+20251,TransformerGNN,Electrode structure,Predicted average voltage,HTPredictor,GNN voltage prediction
+20289,SliceGAN,2D micrographs,Generated 3D microstructure,ExperimentFeedback,GAN reconstructs electrode microstructure from imaging
+20303,graphNNP,Atomic structure + charge density,Nanosecond MD trajectories,MechanismSimulator,NN potential MD with electron-density description
+20313,HaUnet_paper,Atomic-scale STEM images,Phase segmentation/diagnosis,ExperimentFeedback,Deep-learning image phase segmentation (C8 cross-cutting)
+20328,Voltage-Model,Cathode candidate space,Screened cathodes (predicted voltage),HTPredictor,ML screening for new cathode materials
+20382,MLORR,Lewis-acid descriptors,Predicted reaction property,HTPredictor,Descriptor-based ML property prediction
+40044,ML-assisted-HEA-1,Design constraints,Proposed HEA interphase composition,FormulationDesigner,ML-assisted design of interphase composition
+40149,DMFC,Catalyst/support descriptors,Forecast mass activity,HTPredictor,ML forecasting of catalyst mass activity (C8 cross-cutting)
+40150,ThankGod_C_Egemonye_Ge12C12_Si12C12_Battery,Doped nanostructure,ML-DFT predicted properties,HTPredictor,ML-assisted DFT property prediction
+40213,Li-metal-anode,Anode design data,Predicted high-safety anode design,HTPredictor,Data-driven prediction guiding anode safety design

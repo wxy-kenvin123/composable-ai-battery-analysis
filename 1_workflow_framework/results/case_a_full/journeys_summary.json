@@ -1,0 +1,13 @@
+{
+  "n_journeys": 6,
+  "anchor_formula": "Li5B7S13",
+  "co_occurring_compositions": [
+    "Li2B1S2"
+  ],
+  "co_occurrence_scope": "string-level: the committed card verdict names the formula and the pinned family match contains the same reduced formula; author independence and citation-graph separation were not assessed",
+  "posthoc_added": [
+    "Li1Al1S2"
+  ],
+  "posthoc_note": "the AIMD-match deep-dive clause was declared post hoc, after this candidate's match had been seen; illustrative, not a policy effect",
+  "measurement_note": "this run used no measurement; the three linked releases contain no measured-cell result used here"
+}

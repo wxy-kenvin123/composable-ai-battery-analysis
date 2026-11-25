@@ -1,0 +1,291 @@
+{
+ "articles": 755,
+ "theme_n": {
+  "C1": 153,
+  "C8": 43,
+  "C2": 110,
+  "C3": 160,
+  "C5": 104,
+  "C7": 47,
+  "C4": 79,
+  "C6": 59
+ },
+ "main_n": {
+  "Electrolyte": 439,
+  "Cathode": 197,
+  "Anode": 107,
+  "Tie": 12
+ },
+ "main_by_theme": {
+  "Anode": {
+   "C1": 10,
+   "C8": 11,
+   "C2": 4,
+   "C3": 8,
+   "C5": 12,
+   "C7": 24,
+   "C4": 18,
+   "C6": 20
+  },
+  "Electrolyte": {
+   "C1": 124,
+   "C8": 4,
+   "C2": 91,
+   "C3": 107,
+   "C5": 67,
+   "C7": 2,
+   "C4": 29,
+   "C6": 15
+  },
+  "Cathode": {
+   "C1": 17,
+   "C8": 28,
+   "C2": 15,
+   "C3": 43,
+   "C5": 24,
+   "C7": 20,
+   "C4": 29,
+   "C6": 21
+  }
+ },
+ "electrolyte_kind_n": {
+  "Inorganic solid": 204,
+  "Liquid": 156,
+  "Not specified": 57,
+  "Polymer": 22
+ },
+ "share_articles": 678,
+ "main_share_median": 0.8848,
+ "main_share_ge": {
+  "0.6": 587,
+  "0.8": 459,
+  "0.9": 331
+ },
+ "all_three_each_ge": {
+  "0.1": 75,
+  "0.2": 16
+ },
+ "main_share_median_by_theme": {
+  "C1": 0.9215,
+  "C8": 0.9394,
+  "C2": 0.9309,
+  "C3": 0.931,
+  "C5": 0.7732,
+  "C7": 0.8427,
+  "C4": 0.7831,
+  "C6": 0.766
+ },
+ "share_articles_by_theme": {
+  "C1": 128,
+  "C8": 39,
+  "C2": 102,
+  "C3": 147,
+  "C5": 104,
+  "C7": 44,
+  "C4": 67,
+  "C6": 47
+ },
+ "three_named_by_threshold": {
+  "1": {
+   "1": 184,
+   "2": 230,
+   "3": 341
+  },
+  "3": {
+   "0": 14,
+   "1": 364,
+   "2": 221,
+   "3": 156
+  },
+  "5": {
+   "0": 34,
+   "1": 447,
+   "2": 182,
+   "3": 92
+  },
+  "10": {
+   "0": 104,
+   "1": 506,
+   "2": 120,
+   "3": 25
+  }
+ },
+ "minor_ge1": {
+  "Interphase": 307,
+  "Separator": 180,
+  "Binder": 95,
+  "Current collector": 93
+ },
+ "minor_ge5": {
+  "Interphase": 145,
+  "Separator": 28,
+  "Binder": 22,
+  "Current collector": 7
+ },
+ "interphase_ge1_by_theme": {
+  "C1": 61,
+  "C8": 7,
+  "C2": 53,
+  "C3": 32,
+  "C5": 66,
+  "C7": 19,
+  "C4": 32,
+  "C6": 37
+ },
+ "ion_n": {
+  "Li": 544,
+  "Na": 95,
+  "Zn": 38,
+  "Flow and other": 18,
+  "Several": 18,
+  "Mg": 16,
+  "Not named": 12,
+  "K": 6,
+  "Ca": 5,
+  "Al": 3
+ },
+ "ion_group_n": {
+  "Li": 544,
+  "Na": 95,
+  "Zn": 38,
+  "K, Mg, Ca or Al": 30,
+  "Flow and other": 18,
+  "Several": 18,
+  "Not named": 12
+ },
+ "ion_group_by_theme": {
+  "Li": {
+   "C1": 122,
+   "C8": 28,
+   "C2": 87,
+   "C3": 108,
+   "C5": 59,
+   "C7": 16,
+   "C4": 69,
+   "C6": 55
+  },
+  "Flow and other": {
+   "C1": 2,
+   "C8": 0,
+   "C2": 5,
+   "C3": 1,
+   "C5": 1,
+   "C7": 0,
+   "C4": 7,
+   "C6": 2
+  },
+  "K, Mg, Ca or Al": {
+   "C1": 5,
+   "C8": 2,
+   "C2": 3,
+   "C3": 8,
+   "C5": 2,
+   "C7": 8,
+   "C4": 0,
+   "C6": 2
+  },
+  "Zn": {
+   "C1": 2,
+   "C8": 1,
+   "C2": 5,
+   "C3": 2,
+   "C5": 25,
+   "C7": 2,
+   "C4": 1,
+   "C6": 0
+  },
+  "Na": {
+   "C1": 17,
+   "C8": 11,
+   "C2": 2,
+   "C3": 28,
+   "C5": 15,
+   "C7": 21,
+   "C4": 1,
+   "C6": 0
+  },
+  "Several": {
+   "C1": 1,
+   "C8": 1,
+   "C2": 4,
+   "C3": 12,
+   "C5": 0,
+   "C7": 0,
+   "C4": 0,
+   "C6": 0
+  },
+  "Not named": {
+   "C1": 4,
+   "C8": 0,
+   "C2": 4,
+   "C3": 1,
+   "C5": 2,
+   "C7": 0,
+   "C4": 1,
+   "C6": 0
+  }
+ },
+ "ion_full_n": {
+  "Li": 552,
+  "Na": 97,
+  "Zn": 38,
+  "Mg": 18,
+  "Flow and other": 17,
+  "Not named": 10,
+  "Ca": 8,
+  "K": 7,
+  "Several": 5,
+  "Al": 3
+ },
+ "kind_ta_specified_and_same": [
+  319,
+  323
+ ],
+ "corrections": {
+  "ion A": 4,
+  "ion B": 7,
+  "ion C": 15,
+  "kind B": 14
+ },
+ "electrolyte_kind_full_n": {
+  "Inorganic solid": 203,
+  "Liquid": 154,
+  "Not specified": 65,
+  "Polymer": 17
+ },
+ "ion_ta_n": {
+  "Li": 486,
+  "Na": 95,
+  "Not named": 74,
+  "Zn": 38,
+  "Flow and other": 17,
+  "Mg": 16,
+  "Several": 16,
+  "K": 6,
+  "Ca": 4,
+  "Al": 3
+ },
+ "ion_ta_same_as_full_text": 675,
+ "ion_ta_named_and_same": [
+  665,
+  681
+ ],
+ "ai_articles": 673,
+ "ai_type_n": {
+  "active learning": 93,
+  "deep learning": 359,
+  "ensemble learning": 156,
+  "evolutionary algorithms": 128,
+  "generative ai": 63,
+  "graph neural networks": 105,
+  "llm": 34,
+  "nlp": 38,
+  "optimization algorithms": 116,
+  "post-hoc explanation": 167,
+  "probabilistic reasoning": 6,
+  "reinforcement learning": 11,
+  "supervised machine learning": 424,
+  "symbolic ai": 5,
+  "unsupervised machine learning": 73
+ }
+}

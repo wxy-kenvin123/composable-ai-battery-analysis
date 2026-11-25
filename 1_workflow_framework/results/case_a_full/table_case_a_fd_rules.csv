@@ -1,0 +1,10 @@
+﻿rule_id,condition,action
+provisional-rank,the executed prediction used an element absent from the model's training formulae,treat this rank as provisional; do not compare it against in-domain candidates without retraining on the missing element
+no-precedent,the card cites no same-family study,no corpus precedent to lean on; enumerate structures and simulate transport before spending any synthesis effort
+family-route,the card cites at least one same-family study,reuse the cited family's characterisation route instead of designing one
+screen-failure-modes,the card reports failure modes for this family,screen for the cited family failure modes before cell assembly
+structure-check,the release enumerated no structure for this composition,"run the upstream pipeline's own next stage, structure enumeration: the executed model is composition-level and cannot see structure"
+structure-reuse,the release already enumerated structures for this composition,check the composition-level prediction against the released structures with a structure-aware method
+convention-note,the executed prediction sits above the 1e-4 S/cm field convention,"report the convention as an annotation, never as a passed criterion: neither upstream tool published it as a threshold"
+condition-mismatch-recheck,"a published AIMD study covers this exact composition under conditions the executed estimate does not share (high-temperature, structure-specific vs composition-level)",re-assess under aligned conditions with a structure-aware method before acting on either number
+family-simulated,the release ran AIMD on same-system compositions but not on this one,reuse the published AIMD protocol for this stoichiometry before considering synthesis

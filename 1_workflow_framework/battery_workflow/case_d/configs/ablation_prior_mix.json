@@ -1,0 +1,501 @@
+{
+  "contract_tag": "case2-ablation-prior-mix",
+  "status": "exploratory; frozen before the run",
+  "purpose": "Compare the full optimizer with each of two modules disabled. Mix the Nernst–Einstein conductivity prior toward the observed mean using the concentration and anion rules.",
+  "name": "ablation_prior_mix",
+  "experiment": "ablation",
+  "data": {
+    "database": "OEDB, Open Electrolyte Database for Batteries",
+    "version": "v2026-05-11",
+    "licence": "CC BY 4.0",
+    "homepage": "https://oedb.jp/",
+    "mcp_endpoint": "https://oedb.jp/mcp",
+    "mcp_server_name": "MCP for Open Electrolyte Database for Batteries (OEDB)",
+    "mcp_server_version": "2.0.0",
+    "mcp_protocol_version": "2024-11-05",
+    "mcp_tools_exposed": [
+      "searchElectrolytes",
+      "getStatistics",
+      "getDistribution",
+      "getCorrelation",
+      "exportData"
+    ],
+    "export_tool": "exportData",
+    "export_filters": null,
+    "export_reported_row_count": 5616,
+    "paper_doi": "10.1038/s41524-026-02093-y",
+    "raw_dir": "<BATTAGENT_OEDB_DIR>",
+    "env_var": "BATTAGENT_OEDB_DIR",
+    "cache_dirname": "oedb_v2026-05-11",
+    "primary_file": "oedb_mcp_exportData_v2026-05-11.csv",
+    "files_sha256": {
+      "oedb_mcp_exportData_v2026-05-11.csv": "08f8b6f7c50a2a3c2b506b873c21f5bcd263ac24de0574a1ffb38bc949ceb234",
+      "oedb-electrolytes-v2026-05-11.csv": "a955f2dd719d2e5dd8ab2082e4c78104541ec0caa548e786662636f07553a462"
+    }
+  },
+  "columns": {
+    "id": "id",
+    "cation": "cation",
+    "anion": "anion",
+    "solvent": "solvent",
+    "concentration": "Concentration (mol/kg)",
+    "ionic_conductivity": "Ionic Conductivity (mS/cm)",
+    "cation_diffusivity": "Cation's Diffusivity (m²/s)",
+    "anion_diffusivity": "Anion's Diffusivity (m²/s)",
+    "viscosity": "Viscosity (mPa·s)",
+    "density": "Density (g/cm³)"
+  },
+  "universe": {
+    "cation": "Li",
+    "n_candidates": 1872,
+    "anions_ordered": [
+      "BETI",
+      "BF4",
+      "ClO4",
+      "DFOB",
+      "FSI",
+      "OTf",
+      "PF6",
+      "TFA",
+      "TFSI"
+    ],
+    "solvents_ordered": [
+      "AN",
+      "Ac",
+      "Ac2O",
+      "BC",
+      "DEC",
+      "DMC",
+      "DMI",
+      "DMSO",
+      "EA",
+      "EB",
+      "EC",
+      "EMC",
+      "EP",
+      "FAN",
+      "FEA",
+      "FEC",
+      "FEMC",
+      "GBL",
+      "GN",
+      "MA",
+      "MB",
+      "MP",
+      "PC",
+      "SN",
+      "TEP",
+      "TMP"
+    ],
+    "concentrations_ordered": [
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0
+    ]
+  },
+  "features": {
+    "dimension": 36,
+    "layout": "one_hot(anion, 9) ++ one_hot(solvent, 26) ++ scaled_concentration(1)",
+    "concentration_scaling": {
+      "method": "fixed min-max from the pinned grid, not from observed data",
+      "min": 0.5,
+      "max": 4.0
+    },
+    "rationale": "Fixed rather than data-derived scaling, so the feature of a candidate never depends on which points happen to have been revealed."
+  },
+  "missing_policy": {
+    "missing_ids": [
+      3010,
+      3011,
+      3370,
+      3428,
+      3503
+    ],
+    "missing_field": "Ionic Conductivity (mS/cm)",
+    "missing_confirmed_in": [
+      "MCP CSV export",
+      "MCP JSON export",
+      "GUI CSV download"
+    ],
+    "candidate_universe_size": 1872,
+    "truth_set_size": 1867,
+    "oracle_return": "data_missing",
+    "counts_against_budget": true,
+    "marks_id_as_revealed": true,
+    "enters_model": false,
+    "gate": "oedb-data-available",
+    "must_report": "the number of times each of the five ids was selected, per arm and per seed"
+  },
+  "objectives": {
+    "mode": "sigma_tplus",
+    "columns": [
+      {
+        "index": 0,
+        "name": "m1",
+        "expression": "-log10(ionic conductivity in mS/cm)",
+        "direction": "minimise"
+      },
+      {
+        "index": 1,
+        "name": "m4",
+        "expression": "-(d_cation / (d_cation + d_anion))",
+        "direction": "minimise"
+      }
+    ]
+  },
+  "hard_failure_protocol": {
+    "file": "hard_fail_sets.json",
+    "sha256": "3bc9f24656af1fc81248c09a63ec48a0b5f56b506a4ed024cde5ae4fb87a747b",
+    "protocols": [
+      {
+        "set": "p80",
+        "n_unprocessable": 374,
+        "n_feasible_labelled": 1493,
+        "candidate_ids_sha256": "ef3824b8610b02a03ebede19c945eb3589fdef1b35a0e783d7464ce15d2c95f0"
+      }
+    ]
+  },
+  "front_census": {
+    "unconstrained_front_size": 14,
+    "blocked_front_size": 6,
+    "blocked_front_ids": [
+      1960,
+      2020,
+      2060,
+      3308,
+      3688,
+      3721
+    ],
+    "feasible_front_size": 8
+  },
+  "feasibility_model": {
+    "type": "L2-regularised logistic regression fitted by iteratively reweighted least squares (Newton), numpy only",
+    "features": "36-dimensional encoding plus an unpenalised intercept",
+    "labels": {
+      "ok": 1,
+      "hard_fail": 0,
+      "data_missing": "excluded from training"
+    },
+    "l2_lambda": 1.0,
+    "class_weight": "balanced: each observation weighted n_total / (2 * n_its_class)",
+    "activation": {
+      "min_positives": 2,
+      "min_negatives": 2,
+      "inactive_pof": 1.0
+    },
+    "pof_floor": 0.05,
+    "pof_veto_threshold": 0.5,
+    "veto_rule": "point",
+    "lcb_kappa": 1.0,
+    "refit": "once per optimised batch, not once per selection",
+    "numerics": {
+      "max_iter": 100,
+      "tol": 1e-08,
+      "solver": "Newton steps with the L2 term added to the Hessian; no random component"
+    },
+    "no_label_guarantee": "the model reads only attempt statuses and candidate features; it never receives m1, m2, m3 or any hidden label"
+  },
+  "sessions": {
+    "n_sessions": 4,
+    "per_session_budget": {
+      "n_init": 5,
+      "n_optimised_batches": 4,
+      "batch_size": 5,
+      "n_optimised_selections": 20,
+      "total": 25
+    },
+    "campaign_total_budget": 100
+  },
+  "initialisation": {
+    "method": "greedy_maximin",
+    "random_seed": "10 * campaign_seed + session_index",
+    "session_index_origin": 1,
+    "tie_break": "smallest id"
+  },
+  "surrogate": {
+    "type": "gaussian_process",
+    "implementation": "pure numpy, in battery_workflow/case_d/surrogate.py",
+    "kernel": "matern_5_2_isotropic",
+    "kernel_formula": "k(x,x') = sigma_f2 * (1 + s + s*s/3) * exp(-s), s = sqrt(5)*||x-x'||/lengthscale",
+    "hyperparameter_fit": "exhaustive grid search maximising the exact log marginal likelihood; no gradient optimiser, so no platform-dependent line search",
+    "grid": {
+      "lengthscale": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0,
+        8.0
+      ],
+      "sigma_f2": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "sigma_n2": [
+        0.0001,
+        0.001,
+        0.01,
+        0.1
+      ]
+    },
+    "grid_tie_break": "lowest flat index in the order (lengthscale, sigma_f2, sigma_n2)",
+    "target_standardisation": "mean and standard deviation of the observed targets only; never the full label set. A zero standard deviation is replaced by 1.0.",
+    "cholesky_jitter": {
+      "start": 1e-10,
+      "growth": 10.0,
+      "max_attempts": 6,
+      "recorded_in_trace": true
+    }
+  },
+  "acquisition": {
+    "scheme": "parego_expected_improvement",
+    "objective_normalisation": "each minimize-form objective is min-max scaled using observed points only; a zero range is replaced by 1.0",
+    "scalarisation": "augmented_chebyshev",
+    "rho": 0.05,
+    "expected_improvement": {
+      "sense": "minimisation",
+      "incumbent": "minimum observed scalarised value in the current round's weighting",
+      "xi": 0.01,
+      "normal_cdf_pdf": "closed form via math.erf; no scipy"
+    },
+    "selection": "argmin over unseen candidates of the negative expected improvement",
+    "tie_break": "largest expected improvement first, then smallest id; whether a tie occurred is recorded in the trace",
+    "weight_source": {
+      "lattice_divisions": 10,
+      "dimension": 2,
+      "n_vectors": 11
+    },
+    "batch": {
+      "batch_size": 5,
+      "weight_selection": "stride",
+      "weight_stride": 8,
+      "weight_start": 0
+    }
+  },
+  "mechanism": {
+    "relation": "nernst_einstein_with_empirical_haven_like_correction",
+    "constants": {
+      "faraday_C_per_mol": 96485.33212,
+      "gas_constant_J_per_mol_K": 8.314462618,
+      "temperature_K": 298.0,
+      "temperature_source": "OEDB Methods: production runs were carried out under NVT conditions at 298 K"
+    },
+    "raw_estimate": "sigma_NE_raw(x) = 1e4 * (F^2 / (R*T)) * b(x) * (D_Li_hat(x) + D_anion_hat(x)) in mS/cm, with b the molality in mol/kg from the candidate key taken as mol/L at 1 kg/L (x1000 to mol/m3) and the S/m result converted to mS/cm (x10)",
+    "diffusivity_inputs": {
+      "D_Li_hat": "posterior mean of a GP fitted on observed -log10(D_Li), inverted back to linear units",
+      "D_anion_hat": "D_Li_hat multiplied by the running median of the observed D_anion / D_Li ratio; the ratio prior before any observation is 1.0"
+    },
+    "haven_like_correction": {
+      "definition": "sigma_NE_raw / sigma_observed, evaluated only on already-revealed points with status ok",
+      "aggregation": "geometric mean in log10 space",
+      "shrinkage": "log10(h) is shrunk toward the prior log10(h0)=0 with weight n/(n+n0)",
+      "n0": 4,
+      "causality": "The value used in round t is computed from rounds 1..t-1 only. The implementation snapshots the correction before the oracle is called, and a test recomputes it independently from the prefix of the observation log."
+    }
+  },
+  "memory": {
+    "rule": "noise_inflation = clip(1 + mean(|residual| over the last k rounds) / residual_scale, 1.0, cap)",
+    "k": 8,
+    "residual_scale": 0.25,
+    "cap": 4.0
+  },
+  "knowledge_combination": "mix_with_observed_mean",
+  "knowledge_channel": "prior",
+  "rule_pack": {
+    "file": "rules/rules_prior_mix.json",
+    "sha256": "07948daab507099aff481fb85afa96ed758113d16a500b5c5674e18b79a7a5ef"
+  },
+  "metrics": {
+    "primary": "log_hv_regret_auc",
+    "floor": 1e-06,
+    "also_reported": [
+      "hv_regret_auc",
+      "hv_regret_normalized",
+      "pareto_recall",
+      "hard_fail_attempts_total",
+      "cross_session_duplicate_attempts",
+      "numbered_attempts",
+      "pof_active_batches",
+      "unique_candidates_attempted"
+    ],
+    "evaluator_only": {
+      "access_note": "This block is label-derived. Only OEDBEvaluator may read it. A test asserts that no agent module imports it.",
+      "truth_set_size": 1867,
+      "reference_point": [
+        3.0838996135,
+        13.6559092436,
+        2.8217663081
+      ],
+      "reference_point_rule": "per-coordinate maximum over the truth set in minimize form, extended by 5% of that coordinate's range, rounded to 1e-10",
+      "hv_true": 88.248293938,
+      "hv_true_tolerance": 1e-06,
+      "pareto_ids": [
+        2081,
+        2097,
+        2098,
+        2099,
+        2100,
+        2289,
+        2306,
+        2513,
+        2721,
+        2929,
+        3121,
+        3123,
+        3137,
+        3138,
+        3140,
+        3346
+      ],
+      "top1pct_k": 19,
+      "top1pct_rule": "ceil(0.01 * 1867) points with the smallest equal-weight mean of the min-max normalised minimize-form objectives, ties broken by smallest id",
+      "top1pct_ids": [
+        1890,
+        2084,
+        2098,
+        2099,
+        2100,
+        2101,
+        2289,
+        2306,
+        2307,
+        2513,
+        2514,
+        2705,
+        2721,
+        2929,
+        3121,
+        3122,
+        3137,
+        3138,
+        3140
+      ],
+      "derived_constants_sha256": "55b696ed75296d57654167d45f4f1db309648ed2e60fb3a9eefe1b271b1ca699",
+      "derived_constants_sha256_payload": "sha256 of json.dumps({truth_set_size, reference_point, hv_true, pareto_ids, top1pct_k, top1pct_ids}, sort_keys=True, separators=(',',':')) encoded utf-8"
+    }
+  },
+  "arms": [
+    {
+      "name": "full_shared",
+      "km": true,
+      "mkb": true,
+      "mechanism": true,
+      "coordinator": true,
+      "transfer": "full_learn",
+      "success_transfer": "all",
+      "void_own_failures": false,
+      "records_failures_for_successors": true,
+      "failure_regime": "structured"
+    },
+    {
+      "name": "full_shared_no_mechanism",
+      "km": true,
+      "mkb": true,
+      "mechanism": false,
+      "coordinator": true,
+      "module_off": "mechanism",
+      "transfer": "full_learn",
+      "success_transfer": "all",
+      "void_own_failures": false,
+      "records_failures_for_successors": true,
+      "failure_regime": "structured"
+    },
+    {
+      "name": "full_shared_no_km",
+      "km": false,
+      "mkb": true,
+      "mechanism": true,
+      "coordinator": true,
+      "module_off": "km",
+      "transfer": "full_learn",
+      "success_transfer": "all",
+      "void_own_failures": false,
+      "records_failures_for_successors": true,
+      "failure_regime": "structured"
+    }
+  ],
+  "protocols": [
+    "p80"
+  ],
+  "seeds": [
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359
+  ],
+  "paired_bootstrap": {
+    "pairing_unit": "seed",
+    "bootstrap_resamples": 10000,
+    "bootstrap_rng_seed": 20260920,
+    "interval": "95% percentile",
+    "comparisons": []
+  },
+  "allow_log_floor": true,
+  "report_rule_fields": [],
+  "comparison_gate_flag": true,
+  "sign_check_applicable": true
+}

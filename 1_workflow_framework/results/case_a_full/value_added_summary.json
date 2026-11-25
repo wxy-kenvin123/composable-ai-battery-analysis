@@ -1,0 +1,25 @@
+{
+  "n_candidates": 56,
+  "n_top": 5,
+  "n_deep_dive": 6,
+  "n_downstream_added": 5,
+  "n_posthoc_illustrative": 1,
+  "n_carried_warnings": 4,
+  "n_unchanged": 46,
+  "stage_touch": {
+    "PropertyScreener": 56,
+    "ExecutedToolScreener": 56,
+    "SimulationFeedback": 6,
+    "KnowledgeMiner": 6,
+    "MechanismSimulator": 6,
+    "FormulationDesigner": 6
+  },
+  "retrieval_questions_asked": 18,
+  "retrieval_questions_uniform": 168,
+  "retrieval_question_share": 0.10714285714285714,
+  "deep_dive_share": 0.10714285714285714,
+  "deep_dive_rule": "top 5 by executed log10 conductivity, plus any survivor whose exact stoichiometry has a published AIMD trajectory in LiSSE-MP. The second clause was declared post hoc, after the AIMD match had been seen; illustrative, not a selection policy fixed in advance",
+  "baseline_note": "rank-only reading of the executed shortlist; the top-N budget is this run's retrieval budget, not a published decision rule",
+  "carried_note": "out-of-training flags were already present in the continuation export; the chain carries them and is not credited for them",
+  "posthoc_note": "the AIMD-match clause was declared post hoc; its one admission is an illustrative case, not a policy-effect measurement"
+}

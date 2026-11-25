@@ -1,0 +1,31 @@
+﻿"pair","style","shared_core_algorithms","algorithms","pair_tabular","pair_neural","pair_search"
+"C1-C2","name",2,"graph neural networks; linear regression",1,1,0
+"C1-C3","potential",1,"graph neural networks",1,2,0
+"C1-C3","name",2,"linear regression; multi layer perceptron",1,2,0
+"C1-C4","name",1,"linear regression",1,0,0
+"C1-C5","name",1,"linear regression",1,0,0
+"C1-C6","name",2,"linear regression; multi layer perceptron",1,1,0
+"C1-C7","name",2,"linear regression; multi layer perceptron",1,1,0
+"C1-C8","potential",1,"multi layer perceptron",1,1,0
+"C1-C8","name",1,"linear regression",1,1,0
+"C2-C3","tabular",11,"bayesian optimization; convolutional neural network; decision tree; gaussian process regression; graph neural networks; linear regression; random forest; shapley additive explanations; support vector machine; support vector regression; xgboost",8,2,1
+"C2-C4","tabular",5,"convolutional neural network; decision tree; linear regression; random forest; support vector machine",4,1,0
+"C2-C5","tabular",9,"bayesian optimization; convolutional neural network; decision tree; linear regression; random forest; shapley additive explanations; support vector machine; support vector regression; xgboost",7,1,1
+"C2-C6","tabular",10,"bayesian optimization; convolutional neural network; decision tree; gaussian process regression; linear regression; random forest; shapley additive explanations; support vector machine; support vector regression; xgboost",8,1,1
+"C2-C7","tabular",8,"bayesian optimization; decision tree; linear regression; random forest; shapley additive explanations; support vector machine; support vector regression; xgboost",7,0,1
+"C2-C8","tabular",7,"convolutional neural network; decision tree; linear regression; random forest; shapley additive explanations; support vector regression; xgboost",6,1,0
+"C3-C4","tabular",5,"convolutional neural network; decision tree; linear regression; random forest; support vector machine",4,1,0
+"C3-C5","tabular",10,"bayesian optimization; convolutional neural network; decision tree; k nearest neighbours; linear regression; random forest; shapley additive explanations; support vector machine; support vector regression; xgboost",8,1,1
+"C3-C6","tabular",13,"bayesian optimization; convolutional neural network; decision tree; ensemble learning; gaussian process regression; k nearest neighbours; linear regression; multi layer perceptron; random forest; shapley additive explanations; support vector machine; support vector regression; xgboost",10,2,1
+"C3-C7","tabular",11,"bayesian optimization; decision tree; ensemble learning; k nearest neighbours; linear regression; multi layer perceptron; random forest; shapley additive explanations; support vector machine; support vector regression; xgboost",9,1,1
+"C3-C8","tabular",8,"convolutional neural network; decision tree; linear regression; multi layer perceptron; random forest; shapley additive explanations; support vector regression; xgboost",6,2,0
+"C4-C5","tabular",5,"convolutional neural network; decision tree; linear regression; random forest; support vector machine",4,1,0
+"C4-C6","neural",10,"adam optimizer; convolutional neural network; decision tree; genetic algorithm; linear regression; long short term memory network; neural networks with rectangular linear activations; random forest; recurrent neural network; support vector machine",4,5,1
+"C4-C7","tabular",5,"decision tree; linear regression; neural networks with rectangular linear activations; random forest; support vector machine",4,1,0
+"C4-C8","tabular",5,"convolutional neural network; decision tree; genetic algorithm; linear regression; random forest",3,1,1
+"C5-C6","tabular",10,"bayesian optimization; convolutional neural network; decision tree; k nearest neighbours; linear regression; random forest; shapley additive explanations; support vector machine; support vector regression; xgboost",8,1,1
+"C5-C7","tabular",9,"bayesian optimization; decision tree; k nearest neighbours; linear regression; random forest; shapley additive explanations; support vector machine; support vector regression; xgboost",8,0,1
+"C5-C8","tabular",7,"convolutional neural network; decision tree; linear regression; random forest; shapley additive explanations; support vector regression; xgboost",6,1,0
+"C6-C7","tabular",12,"bayesian optimization; decision tree; ensemble learning; k nearest neighbours; linear regression; multi layer perceptron; neural networks with rectangular linear activations; random forest; shapley additive explanations; support vector machine; support vector regression; xgboost",9,2,1
+"C6-C8","tabular",9,"convolutional neural network; decision tree; genetic algorithm; linear regression; multi layer perceptron; random forest; shapley additive explanations; support vector regression; xgboost",6,2,1
+"C7-C8","tabular",7,"decision tree; linear regression; multi layer perceptron; random forest; shapley additive explanations; support vector regression; xgboost",6,1,0

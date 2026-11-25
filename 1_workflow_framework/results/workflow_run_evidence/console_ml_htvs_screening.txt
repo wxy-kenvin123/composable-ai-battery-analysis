@@ -1,0 +1,80 @@
+==============================================================================
+Case A - ML-HTVS-Li-SE screening funnel, re-derived through the agent loop
+==============================================================================
+
+Source        : ML-HTVS-Li-SE (audit paper_id 10771) [@kim2023accelerating]
+  repository  : https://github.com/SeoinBack/ML-HTVS-Li-SE @ c13da8e9
+  licence     : none declared (do not redistribute)
+  data root   : <BATTAGENT_REPOS_CACHE>/gh_SeoinBack__ML-HTVS-Li-SE
+  candidates  : 438
+  checksums verified against the pinned commit.
+
+Agents (each returns published values, none computes anything):
+  HTPredictor          PropertyScreener.predict_material_properties
+  MechanismSimulator   MechanismSimulator.enumerate_published_structures
+  ProcessCoordinator   field handoff PropertyScreener->MechanismSimulator
+
+Gates (thresholds are literals in the published notebooks):
+  [htvs-thermodynamic   ] roost_ensemble_mean < 0.1 eV/atom
+  [htvs-thermodynamic   ] e_hull_from_roost < 0.2 eV/atom
+                          <- SeoinBack/ML-HTVS-Li-SE @ c13da8e9 02_1_e_above_hull_roost.ipynb cell[30] line 1; [@kim2023accelerating] doi:10.1021/acsami.3c10798
+  [htvs-electronic      ] roost_band_gap > 0.5 eV
+                          <- SeoinBack/ML-HTVS-Li-SE @ c13da8e9 02_2_band_gap_roost.ipynb cell[8] line 1; [@kim2023accelerating] doi:10.1021/acsami.3c10798
+  [htvs-electrochemical ] upper_bound > 1 V
+  [htvs-electrochemical ] total_range > 0.001 V
+                          <- SeoinBack/ML-HTVS-Li-SE @ c13da8e9 02_3_stability_window.ipynb cell[7] line 1; [@kim2023accelerating] doi:10.1021/acsami.3c10798
+
+------------------------------------------------------------------------------
+FUNNEL  (re-derived vs the survivor CSVs the authors released)
+------------------------------------------------------------------------------
+stage                  evaluated  survived  published  set match
+thermodynamic                438       319        319        yes
+electronic                   319       306        306        yes
+electrochemical              306        56         56        yes
+
+  438 -> 319 -> 306 -> 56
+
+------------------------------------------------------------------------------
+FAIL-FAST ACCOUNTING
+------------------------------------------------------------------------------
+  htvs-thermodynamic     evaluated  438 of 438   (0 never reached it)
+  htvs-electronic        evaluated  319 of 438   (119 never reached it)
+  htvs-electrochemical   evaluated  306 of 438   (132 never reached it)
+  total                  1063 of 1314 gate evaluations (251 avoided, 19.1%)
+  The published release contains exactly 319 band gaps and 306 stability windows,
+  not 438 of each: the upstream pipeline stopped paying for a property once a
+  cheaper filter had already rejected the candidate.
+
+------------------------------------------------------------------------------
+NEXT STAGE  (what the release contains for the survivors)
+------------------------------------------------------------------------------
+  7 of the 56 survivors have enumerated structures in
+  06_2_drop_duplicate.csv; for the rest the released record stops at the
+  shortlist. The agent reports the absence rather than supplying a value.
+
+------------------------------------------------------------------------------
+STRUCTURED NEGATIVE EVIDENCE (what the MKB retained about the rejects)
+------------------------------------------------------------------------------
+  htvs-thermodynamic      119 rejections logged with reason and conditions
+  htvs-electrochemical    250 rejections logged with reason and conditions
+  htvs-electronic          13 rejections logged with reason and conditions
+
+  example  : htvs:Li2Zn2S1
+    gate   : htvs-thermodynamic (phase screening)
+    reason : e_hull_from_roost: 0.43227691952027414 eV/atom fails < 0.2
+
+  MKB      : {'core': 56, 'archive': 382, 'active': 56, 'total_failures': 382}
+  56 candidates remain in Core at phase 'simulation' -- the shortlist the authors sent to structure
+  generation and DFT; the rest are archived with their rejection reason.
+
+------------------------------------------------------------------------------
+AGENT TRACE
+------------------------------------------------------------------------------
+  1995 recorded trace steps: 494 agent invocations, 56 field handoffs, 1063 gate decisions, 382 feedback triggers
+  agents invoked      : HTPredictor, MechanismSimulator
+  plan source         : deterministic (deterministic=True)
+
+==============================================================================
+Every stage reproduced the published survivor list exactly (composition sets,
+not just counts). No value in this case was produced by this framework.
+==============================================================================

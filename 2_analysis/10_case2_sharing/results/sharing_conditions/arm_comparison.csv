@@ -1,0 +1,5 @@
+﻿protocol,arm,n_seeds,objectives,campaign_total_budget,hard_fail_attempts_mean,cross_session_duplicates_mean,numbered_attempts_mean,unique_candidates_mean,pof_active_batches_mean,pareto_recall_mean,log_hv_regret_auc_mean,hv_regret_auc_mean,hv_regret_final_mean,source
+p80,isolated,60,sigma_tplus,100,5.133333333,36.85,94.85,63.15,0.0,0.508333333,-1.525387003,0.047000963,0.018359641,case2-sharing-conditions
+p80,pareto_only,60,sigma_tplus,100,3.316666667,29.766666667,96.683333333,70.233333333,0.0,0.7,-1.641936005,0.044124634,0.009688591,case2-sharing-conditions
+p80,success_only,60,sigma_tplus,100,10.616666667,2.666666667,89.383333333,97.333333333,0.0,0.741666667,-1.827040482,0.040286154,0.004432117,case2-sharing-conditions
+p80,full_shared,60,sigma_tplus,100,5.966666667,0.0,94.033333333,100.0,11.016666667,0.702083333,-1.773887802,0.041082998,0.005162041,case2-sharing-conditions

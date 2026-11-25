@@ -1,0 +1,9 @@
+Cluster,n,name_en,figure_short_name,keywords
+1,153,Atomistic dynamics and transport simulations,Atomistic dynamics & transport,"force, trajectory, simulation, ensemble, atom, motion, displacement, agreement, cutoff, theory, distance, sampling, thermostat, approximation, functional"
+2,110,Molecular and polymer property prediction and screening,Molecular & polymer properties,"molecule, solvent, salt, solubility, viscosity, solvation, carbonate, property, discovery, methyl, electrolyte, screening, chemical, prediction, design"
+3,160,Solid-state material property prediction and screening,Solid-material properties,"database, screening, candidate, discovery, conductivity, material, crystal, compound, hull, space, property, learning, machine, number, stability"
+4,79,Microstructure characterization and manufacturing-process modelling,Microstructure & manufacturing,"pixel, tomography, image, resolution, area, thickness, imaging, segmentation, size, loss, electrode, particle, beam, porosity, section"
+5,104,Battery-material design and electrochemical performance optimization,Materials design & optimization,"spectroscopy, retention, spectrum, microscopy, cycling, deposition, reversibility, foil, impedance, microscope, side, polarization, electron, cell, electrolyte"
+6,59,Battery state estimation and lifetime prediction,Battery state & lifetime,"health, management, estimation, vehicle, aging, memory, degradation, life, circuit, cycle, discharge, voltage, input, output, error"
+7,47,Electrode performance prediction and processing optimization,Electrode performance prediction,"spacing, discharge, carbon, interlayer, capacity, precursor, synthesis, sample, content, output, rate, target, storage, prediction, feature"
+8,43,Structural stability and reaction mechanisms of battery materials,Structural stability & mechanisms,"bonding, band, lattice, site, bond, atom, transition, instability, strength, bulk, barrier, repulsion, strain, projector, theory"

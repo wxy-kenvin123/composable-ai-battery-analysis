@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+rerun/
+rerun_case1/
+1_workflow_framework/figures/
+2_analysis/*/rerun/
+2_analysis/01_corpus/annual_records/*.svg
+2_analysis/03_clustering/k_choice/rerun/

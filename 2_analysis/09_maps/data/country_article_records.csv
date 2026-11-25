@@ -1,0 +1,978 @@
+article_id,country,Cluster
+10015,Denmark,1
+10015,China,1
+10015,India,1
+10018,United States,2
+10019,China,3
+10020,United States,2
+10022,China,1
+10025,China,4
+10027,China,1
+10031,China,1
+10032,China,2
+10033,China,1
+10037,China,4
+10038,France,5
+10038,Belgium,5
+10038,Netherlands,5
+10038,Spain,5
+10038,United Kingdom,5
+10039,Norway,3
+10039,Portugal,3
+10039,Brazil,3
+10040,China,5
+10044,China,1
+10045,South Korea,6
+10049,Saudi Arabia,6
+10057,Morocco,3
+10057,France,3
+10060,South Korea,2
+10060,Japan,2
+10061,China,2
+10062,India,2
+10063,India,6
+10067,China,2
+10069,China,3
+10069,Macao,3
+10070,China,5
+10073,China,1
+10073,Japan,1
+10075,United States,1
+10079,China,5
+10079,Taiwan,5
+10081,South Korea,3
+10081,United States,3
+10084,South Korea,3
+10089,China,3
+10089,Germany,3
+10097,Canada,2
+10098,South Korea,2
+10102,South Korea,3
+10104,China,5
+10104,Sweden,5
+10104,United States,5
+10105,United States,3
+10106,Australia,3
+10107,China,4
+10109,Singapore,5
+10109,China,5
+10111,China,3
+10113,China,5
+10113,Germany,5
+10122,Japan,4
+10123,Kazakhstan,2
+10130,China,3
+10130,Germany,3
+10135,China,3
+10136,China,2
+10137,China,2
+10139,Italy,1
+10142,South Korea,1
+10152,China,3
+10152,Australia,3
+10153,Taiwan,2
+10155,United States,2
+10160,China,4
+10164,Russian Federation,1
+10171,Japan,3
+10171,China,3
+10173,Netherlands,2
+10173,United States,2
+10175,United States,5
+10175,South Korea,5
+10176,China,5
+10179,China,3
+10179,Germany,3
+10181,India,3
+10181,Germany,3
+10182,China,1
+10185,China,4
+10188,China,2
+10193,China,5
+10193,New Zealand,5
+10195,Turkey,2
+10196,China,2
+10197,South Korea,3
+10205,United States,1
+10206,China,2
+10207,India,1
+10208,China,2
+10209,South Korea,1
+10209,United Kingdom,1
+10213,China,5
+10216,China,1
+10218,India,6
+10225,South Korea,3
+10227,China,2
+10228,China,1
+10232,China,2
+10237,China,1
+10240,Japan,1
+10241,Switzerland,1
+10241,France,1
+10241,Belgium,1
+10243,Australia,3
+10244,Australia,1
+10245,South Korea,6
+10245,Netherlands,6
+10251,United States,1
+10252,Singapore,1
+10252,Russian Federation,1
+10252,Germany,1
+10257,South Korea,2
+10258,United States,1
+10258,China,1
+10259,Australia,1
+10259,United Kingdom,1
+10262,Malaysia,3
+10263,South Korea,1
+10264,United States,2
+10265,India,1
+10267,United States,1
+10269,Thailand,2
+10270,Germany,3
+10270,China,3
+10273,China,2
+10273,United States,2
+10277,Japan,3
+10281,China,2
+10281,Japan,2
+10283,China,3
+10291,China,3
+10294,China,4
+10297,China,1
+10297,United States,1
+10299,China,5
+10299,Singapore,5
+10300,China,2
+10307,China,5
+10309,United States,3
+10309,India,3
+10311,India,3
+10313,China,6
+10316,India,7
+10319,China,3
+10320,United States,2
+10322,China,1
+10323,China,3
+10325,United States,2
+10326,South Korea,1
+10326,Japan,1
+10335,China,5
+10335,Saudi Arabia,5
+10335,Egypt,5
+10338,China,3
+10338,Australia,3
+10344,South Korea,5
+10347,Australia,6
+10349,Germany,4
+10350,China,3
+10359,South Korea,5
+10366,United States,3
+10366,Germany,3
+10367,China,1
+10368,Australia,5
+10373,United States,1
+10373,Spain,1
+10376,China,5
+10382,Morocco,3
+10382,France,3
+10383,South Korea,3
+10384,Macao,3
+10384,China,3
+10385,Japan,1
+10389,South Korea,4
+10389,United States,4
+10390,Japan,1
+10391,United States,2
+10392,China,1
+10395,China,1
+10403,China,6
+10406,China,3
+10406,United States,3
+10409,Japan,3
+10410,United Kingdom,6
+10414,South Korea,1
+10414,United Kingdom,1
+10415,United States,1
+10415,South Korea,1
+10417,United States,1
+10418,China,3
+10418,Australia,3
+10428,Japan,5
+10431,United States,3
+10440,South Korea,1
+10440,United Kingdom,1
+10443,United States,6
+10444,United States,3
+10450,Malaysia,3
+10452,Germany,4
+10455,China,5
+10457,South Korea,5
+10457,United Kingdom,5
+10458,South Korea,1
+10472,China,1
+10473,India,2
+10474,South Korea,3
+10474,Australia,3
+10475,India,2
+10478,China,3
+10494,China,5
+10496,Germany,2
+10497,Germany,1
+10501,Turkey,2
+10501,United States,2
+10502,United States,2
+10505,South Korea,1
+10505,United States,1
+10512,South Korea,3
+10513,India,3
+10514,China,1
+10515,South Korea,3
+10517,China,3
+10518,Russian Federation,3
+10519,South Korea,1
+10521,United States,1
+10522,Taiwan,2
+10524,China,5
+10527,Japan,5
+10527,Singapore,5
+10527,China,5
+10529,France,1
+10529,Spain,1
+10533,China,1
+10535,United States,4
+10536,China,4
+10540,China,2
+10542,United States,5
+10543,China,1
+10545,China,1
+10547,United States,1
+10550,India,2
+10551,China,3
+10554,Japan,3
+10554,China,3
+10556,China,3
+10557,China,3
+10557,United States,3
+10563,China,1
+10563,United States,1
+10563,Germany,1
+10565,China,3
+10568,United States,3
+10569,Australia,5
+10569,Singapore,5
+10575,China,5
+10578,China,3
+10578,Nigeria,3
+10578,Japan,3
+10579,China,4
+10581,India,3
+10585,Japan,3
+10585,Singapore,3
+10585,Germany,3
+10589,Japan,3
+10593,South Korea,3
+10594,Malaysia,6
+10594,India,6
+10594,Saudi Arabia,6
+10596,China,3
+10598,Germany,4
+10599,China,3
+10605,South Korea,2
+10613,Austria,2
+10613,Canada,2
+10613,Sweden,2
+10613,Germany,2
+10614,Germany,1
+10620,South Korea,2
+10623,Russian Federation,2
+10624,Germany,1
+10626,United Kingdom,1
+10626,Sweden,1
+10628,China,5
+10629,China,1
+10631,Austria,4
+10631,United Kingdom,4
+10631,Germany,4
+10632,China,2
+10634,United States,5
+10635,United States,4
+10638,Japan,3
+10640,China,2
+10641,Mexico,2
+10651,Germany,4
+10655,Belgium,1
+10655,Japan,1
+10656,China,3
+10657,United States,2
+10658,Spain,4
+10659,Russian Federation,3
+10664,South Korea,3
+10666,China,4
+10668,Denmark,1
+10668,United States,1
+10668,China,1
+10677,India,2
+10682,Russian Federation,1
+10683,Macao,3
+10684,South Korea,3
+10692,France,4
+10694,Sweden,1
+10705,China,5
+10706,United States,2
+10717,China,2
+10720,Belgium,1
+10720,Japan,1
+10721,India,3
+10724,China,4
+10730,South Korea,3
+10732,Denmark,1
+10732,United States,1
+10734,Germany,4
+10741,United States,2
+10742,Singapore,1
+10745,South Korea,2
+10753,China,1
+10754,United States,2
+10755,China,3
+10757,South Korea,3
+10763,China,5
+10764,China,1
+10764,Switzerland,1
+10767,United States,5
+10771,South Korea,3
+10773,United Kingdom,1
+10773,United States,1
+10776,United States,5
+10782,Japan,5
+10797,United States,2
+10799,United States,2
+10804,United States,1
+10804,Netherlands,1
+10805,Canada,4
+10805,Morocco,4
+10810,South Korea,3
+10816,Germany,2
+10819,Japan,2
+10824,Germany,2
+10826,China,1
+10826,United States,1
+10826,Italy,1
+10828,United States,1
+10834,Denmark,2
+10834,Germany,2
+10839,Canada,3
+10847,Germany,2
+10850,India,3
+10858,Germany,4
+10860,China,4
+10860,Canada,4
+10866,United States,4
+10877,United States,6
+10877,Germany,6
+10882,Kuwait,2
+10891,Japan,4
+10893,China,3
+10907,Germany,1
+10907,United Kingdom,1
+10909,United States,3
+10910,France,4
+10910,United States,4
+10913,United States,1
+10914,China,3
+10920,China,5
+10921,South Korea,3
+11040,China,3
+11040,United States,3
+11074,Malaysia,2
+15002,China,4
+15003,China,1
+15005,China,2
+15005,Singapore,2
+15007,China,2
+15009,China,6
+15013,China,5
+15014,China,5
+15017,United States,2
+15019,China,1
+15019,United Kingdom,1
+15020,Denmark,1
+15021,China,5
+15023,Singapore,5
+15023,China,5
+15029,China,1
+15030,United Kingdom,1
+15031,China,3
+15033,India,3
+15034,China,5
+15035,Canada,1
+15035,United States,1
+15035,Japan,1
+15035,United Kingdom,1
+15038,China,5
+15042,China,2
+15044,China,5
+15045,China,5
+15045,Singapore,5
+15046,China,2
+15048,South Korea,3
+15054,Singapore,3
+15055,China,1
+15056,China,5
+15057,Singapore,2
+15057,China,2
+15059,South Korea,5
+15059,Singapore,5
+15059,China,5
+15061,China,5
+15062,China,4
+15065,United States,2
+15067,United States,1
+15068,Japan,3
+15069,China,6
+15071,United States,2
+15072,China,2
+15073,United Kingdom,2
+15073,China,2
+15075,South Korea,3
+15076,China,5
+15077,China,5
+15078,Egypt,6
+15079,China,5
+15079,United Kingdom,5
+15079,Canada,5
+15080,Russian Federation,3
+15082,Taiwan,1
+15082,Germany,1
+15082,Netherlands,1
+15082,Japan,1
+15083,China,5
+15084,South Korea,2
+15084,United States,2
+15085,United States,1
+15087,China,6
+15091,South Korea,5
+15093,United States,4
+15094,United States,2
+15098,Morocco,3
+15100,China,5
+15103,China,3
+15110,China,2
+15112,United States,2
+15114,South Korea,2
+15115,China,5
+15116,United States,1
+15116,Singapore,1
+15117,Armenia,1
+15119,China,3
+15120,China,2
+15120,United Kingdom,2
+15121,China,1
+15122,Armenia,3
+15124,China,6
+15130,United States,1
+15132,China,4
+15133,China,6
+15134,China,2
+15135,United Kingdom,6
+15139,Hungary,2
+15140,India,2
+15141,United States,1
+15142,United States,3
+15143,China,2
+15147,Australia,2
+15148,South Korea,3
+15148,United States,3
+15150,China,5
+15155,China,1
+15156,Mexico,3
+15160,South Korea,4
+15161,United States,3
+15161,Spain,3
+15164,Sweden,2
+15166,United States,5
+15167,Italy,1
+15169,United States,8
+15171,China,1
+15172,Thailand,2
+15172,Canada,2
+15173,China,5
+15174,United States,1
+15175,United Kingdom,1
+15178,Japan,3
+15179,China,2
+15181,South Korea,3
+15181,United States,3
+15183,Italy,1
+15184,India,1
+15185,China,3
+15186,China,1
+15187,China,5
+15188,China,8
+15189,China,7
+15190,China,5
+15191,China,2
+15191,United States,2
+15192,Japan,3
+15193,India,2
+15195,United States,1
+15196,India,1
+15197,Italy,1
+15198,France,1
+15198,Singapore,1
+15199,United States,2
+15200,India,1
+15201,China,1
+15202,United Kingdom,1
+15202,China,1
+15203,Algeria,3
+15204,United States,1
+15205,Japan,1
+15206,United States,3
+15207,China,1
+15208,Japan,1
+15208,Indonesia,1
+15208,United States,1
+15209,United Kingdom,1
+15210,United States,3
+15210,Nigeria,3
+15210,Ghana,3
+15210,South Africa,3
+15213,India,3
+15214,South Korea,8
+15215,Italy,1
+15217,China,5
+15218,China,7
+15219,China,5
+15221,United States,1
+15223,United States,1
+15224,China,1
+15225,China,5
+15227,United States,8
+15228,China,5
+15228,United States,5
+15230,France,1
+15231,China,1
+15231,Iran,1
+15231,Azerbaijan,1
+15231,Kazakhstan,1
+15232,China,5
+15234,United States,1
+15236,Japan,1
+15236,South Korea,1
+15237,China,3
+15238,China,3
+15238,United States,3
+15239,United States,2
+15240,China,1
+15241,China,1
+15242,Germany,2
+15243,China,1
+15243,United States,1
+15244,China,1
+15245,Japan,5
+15246,China,7
+15247,China,1
+20008,China,8
+20015,China,1
+20018,United States,2
+20019,Turkey,7
+20022,Germany,4
+20028,China,6
+20030,South Korea,8
+20031,China,7
+20033,China,4
+20033,Germany,4
+20035,China,7
+20037,South Korea,7
+20038,China,6
+20041,China,3
+20048,Japan,2
+20049,China,3
+20057,Italy,1
+20057,United Kingdom,1
+20058,United States,7
+20059,China,5
+20064,Denmark,1
+20064,United States,1
+20065,Japan,5
+20066,China,5
+20068,China,7
+20069,China,8
+20069,Czech Republic,8
+20069,United States,8
+20074,Netherlands,2
+20074,Germany,2
+20074,Belgium,2
+20075,South Korea,8
+20078,South Korea,4
+20078,Japan,4
+20079,China,8
+20080,China,8
+20085,China,5
+20091,South Korea,8
+20093,Australia,5
+20093,China,5
+20102,China,3
+20107,China,2
+20108,United States,2
+20109,China,5
+20110,China,5
+20116,China,3
+20116,Pakistan,3
+20117,Pakistan,6
+20118,South Korea,4
+20121,United Kingdom,6
+20121,Saudi Arabia,6
+20124,China,7
+20127,Saudi Arabia,3
+20128,China,5
+20129,China,8
+20137,China,4
+20143,South Korea,1
+20144,Japan,5
+20145,United States,2
+20149,United States,3
+20150,China,3
+20151,China,1
+20152,South Korea,3
+20158,South Korea,4
+20160,Denmark,3
+20164,China,7
+20167,China,5
+20174,United States,3
+20176,Spain,4
+20177,China,3
+20180,Italy,3
+20185,China,1
+20188,China,3
+20193,China,1
+20195,United States,1
+20196,South Korea,3
+20197,South Korea,6
+20197,Australia,6
+20197,Brazil,6
+20198,China,2
+20199,China,3
+20200,United States,4
+20204,China,4
+20205,India,8
+20206,China,4
+20211,South Korea,3
+20215,China,1
+20218,Malaysia,7
+20218,United Kingdom,7
+20219,Australia,3
+20220,United States,1
+20222,China,5
+20222,Australia,5
+20227,China,8
+20229,United States,1
+20230,Canada,5
+20230,Belgium,5
+20230,Japan,5
+20233,South Korea,8
+20234,China,5
+20234,Germany,5
+20234,Switzerland,5
+20234,United States,5
+20235,China,5
+20235,Singapore,5
+20236,United States,5
+20236,China,5
+20238,Japan,4
+20242,United States,7
+20242,China,7
+20245,United States,4
+20247,China,4
+20249,China,2
+20249,United States,2
+20250,China,4
+20251,China,3
+20254,United States,1
+20256,South Korea,3
+20256,United States,3
+20257,South Korea,6
+20259,China,3
+20259,United Kingdom,3
+20260,Japan,5
+20263,China,7
+20264,South Korea,8
+20268,China,8
+20269,South Korea,5
+20274,China,8
+20275,China,5
+20275,Canada,5
+20277,Russian Federation,3
+20279,China,3
+20279,United Kingdom,3
+20282,China,8
+20284,United States,4
+20286,United States,3
+20289,Germany,4
+20290,China,5
+20296,China,3
+20298,South Korea,4
+20303,Denmark,1
+20305,China,1
+20306,United States,1
+20307,United States,4
+20311,South Korea,3
+20313,United States,4
+20313,China,4
+20314,China,5
+20316,China,8
+20317,Netherlands,2
+20317,Germany,2
+20319,Sweden,2
+20320,South Korea,5
+20320,Indonesia,5
+20320,Japan,5
+20320,Viet Nam,5
+20323,Germany,4
+20328,Canada,3
+20331,China,3
+20332,China,6
+20333,Germany,4
+20336,China,8
+20337,United States,5
+20339,South Korea,6
+20341,United Kingdom,4
+20342,Italy,3
+20343,United States,6
+20345,South Korea,3
+20346,United Kingdom,8
+20348,India,2
+20349,Germany,4
+20350,China,4
+20362,China,4
+20366,China,5
+20367,Turkey,7
+20368,United Kingdom,4
+20370,China,7
+20371,United States,4
+20374,United States,1
+20374,India,1
+20376,China,6
+20376,United Kingdom,6
+20377,China,8
+20388,South Korea,8
+20388,United Kingdom,8
+20392,South Korea,7
+20392,United States,7
+20394,Sweden,8
+20396,China,3
+20397,Canada,3
+20398,United States,6
+25001,China,2
+25003,China,6
+25006,China,7
+25010,Turkey,6
+25010,Japan,6
+25010,Netherlands,6
+25011,China,8
+25011,Pakistan,8
+25014,China,7
+25015,China,7
+25016,Morocco,3
+25017,Netherlands,6
+25017,Austria,6
+25017,Germany,6
+25018,Spain,5
+25021,China,1
+25023,South Korea,5
+25023,China,5
+25024,United States,4
+25026,China,1
+25027,Germany,1
+25029,Japan,5
+25030,South Korea,7
+25031,South Korea,4
+25032,China,1
+25033,China,5
+25034,China,8
+25035,China,1
+25036,Russian Federation,3
+25037,China,5
+25039,South Korea,1
+30013,South Korea,1
+30026,China,2
+30076,China,6
+30112,United Kingdom,4
+30120,South Korea,3
+30125,United Kingdom,6
+30125,Saudi Arabia,6
+30172,Taiwan,6
+30252,United States,6
+30281,Japan,3
+30281,Switzerland,3
+30287,Morocco,6
+30287,Canada,6
+30302,South Korea,3
+30312,India,6
+30358,United States,6
+30364,United States,4
+30378,South Korea,3
+30383,China,4
+30383,France,4
+30383,United States,4
+30423,Germany,6
+30430,Japan,5
+35001,China,7
+35002,China,7
+35005,Portugal,2
+35008,Iran,7
+35009,India,8
+35010,India,3
+35011,South Korea,6
+35012,China,7
+35013,Viet Nam,3
+35013,Singapore,3
+35013,United States,3
+35014,China,5
+35014,Belarus,5
+35016,China,6
+35019,China,5
+35021,United Arab Emirates,3
+35021,Canada,3
+35022,South Korea,8
+35023,Saudi Arabia,6
+35026,India,3
+35026,South Korea,3
+35027,Iran,7
+35027,Jordan,7
+35027,India,7
+35029,Saudi Arabia,3
+35031,China,7
+35032,China,3
+35032,Belgium,3
+35033,Italy,3
+35034,South Korea,8
+35034,United States,8
+35035,China,3
+35035,United Kingdom,3
+35036,China,2
+35037,China,3
+35038,China,3
+35039,United States,1
+35040,China,7
+35042,India,8
+35046,South Korea,3
+35047,China,8
+35048,France,1
+35049,China,4
+35052,India,8
+35053,Saudi Arabia,6
+35053,United Kingdom,6
+35053,Egypt,6
+35054,China,7
+35055,South Korea,2
+35056,Germany,4
+35056,United States,4
+35056,Switzerland,4
+35057,Germany,4
+35058,Japan,1
+35059,China,3
+35059,Russian Federation,3
+35059,Spain,3
+35060,Saudi Arabia,6
+35060,United Kingdom,6
+35060,Egypt,6
+35061,China,7
+35062,China,5
+35063,China,8
+35064,Germany,4
+35065,China,8
+35066,South Korea,3
+35066,India,3
+35067,Canada,2
+35068,Taiwan,1
+35068,Germany,1
+35068,Netherlands,1
+35070,United Kingdom,4
+35070,Ireland,4
+35070,United States,4
+35071,United Kingdom,4
+35072,Japan,1
+40015,Iran,2
+40020,China,6
+40020,Australia,6
+40023,Australia,3
+40026,Japan,5
+40030,China,6
+40030,Germany,6
+40037,Ireland,7
+40039,China,3
+40043,China,7
+40044,China,5
+40057,Iran,8
+40066,United States,7
+40074,China,7
+40076,Brazil,8
+40077,China,3
+40084,China,5
+40084,Singapore,5
+40085,Russian Federation,1
+40088,Brazil,8
+40094,China,7
+40095,China,5
+40096,Germany,7
+40097,China,6
+40101,China,7
+40101,Sweden,7
+40101,Singapore,7
+40101,United States,7
+40102,Mexico,6
+40103,China,4
+40104,China,1
+40107,China,1
+40109,China,7
+40111,United Arab Emirates,8
+40118,Sweden,6
+40125,China,4
+40126,Germany,4
+40130,United Kingdom,4
+40130,France,4
+40130,China,4
+40130,United States,4
+40132,China,8
+40134,China,5
+40141,China,5
+40143,China,6
+40148,China,6
+40148,United Kingdom,6
+40150,Nigeria,2
+40151,China,6
+40155,China,1
+40158,United States,6
+40158,South Korea,6
+40162,Germany,4
+40164,China,7
+40165,China,6
+40167,Japan,3
+40172,United Kingdom,5
+40173,China,7
+40174,Japan,6
+40176,Mexico,7
+40176,Spain,7
+40181,South Korea,4
+40182,China,7
+40182,Australia,7
+40184,India,8
+40184,Sweden,8
+40188,China,7
+40188,Singapore,7
+40189,China,6
+40193,China,7
+40197,China,5
+40201,China,7
+40205,Germany,4
+40206,United Kingdom,6
+40210,China,7
+40212,China,8
+40213,China,3
+40213,United Kingdom,3
+40213,Germany,3
+40220,United Kingdom,4
+40227,China,8

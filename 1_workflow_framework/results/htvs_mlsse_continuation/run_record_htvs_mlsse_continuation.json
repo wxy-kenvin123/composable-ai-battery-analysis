@@ -1,0 +1,582 @@
+{
+  "schema": "battery_workflow.run_record/3",
+  "case": "ml_htvs_mlsse_continuation",
+  "environment": {
+    "python": "3.9.13",
+    "platform": "Windows-10-10.0.26100-SP0"
+  },
+  "objective": "Execute a second audited conductivity model on the published ML-HTVS-Li-SE shortlist through ProcessCoordinator field translation",
+  "source_htvs": {
+    "key": "ml_htvs_li_se",
+    "tool": "ML-HTVS-Li-SE",
+    "audit_paper_id": "10771",
+    "citation": "[@kim2023accelerating]",
+    "doi": "10.1021/acsami.3c10798",
+    "repository": "https://github.com/SeoinBack/ML-HTVS-Li-SE",
+    "commit": "c13da8e9c89ef81ee37eebe4ea3f0f7e778aedce",
+    "licence": "none declared (do not redistribute)",
+    "redistributable": false,
+    "files_sha256": {
+      "data/02_6_e_hull_roost_results.csv": "c19e5af9389a023b51379c5a8b7b64989daad6ef4cfdcea16b81a3f2bfb35010",
+      "data/02_7_after_e_hull_screening.csv": "a5a8ed6d9f08bf4170f939124b9b6f602767725db81abf485594a8af1f960d7b",
+      "data/03_2_band_gap_roost.csv": "5c881ff187d6ec36772d0c2d7624313019a5571540bd498ae236d5a28c699234",
+      "data/03_3_after_band_gap_screening.csv": "e9c7f1c206ee06ca6a812cb9e375e6f504ca3c55a3a4f0330fd280e1e905dede",
+      "data/04_1_stability_window.csv": "70ac28bdb31f598081cba2e88d9896cbeccb5e586cbae2e244de69c731a37ebd",
+      "data/04_2_after_stability_window_screening.csv": "909aad5200a50ba5c1c2508f4c3ac156b221178cbcd0bf62c7dc4cae684c6f0c",
+      "data/06_2_drop_duplicate.csv": "76a54c91bc426b6292303faed99605027b2a7f654c69f49a755032c1e1598a8e"
+    },
+    "resolved_root": "<BATTAGENT_REPOS_CACHE>\\gh_SeoinBack__ML-HTVS-Li-SE"
+  },
+  "source_ml_sse": {
+    "key": "ml_sse",
+    "tool": "ML-SSE",
+    "audit_paper_id": "10102",
+    "citation": "[@kurniawan2025unveiling]",
+    "doi": "10.1016/j.jpcs.2025.112752",
+    "repository": "https://github.com/muhamad-kurniawan/ML-SSE",
+    "commit": "ba397ca4d154e66fc306ecc0e394cf343337fc3f",
+    "licence": "none declared (do not redistribute)",
+    "redistributable": false,
+    "files_sha256": {
+      "model.joblib": "e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f",
+      "data/element_properties/features.csv": "e2744db9e2c451eace8756d57fcda5640673bd71272d670c68c837baee7ebda3",
+      "new_formula_prediction.csv": "6e64131e21668a9f588b5429b1e5913b4ff462c348e37f8c4f836506dc0cd0da",
+      "data/preprocessed_dataset/5fold_cv/1/train.csv": "d4a0ade0e00b12030351b0a967327e49788948dea6a71a7ac1c6d27c40a6d483"
+    },
+    "resolved_root": "<BATTAGENT_REPOS_CACHE>\\gh_muhamad-kurniawan__ML-SSE"
+  },
+  "n_shortlist": 56,
+  "n_above_convention": 1,
+  "n_ood": 4,
+  "convention_log10_S_cm": -4.0,
+  "execution_how": "inprocess:<python>",
+  "weight_sha256": "e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f",
+  "agents_invoked": [
+    "ExecutedToolScreener",
+    "HTPredictor"
+  ],
+  "trace_steps": 168,
+  "field_handoffs": 56,
+  "executed_steps": 56,
+  "mkb_snapshot": {
+    "core": 56,
+    "archive": 0,
+    "active": 56,
+    "total_failures": 0
+  },
+  "ranked": [
+    {
+      "composition": "Li2B1S2",
+      "log10_sigma": -3.798390430144944,
+      "sigma_S_cm": 0.00015907779768019426,
+      "above_convention_1e4": true,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 1
+    },
+    {
+      "composition": "Li1B1S2",
+      "log10_sigma": -4.3739741738172855,
+      "sigma_S_cm": 4.226937498404015e-05,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 2
+    },
+    {
+      "composition": "Li2P2S1",
+      "log10_sigma": -4.444190928352802,
+      "sigma_S_cm": 3.5959121375469096e-05,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 3
+    },
+    {
+      "composition": "Li2P6S1",
+      "log10_sigma": -4.588023714972884,
+      "sigma_S_cm": 2.582119188247959e-05,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 4
+    },
+    {
+      "composition": "Li17S6I5",
+      "log10_sigma": -4.675780313674222,
+      "sigma_S_cm": 2.109695061840063e-05,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 5
+    },
+    {
+      "composition": "Li2Sn1S2",
+      "log10_sigma": -4.69015169709896,
+      "sigma_S_cm": 2.041024899375732e-05,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 6
+    },
+    {
+      "composition": "Li6Sn1S4",
+      "log10_sigma": -4.762735853320814,
+      "sigma_S_cm": 1.72688790075405e-05,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 7
+    },
+    {
+      "composition": "Li17S6Cl5",
+      "log10_sigma": -4.910554076273189,
+      "sigma_S_cm": 1.2287001851786798e-05,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 8
+    },
+    {
+      "composition": "Li6S1Cl4",
+      "log10_sigma": -5.028923002187196,
+      "sigma_S_cm": 9.3557153067832e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 9
+    },
+    {
+      "composition": "Li6Hg1S4",
+      "log10_sigma": -5.05844729173093,
+      "sigma_S_cm": 8.740830694852174e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "Hg",
+      "execution": true,
+      "rank": 10
+    },
+    {
+      "composition": "Li6Cd1S4",
+      "log10_sigma": -5.18999984849866,
+      "sigma_S_cm": 6.4565445426776805e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 11
+    },
+    {
+      "composition": "Li2B6S1",
+      "log10_sigma": -5.199590845562069,
+      "sigma_S_cm": 6.315520576392642e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 12
+    },
+    {
+      "composition": "Li2Hg1S2",
+      "log10_sigma": -5.20814067374433,
+      "sigma_S_cm": 6.192404623869538e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "Hg",
+      "execution": true,
+      "rank": 13
+    },
+    {
+      "composition": "Li6Ca1S4",
+      "log10_sigma": -5.231341117831244,
+      "sigma_S_cm": 5.87028088527644e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 14
+    },
+    {
+      "composition": "Li6Pb1S4",
+      "log10_sigma": -5.23918949620676,
+      "sigma_S_cm": 5.765148571190847e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "Pb",
+      "execution": true,
+      "rank": 15
+    },
+    {
+      "composition": "Li2As1S2",
+      "log10_sigma": -5.255940988668998,
+      "sigma_S_cm": 5.547010798497166e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 16
+    },
+    {
+      "composition": "Li2Ge1S2",
+      "log10_sigma": -5.259086059455893,
+      "sigma_S_cm": 5.50698559595366e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 17
+    },
+    {
+      "composition": "Li6S1I4",
+      "log10_sigma": -5.262187525789301,
+      "sigma_S_cm": 5.467798156228681e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 18
+    },
+    {
+      "composition": "Li2In1S6",
+      "log10_sigma": -5.323291165467206,
+      "sigma_S_cm": 4.7501665219875005e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 19
+    },
+    {
+      "composition": "Li17S6F5",
+      "log10_sigma": -5.359892956166945,
+      "sigma_S_cm": 4.3662343684668904e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 20
+    },
+    {
+      "composition": "Li2Pb1S2",
+      "log10_sigma": -5.367622026676197,
+      "sigma_S_cm": 4.2892165526952085e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "Pb",
+      "execution": true,
+      "rank": 21
+    },
+    {
+      "composition": "Li2Cd1S2",
+      "log10_sigma": -5.379901610510229,
+      "sigma_S_cm": 4.1696383599976555e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 22
+    },
+    {
+      "composition": "Li6Mg1S4",
+      "log10_sigma": -5.411701895826813,
+      "sigma_S_cm": 3.875235537797719e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 23
+    },
+    {
+      "composition": "Li6Zn1S4",
+      "log10_sigma": -5.415167847959759,
+      "sigma_S_cm": 3.844431721138316e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 24
+    },
+    {
+      "composition": "Li2As2S1",
+      "log10_sigma": -5.425251029056339,
+      "sigma_S_cm": 3.7562022711638852e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 25
+    },
+    {
+      "composition": "Li2Ga1S6",
+      "log10_sigma": -5.4545715992379975,
+      "sigma_S_cm": 3.5109803655032025e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 26
+    },
+    {
+      "composition": "Ba1Li6S4",
+      "log10_sigma": -5.46614791887024,
+      "sigma_S_cm": 3.4186298559032587e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 27
+    },
+    {
+      "composition": "Li2S1Cl6",
+      "log10_sigma": -5.477431469123604,
+      "sigma_S_cm": 3.3309531999527987e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 28
+    },
+    {
+      "composition": "Li2Ca1S2",
+      "log10_sigma": -5.498839607597544,
+      "sigma_S_cm": 3.170738254864728e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 29
+    },
+    {
+      "composition": "Li2Al1S6",
+      "log10_sigma": -5.5019363467617755,
+      "sigma_S_cm": 3.148209703931898e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 30
+    },
+    {
+      "composition": "Li3In5S8",
+      "log10_sigma": -5.523431479647923,
+      "sigma_S_cm": 2.996184274940323e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 31
+    },
+    {
+      "composition": "Sr1Li6S4",
+      "log10_sigma": -5.526972204859783,
+      "sigma_S_cm": 2.9718562264577105e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 32
+    },
+    {
+      "composition": "Li2Mg1S2",
+      "log10_sigma": -5.560840153178618,
+      "sigma_S_cm": 2.7489057316695293e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 33
+    },
+    {
+      "composition": "Li1In1S2",
+      "log10_sigma": -5.568627490664195,
+      "sigma_S_cm": 2.700054369134597e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 34
+    },
+    {
+      "composition": "Li1In5S2",
+      "log10_sigma": -5.622892664240631,
+      "sigma_S_cm": 2.382908331712813e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 35
+    },
+    {
+      "composition": "Li2As1S6",
+      "log10_sigma": -5.662729189317254,
+      "sigma_S_cm": 2.1740564209912136e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 36
+    },
+    {
+      "composition": "Li2Zn1S2",
+      "log10_sigma": -5.728433443825521,
+      "sigma_S_cm": 1.8688160537174897e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 37
+    },
+    {
+      "composition": "Ba1Li2S2",
+      "log10_sigma": -5.734401113107208,
+      "sigma_S_cm": 1.8433121550462886e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 38
+    },
+    {
+      "composition": "Li2In6S1",
+      "log10_sigma": -5.740208135553354,
+      "sigma_S_cm": 1.8188289762379596e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 39
+    },
+    {
+      "composition": "Li1Al1S2",
+      "log10_sigma": -5.742963243489918,
+      "sigma_S_cm": 1.8073270826516119e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 40
+    },
+    {
+      "composition": "Li1Ga1S2",
+      "log10_sigma": -5.753569499443049,
+      "sigma_S_cm": 1.7637234960749834e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 41
+    },
+    {
+      "composition": "Li1Ga5S2",
+      "log10_sigma": -5.762999632523082,
+      "sigma_S_cm": 1.7258393523031591e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 42
+    },
+    {
+      "composition": "Li3Ga5S8",
+      "log10_sigma": -5.765439614668342,
+      "sigma_S_cm": 1.7161703139109437e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 43
+    },
+    {
+      "composition": "Li2Ga6S1",
+      "log10_sigma": -5.829437342912078,
+      "sigma_S_cm": 1.481025912315767e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 44
+    },
+    {
+      "composition": "Sr1Li2S2",
+      "log10_sigma": -5.841738197301047,
+      "sigma_S_cm": 1.4396661805985991e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 45
+    },
+    {
+      "composition": "Li1Al5S2",
+      "log10_sigma": -5.946977123422808,
+      "sigma_S_cm": 1.1298554285401405e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 46
+    },
+    {
+      "composition": "Li1Ge2S1",
+      "log10_sigma": -5.954966251125672,
+      "sigma_S_cm": 1.1092610122036794e-06,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 47
+    },
+    {
+      "composition": "Li2As6S1",
+      "log10_sigma": -6.006858694692689,
+      "sigma_S_cm": 9.843313230801834e-07,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 48
+    },
+    {
+      "composition": "Li1As1S2",
+      "log10_sigma": -6.014101823341244,
+      "sigma_S_cm": 9.680508634403642e-07,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 49
+    },
+    {
+      "composition": "Li1As2S1",
+      "log10_sigma": -6.020987226085925,
+      "sigma_S_cm": 9.528241890523622e-07,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 50
+    },
+    {
+      "composition": "Li3As5S8",
+      "log10_sigma": -6.198941655729634,
+      "sigma_S_cm": 6.324968169655817e-07,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 51
+    },
+    {
+      "composition": "Li2Zn6S1",
+      "log10_sigma": -6.286244933193361,
+      "sigma_S_cm": 5.173149946009125e-07,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 52
+    },
+    {
+      "composition": "Li2S1N6",
+      "log10_sigma": -7.266544392664619,
+      "sigma_S_cm": 5.4132191227210384e-08,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 53
+    },
+    {
+      "composition": "Li6S1F4",
+      "log10_sigma": -7.349313990951472,
+      "sigma_S_cm": 4.473897285239284e-08,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 54
+    },
+    {
+      "composition": "Li1S2O5",
+      "log10_sigma": -7.534061250735908,
+      "sigma_S_cm": 2.923739999001416e-08,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 55
+    },
+    {
+      "composition": "Li2S1F6",
+      "log10_sigma": -8.578191159839331,
+      "sigma_S_cm": 2.641245925872202e-09,
+      "above_convention_1e4": false,
+      "ood_elements": "",
+      "execution": true,
+      "rank": 56
+    }
+  ],
+  "provenance": {
+    "class": "executed",
+    "metric_origin": "log10 ionic conductivity predicted by executing ML-SSE model.joblib @ e1b7665ebc578e41f3974d276c11887ead6221cb362209e9eb3676e85235de0f; not measured, not looked up, not a published score for these 56 formulae",
+    "threshold_origin": "no accept/reject gate; 1e-4 S/cm is a field convention used only as an annotation, not a published ML-SSE or ML-HTVS criterion",
+    "execution": "inprocess:<python>; ProcessCoordinator translated composition -> formula; ExecutedToolScreener refused to read the composition locally",
+    "limitations": "composition-level model, crystal structure invisible; out-of-training-set elements flagged; ranking is not a claim of predictive accuracy",
+    "evidence_scope": "cross-tool composition and real model execution only",
+    "does_not_change": "ml_htvs_screening replay remains a lookup of published rows"
+  }
+}

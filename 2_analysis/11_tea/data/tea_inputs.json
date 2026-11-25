@@ -1,0 +1,404 @@
+{
+  "_about": {
+    "title": "Inputs for the record-sharing techno-economic assessment (scripts/recompute_tea_ladder.py)",
+    "currency": "USD, planning values on the stated access dates; no inflation or tax model",
+    "evidence_classes": {
+      "published": "taken from a peer-reviewed paper or an official statistical release; source key resolves in references_zotero_dedup.bib",
+      "tariff": "a public price list read on the access date",
+      "catalogue": "a public supplier catalogue price read on the access date",
+      "scenario": "an analyst assumption; varied in Table S25 and the tornado panel"
+    },
+    "how_to_tune": "Edit any 'value' below and rerun scripts/recompute_tea_ladder.py. Strings named *_base select among documented alternatives."
+  },
+  "compute": {
+    "cpu_hours_total_oedb": {
+      "value": 16000000,
+      "unit": "CPU-h",
+      "evidence_class": "published",
+      "source": "nakamura2026oedb",
+      "note": "approximately 16 million CPU-hours of MD for the whole database"
+    },
+    "compositions_oedb": {
+      "value": 5616,
+      "unit": "compositions",
+      "evidence_class": "published",
+      "source": "nakamura2026oedb",
+      "note": "Li, Na and K formulations; the per-composition average is applied to the Li subspace"
+    },
+    "trajectory_gb_per_evaluation": {
+      "value": 50,
+      "unit": "GB",
+      "evidence_class": "published",
+      "source": "nakamura2026oedb",
+      "note": "approximately 50 GB of trajectory data per composition"
+    },
+    "mdx_node_points_per_hour": {
+      "value": 30.4,
+      "unit": "points per node-hour",
+      "evidence_class": "tariff",
+      "source": "mdx2026charge",
+      "accessed": "2026-09-19",
+      "note": "Node Occupancy Project, generic CPU node, FY2026; 1 point = 1 JPY excluding tax"
+    },
+    "mdx_jpy_per_point": {
+      "value": 1.0,
+      "unit": "JPY per point",
+      "evidence_class": "tariff",
+      "source": "mdx2026charge",
+      "accessed": "2026-09-19"
+    },
+    "mdx_cpu_pack_points_per_vcpu_hour": {
+      "value": 0.1,
+      "unit": "points per vCPU-hour",
+      "evidence_class": "tariff",
+      "source": "mdx2026charge",
+      "accessed": "2026-09-19",
+      "note": "Normal Project CPU pack (1 virtual core); alternative billing basis"
+    },
+    "mdx_physical_cores_per_node": {
+      "value": 76,
+      "unit": "cores",
+      "evidence_class": "published",
+      "source": "mdx2026charge",
+      "accessed": "2026-09-19",
+      "note": "2 x Intel Xeon Platinum 8368 (38 cores each) per generic CPU node, mdx system overview page"
+    },
+    "mdx_vcpu_per_node": {
+      "value": 152,
+      "unit": "vCPU",
+      "evidence_class": "published",
+      "source": "mdx2026charge",
+      "accessed": "2026-09-19",
+      "note": "152 CPU packs (1 vCPU each) is the maximum per virtual machine; two hardware threads per physical core"
+    },
+    "mdx_highspeed_storage_points_per_gb_day": {
+      "value": 0.03,
+      "unit": "points per GB-day",
+      "evidence_class": "tariff",
+      "source": "mdx2026charge",
+      "accessed": "2026-09-19",
+      "note": "high-speed storage; large-capacity and object storage are free"
+    },
+    "trajectory_retention_days_sensitivity": {
+      "value": 30,
+      "unit": "days",
+      "evidence_class": "scenario",
+      "note": "only used in the optional paid-retention sensitivity row"
+    },
+    "fx_jpy_per_usd": {
+      "value": 160,
+      "unit": "JPY per USD",
+      "evidence_class": "scenario",
+      "note": "declared conversion; 140 and 180 in the sensitivity table"
+    },
+    "tariff_mapping_base": "node_occupancy_physical_core",
+    "tariff_mapping_alternatives": {
+      "node_occupancy_physical_core": "one published CPU-hour = one physical core-hour; node tariff divided by 76 cores",
+      "node_occupancy_vcpu": "one published CPU-hour = one hardware-thread-hour; node tariff divided by 152 vCPU",
+      "cpu_pack_vcpu": "one published CPU-hour = one CPU-pack (vCPU) hour at the Normal Project rate"
+    },
+    "rho_compute_cash_realization": {
+      "value": 1.0,
+      "unit": "fraction",
+      "evidence_class": "scenario",
+      "note": "fraction of assigned compute cost avoided by reducing future reservations; 0 = sunk reservation"
+    }
+  },
+  "laboratory": {
+    "electrolyte_mixture_ml": {
+      "value": 2.0,
+      "unit": "mL per formulation",
+      "evidence_class": "scenario"
+    },
+    "electrolyte_usd_per_ml": {
+      "value": 2.0,
+      "unit": "USD per mL",
+      "evidence_class": "scenario",
+      "note": "salt + solvents + additives allowance including aliquoting loss; replace with masses x prices per formulation when known"
+    },
+    "cathode_sheet_pack_usd": {
+      "value": 180.0,
+      "unit": "USD per pack",
+      "evidence_class": "catalogue",
+      "source": "stonylab2026nmc811",
+      "accessed": "2026-09-19",
+      "note": "single-crystal NMC811, single-sided, 10 x 10 cm, 5 sheets per pack, 21.5 mg cm-2, 3.82 mAh cm-2"
+    },
+    "cathode_sheet_pack_area_cm2": {
+      "value": 500.0,
+      "unit": "cm2 per pack",
+      "evidence_class": "catalogue",
+      "source": "stonylab2026nmc811",
+      "accessed": "2026-09-19"
+    },
+    "electrode_disc_diameter_mm": {
+      "value": 12.0,
+      "unit": "mm",
+      "evidence_class": "scenario"
+    },
+    "punching_recovery": {
+      "value": 0.7,
+      "unit": "fraction",
+      "evidence_class": "scenario",
+      "note": "usable disc area per coated area after edge loss and punching"
+    },
+    "anode_disc_usd": {
+      "value": 0.5,
+      "unit": "USD per disc",
+      "evidence_class": "scenario",
+      "note": "coated graphite disc allowance; not a supplier quote"
+    },
+    "coin_cell_kit_pack_usd": {
+      "value": 199.0,
+      "unit": "USD per pack",
+      "evidence_class": "catalogue",
+      "source": "mti2026cr2032kit",
+      "accessed": "2026-09-19",
+      "note": "CR2032 case + spacers + separator + spring, SS304, 100 sets"
+    },
+    "coin_cell_kit_pack_sets": {
+      "value": 100,
+      "unit": "sets per pack",
+      "evidence_class": "catalogue",
+      "source": "mti2026cr2032kit",
+      "accessed": "2026-09-19"
+    },
+    "gas_waste_usd_per_package": {
+      "value": 5.0,
+      "unit": "USD per package",
+      "evidence_class": "scenario",
+      "note": "glove-box gas, handling consumables and waste"
+    },
+    "electricity_kwh_per_attempt": {
+      "value": 0.5,
+      "unit": "kWh per attempted cell",
+      "evidence_class": "scenario",
+      "note": "incremental cycler and glove-box electricity"
+    },
+    "electricity_usd_per_kwh": {
+      "value": 0.15,
+      "unit": "USD per kWh",
+      "evidence_class": "scenario"
+    },
+    "protocols_per_package": {
+      "value": 2,
+      "unit": "protocols",
+      "evidence_class": "scenario"
+    },
+    "replicates_per_protocol": {
+      "value": 3,
+      "unit": "cells",
+      "evidence_class": "scenario"
+    },
+    "assembly_yield": {
+      "value": 0.9,
+      "unit": "fraction",
+      "evidence_class": "scenario",
+      "note": "technically valid cells per attempted assembly; a valid cell with a poor electrochemical result is not a failure"
+    },
+    "channel_hours_per_attempt": {
+      "value": 240.0,
+      "unit": "channel-h per attempted cell",
+      "evidence_class": "scenario",
+      "note": "declared allowance covering, for example, protocol A: two C/10 formation cycles (about 40 h), a C/5-C/2-1C-2C rate map with three cycles per rate (about 50 h) and 60 cycles at 1C with rests (about 150 h); or protocol B: formation plus 30 cycles at C/3 (about 240 h). Every attempted cell is charged the full allowance."
+    },
+    "hands_on_hours_fixed_per_package": {
+      "value": 0.5,
+      "unit": "h per package",
+      "evidence_class": "scenario",
+      "note": "formulation preparation and result review"
+    },
+    "hands_on_hours_per_attempt": {
+      "value": 0.15,
+      "unit": "h per attempted cell",
+      "evidence_class": "scenario",
+      "note": "electrode punching, assembly, crimping, mounting"
+    },
+    "failed_preparation_hours": {
+      "value": 0.5,
+      "unit": "h per repeated intractable attempt",
+      "evidence_class": "scenario",
+      "note": "hands-on time lost when a known-intractable formulation is prepared again and fails handling"
+    }
+  },
+  "labor": {
+    "median_annual_wage_usd": {
+      "value": 91240,
+      "unit": "USD per year",
+      "evidence_class": "published",
+      "source": "bls2025oews",
+      "accessed": "2026-09-19",
+      "note": "chemists (SOC 19-2031), national median annual wage, May 2025 BLS OOH / OEWS"
+    },
+    "paid_hours_per_year": {
+      "value": 2080,
+      "unit": "h",
+      "evidence_class": "published",
+      "source": "bls2025oews",
+      "note": "the OEWS full-time year"
+    },
+    "wage_share_of_compensation": {
+      "value": 0.701,
+      "unit": "fraction",
+      "evidence_class": "published",
+      "source": "bls2026ecec",
+      "accessed": "2026-09-19",
+      "note": "wages and salaries as a share of total compensation, private industry, December 2025"
+    },
+    "eta_labor_cash_realization": {
+      "value": 0.5,
+      "unit": "fraction",
+      "evidence_class": "scenario",
+      "note": "share of released hands-on labor that actually reduces overtime, outsourcing or hiring"
+    }
+  },
+  "equipment": {
+    "cycler_capital_usd": {
+      "value": 8000.0,
+      "unit": "USD",
+      "evidence_class": "scenario"
+    },
+    "cycler_channels": {
+      "value": 32,
+      "unit": "channels",
+      "evidence_class": "scenario"
+    },
+    "cycler_life_years": {
+      "value": 5,
+      "unit": "years",
+      "evidence_class": "scenario"
+    },
+    "cycler_utilization": {
+      "value": 0.5,
+      "unit": "fraction",
+      "evidence_class": "scenario"
+    },
+    "shared_lab_capital_usd": {
+      "value": 40000.0,
+      "unit": "USD",
+      "evidence_class": "scenario",
+      "note": "glove box, preparation and characterization equipment"
+    },
+    "shared_lab_life_years": {
+      "value": 7,
+      "unit": "years",
+      "evidence_class": "scenario"
+    },
+    "shared_lab_hours_per_year": {
+      "value": 2000,
+      "unit": "h",
+      "evidence_class": "scenario"
+    },
+    "shared_lab_utilization": {
+      "value": 0.5,
+      "unit": "fraction",
+      "evidence_class": "scenario"
+    },
+    "maintenance_fraction_of_capital": {
+      "value": 0.04,
+      "unit": "fraction per year",
+      "evidence_class": "scenario"
+    },
+    "facility_fixed_usd_per_year": {
+      "value": 3000.0,
+      "unit": "USD per year",
+      "evidence_class": "scenario"
+    }
+  },
+  "record_system": {
+    "implementation_hours": {
+      "value": 200,
+      "unit": "h",
+      "evidence_class": "scenario"
+    },
+    "implementation_other_usd": {
+      "value": 2000.0,
+      "unit": "USD",
+      "evidence_class": "scenario",
+      "note": "validation and migration provision"
+    },
+    "annual_maintenance_hours": {
+      "value": 40,
+      "unit": "h per year",
+      "evidence_class": "scenario"
+    },
+    "annual_digital_opex_usd": {
+      "value": 1200.0,
+      "unit": "USD per year",
+      "evidence_class": "scenario",
+      "note": "storage, hosting, backups, transfer"
+    },
+    "curation_hours_per_study": {
+      "value": 2.0,
+      "unit": "h per study",
+      "evidence_class": "scenario"
+    }
+  },
+  "finance": {
+    "studies_per_year": {
+      "value": 10,
+      "unit": "studies per year",
+      "evidence_class": "scenario"
+    },
+    "horizon_years": {
+      "value": 3,
+      "unit": "years",
+      "evidence_class": "scenario"
+    },
+    "discount_rate": {
+      "value": 0.08,
+      "unit": "fraction",
+      "evidence_class": "scenario",
+      "note": "end-of-year cash flows; no residual value"
+    }
+  },
+  "reuse": {
+    "p_match_times_p_omit": {
+      "value": 1.0,
+      "unit": "fraction",
+      "evidence_class": "scenario",
+      "note": "probability that a progressed candidate has a protocol-matched record AND that the repeat may legitimately be omitted; 1.0 is the upper bound, so the base alpha equals the measured p_progress ceiling"
+    },
+    "alpha_override": null,
+    "_note": "alpha = p_progress(measured, top-k of the earlier group's own ranking) x p_match_times_p_omit unless alpha_override is a number."
+  },
+  "cell_gate": {
+    "electrolyte_share_of_cell_cost": {
+      "value": 0.05,
+      "unit": "fraction",
+      "evidence_class": "scenario",
+      "note": "electrolyte share of baseline pre-yield cell cost; 0.02 and 0.10 as alternatives"
+    },
+    "baseline_yield": {
+      "value": 0.95,
+      "unit": "fraction",
+      "evidence_class": "scenario"
+    },
+    "price_multiplier_example": {
+      "value": 2.0,
+      "unit": "x",
+      "evidence_class": "scenario"
+    },
+    "yield_curves": [
+      0.98,
+      0.95,
+      0.9,
+      0.85
+    ],
+    "energy_curves": [
+      1.0,
+      0.95
+    ],
+    "share_alternatives": [
+      0.02,
+      0.05,
+      0.1
+    ],
+    "process_cost_example": {
+      "value": 0.05,
+      "unit": "fraction",
+      "evidence_class": "scenario",
+      "note": "added formation or process cost as a fraction of baseline pre-yield cost"
+    }
+  }
+}

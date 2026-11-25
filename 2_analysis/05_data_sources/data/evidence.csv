@@ -1,0 +1,1677 @@
+﻿paper_id,category,dataset,role
+10015,own_computation,,train
+10018,public_db,PubChem,screen
+10018,public_db,eMolecules,screen
+10018,own_experiment,,train
+10019,literature,,train
+10020,public_db,CALiSol-23,fine_tune
+10020,public_model,SMI-TED,fine_tune
+10020,own_experiment,,validate_test
+10020,literature,,fine_tune
+10022,public_model,DPA-2-MP,fine_tune
+10022,public_model,M3GNet,fine_tune
+10022,public_model,MACE-MP-0a,fine_tune
+10022,own_computation,,train
+10025,own_computation,,train
+10025,literature,,other
+10027,own_computation,,train
+10031,own_computation,,train
+10032,public_db,Materials Project database,train
+10032,own_computation,,train
+10032,own_experiment,,validate_test
+10032,literature,,train
+10033,own_computation,,train
+10037,unclear,,
+10038,own_computation,,train
+10038,own_experiment,,validate_test
+10039,own_computation,,train
+10039,literature,,validate_test
+10040,own_experiment,,train
+10044,own_computation,,train
+10045,public_db,eVTOL Battery Dataset,validate_test
+10045,own_experiment,,train
+10049,literature,,train
+10057,public_db,OBELiX,train
+10057,own_computation,,train
+10057,literature,,validate_test
+10060,public_db,Oyaizu polymer electrolyte dataset,train
+10061,unclear,,
+10062,own_experiment,,train
+10063,own_experiment,,train
+10067,own_computation,,train
+10067,own_experiment,,validate_test
+10069,public_db,Liverpool Ionics Dataset (LiIon),train
+10069,public_db,Magpie elemental information table,train
+10069,public_db,Materials Project database,screen
+10069,own_computation,,validate_test
+10069,literature,,train
+10070,public_db,Materials Project database,train
+10070,public_db,PubChem,train
+10070,own_computation,,validate_test
+10070,own_experiment,,validate_test
+10073,own_computation,,train
+10075,public_db,Materials Project database,train
+10075,own_computation,,train
+10079,own_experiment,,train
+10081,public_db,Materials Project database,train
+10081,public_model,CHGNet (neural network potential),fine_tune
+10081,own_computation,,fine_tune
+10081,literature,,train
+10084,public_db,Materials Project database,screen
+10084,public_model,MatTen,screen
+10084,own_computation,,screen
+10084,own_experiment,,validate_test
+10089,own_computation,,train
+10097,public_db,Ionic Liquid Property Explorer,train
+10097,literature,,fine_tune
+10098,own_computation,,train
+10098,literature,,train
+10102,own_computation,,validate_test
+10102,literature,,train
+10104,public_db,ZINC,train
+10104,own_computation,,validate_test
+10104,own_experiment,,validate_test
+10105,literature,,train
+10106,public_db,AFLOW,validate_test
+10106,public_db,Materials Project database,train
+10106,own_computation,,validate_test
+10107,own_computation,,train
+10107,own_experiment,,validate_test
+10109,own_computation,,train
+10109,own_experiment,,validate_test
+10109,literature,,screen
+10111,own_computation,,validate_test
+10111,literature,,train
+10113,public_model,GPT-4,screen
+10113,own_computation,,validate_test
+10113,own_experiment,,validate_test
+10113,literature,,screen
+10122,own_computation,,train
+10123,literature,,train
+10130,public_db,Materials Project database,train
+10130,own_computation,,validate_test
+10130,literature,,train
+10135,public_db,Materials Project database,train
+10135,public_db,OQMD,screen
+10135,own_computation,,train
+10135,literature,,validate_test
+10136,own_computation,,train
+10136,own_experiment,,train
+10137,public_db,LiBE,screen
+10137,public_db,Reaxys,fine_tune
+10137,public_db,USPTO,fine_tune
+10137,public_model,ASKCOS,other
+10137,public_model,G2GT,fine_tune
+10137,public_model,Uni-Mol (UniMol),other
+10137,own_computation,,train
+10137,literature,,validate_test
+10139,public_db,Materials Project database,fine_tune
+10139,public_model,MACE-MP-0,fine_tune
+10139,own_computation,,fine_tune
+10139,literature,,validate_test
+10142,public_model,M3GNet,fine_tune
+10142,own_computation,,fine_tune
+10142,literature,,validate_test
+10152,public_db,MatSciRE,train
+10152,public_model,BERT,fine_tune
+10152,public_model,DeepSeek,other
+10152,public_model,MatBERT,other
+10152,public_model,MatSciBERT,fine_tune
+10152,public_model,SciBERT,other
+10152,literature,,train
+10153,own_computation,,train
+10155,own_experiment,,train
+10160,unclear,,
+10164,own_computation,,train
+10164,own_experiment,,validate_test
+10171,own_computation,,train
+10171,literature,,train
+10173,public_db,PubChem,screen
+10173,public_db,RedDB,screen
+10173,public_model,AqSolPred,screen
+10173,public_model,RedPred,screen
+10173,own_computation,,validate_test
+10173,own_experiment,,validate_test
+10173,literature,,validate_test
+10175,own_experiment,,train
+10176,own_computation,,train
+10176,own_experiment,,validate_test
+10179,own_computation,,train
+10181,own_experiment,,train
+10182,own_computation,,train
+10185,own_computation,,train
+10188,public_db,ZINC,screen
+10188,own_computation,,train
+10188,literature,,train
+10193,own_experiment,,validate_test
+10193,literature,,train
+10195,own_computation,,train
+10196,own_computation,,train
+10196,own_experiment,,train
+10205,own_computation,,train
+10206,public_db,PCQM4Mv2,train
+10206,public_db,PubChem,fine_tune
+10206,public_db,Stenutz,fine_tune
+10206,own_experiment,,validate_test
+10206,literature,,fine_tune
+10207,own_computation,,train
+10208,public_db,ChemSpider,train
+10208,own_computation,,train
+10208,own_experiment,,validate_test
+10209,public_db,Materials Project database,screen
+10209,public_model,M3GNet,screen
+10209,own_computation,,screen
+10209,literature,,validate_test
+10213,own_computation,,screen
+10213,own_experiment,,validate_test
+10213,literature,,screen
+10216,own_computation,,train
+10218,public_db,NASA,train
+10225,public_db,Materials Project database,train
+10225,public_model,CHGNet (neural network potential),screen
+10225,own_computation,,validate_test
+10225,own_experiment,,validate_test
+10225,literature,,train
+10227,own_computation,,train
+10227,own_experiment,,validate_test
+10227,literature,,train
+10228,own_computation,,train
+10228,own_experiment,,validate_test
+10232,public_db,ComBat,validate_test
+10232,own_computation,,train
+10232,own_experiment,,train
+10232,literature,,train
+10237,own_computation,,train
+10240,own_computation,,train
+10241,own_computation,,train
+10241,own_experiment,,validate_test
+10243,public_db,COD,train
+10243,public_db,ICSD,train
+10243,public_db,Materials Project database,screen
+10243,own_computation,,train
+10243,literature,,train
+10244,own_computation,,train
+10244,literature,,train
+10245,own_experiment,,train
+10251,own_computation,,train
+10251,own_experiment,,validate_test
+10252,public_db,KAHLE2020,train
+10252,public_db,LASKOWSKI2023,validate_test
+10252,public_db,Materials Project database,screen
+10252,public_model,M3GNet,screen
+10252,public_model,SevenNet,validate_test
+10252,own_computation,,validate_test
+10257,public_db,Electrolyte Genome,fine_tune
+10257,public_model,NPVAE,fine_tune
+10257,public_model,Uni-Mol (UniMol),fine_tune
+10257,own_computation,,validate_test
+10258,public_model,M3GNet,fine_tune
+10258,own_computation,,train
+10259,own_computation,,train
+10259,literature,,validate_test
+10262,public_db,Materials Project database,train
+10263,own_computation,,train
+10264,own_computation,,train
+10264,literature,,train
+10265,own_computation,,train
+10265,literature,,train
+10267,own_computation,,train
+10267,own_experiment,,validate_test
+10269,public_db,GDB-17,screen
+10269,own_computation,,train
+10269,literature,,train
+10270,own_experiment,,validate_test
+10270,industry_field,Thermo Fisher Scientific,screen
+10273,own_computation,,train
+10277,own_experiment,,validate_test
+10281,public_db,JCESR Molecules,train
+10283,public_db,Magpie elemental information table,train
+10283,literature,,train
+10291,public_db,Materials Project database,train
+10291,own_computation,,validate_test
+10294,own_computation,,train
+10297,own_computation,,train
+10297,literature,,validate_test
+10299,public_db,QM9,train
+10299,own_computation,,train
+10299,literature,,train
+10299,own_experiment,,validate_test
+10300,public_db,QM9,screen
+10300,public_model,Uni-Mol (UniMol),fine_tune
+10300,literature,,train
+10307,literature,,train
+10309,public_db,LiBE,train
+10309,public_db,MPcules,validate_test
+10311,own_computation,,validate_test
+10313,own_experiment,,train
+10313,own_computation,,train
+10316,own_experiment,,train
+10319,own_computation,,train
+10320,own_computation,,train
+10320,literature,,validate_test
+10322,public_model,MACE-MP-0,fine_tune
+10322,own_computation,,fine_tune
+10322,literature,,validate_test
+10323,public_db,Materials Project database,validate_test
+10323,own_computation,,validate_test
+10323,literature,,validate_test
+10323,public_model,MatterSim,validate_test
+10323,public_model,Orb-v2,validate_test
+10323,public_model,M3GNet,validate_test
+10323,public_model,SevenNet,validate_test
+10323,public_model,MACE,validate_test
+10323,public_model,CHGNet (neural network potential),validate_test
+10323,public_model,GRACE-2L-OAM,validate_test
+10323,public_model,MACE-MPA-0,validate_test
+10323,public_model,Orb-v3,validate_test
+10323,public_model,SevenNet-MF-ompa,validate_test
+10323,public_model,DPA-3.1-3M,validate_test
+10323,public_model,TensorNet,validate_test
+10325,own_experiment,,train
+10326,own_computation,,train
+10335,own_computation,,train
+10335,own_experiment,,validate_test
+10335,literature,,train
+10338,own_computation,,train
+10338,literature,,train
+10344,public_db,CIFAR-10,train
+10344,public_db,MNIST,train
+10344,own_experiment,,train
+10347,own_experiment,,train
+10349,own_experiment,,train
+10350,public_db,Materials Project database,train
+10350,own_computation,,validate_test
+10359,public_model,M3GNet,other
+10359,public_model,SISSO Gibbs free-energy descriptor,other
+10359,own_experiment,,validate_test
+10366,public_db,Materials Project database,train
+10366,public_db,ICSD,train
+10366,public_db,Refractive index database (Zhao-Cole),train
+10366,literature,,fine_tune
+10366,own_computation,,train
+10366,own_experiment,,validate_test
+10367,own_computation,,train
+10367,literature,,validate_test
+10368,own_computation,,train
+10368,own_experiment,,validate_test
+10368,literature,,validate_test
+10373,own_computation,,train
+10376,own_computation,,train
+10376,own_experiment,,validate_test
+10382,literature,,train
+10383,public_db,Materials Project database,screen
+10383,own_computation,,validate_test
+10383,literature,,screen
+10384,public_db,COD,train
+10384,public_db,Materials Project database,train
+10384,public_db,SpringerMaterials database,train
+10384,own_experiment,,validate_test
+10384,literature,,train
+10385,public_db,Materials Project database,validate_test
+10385,public_model,PFP (Matlantis),other
+10385,own_computation,,validate_test
+10389,public_model,EfficientNet,fine_tune
+10389,own_experiment,,fine_tune
+10390,public_model,M3GNet,other
+10390,own_computation,,validate_test
+10391,own_computation,,train
+10391,own_experiment,,train
+10392,public_db,Materials Project database,train
+10392,own_computation,,train
+10395,own_computation,,train
+10395,literature,,validate_test
+10403,own_experiment,,train
+10406,public_db,Materials Genome Database (Matgen),train
+10406,literature,,train
+10406,own_computation,,validate_test
+10406,own_experiment,,validate_test
+10409,own_experiment,,train
+10410,unclear,,
+10414,own_experiment,,validate_test
+10415,own_computation,,train
+10415,literature,,validate_test
+10417,public_db,Materials Project database,train
+10417,own_computation,,train
+10418,unclear,,
+10428,unclear,,
+10431,public_db,Materials Project database,train
+10431,public_db,WBM,train
+10431,public_db,SWCBM,train
+10431,public_db,CAMD,train
+10431,own_computation,,train
+10431,public_model,M3GNet,screen
+10431,public_model,Matbench M3GNet metallicity classifier,screen
+10440,unclear,,
+10443,own_computation,,train
+10444,public_db,Materials Project database,train
+10444,public_db,ICSD,train
+10444,public_db,Magpie elemental information table,train
+10444,own_computation,,train
+10450,own_experiment,,train
+10452,own_computation,,train
+10455,own_computation,,validate_test
+10455,own_experiment,,validate_test
+10457,public_db,MNIST,train
+10457,own_experiment,,other
+10458,own_computation,,train
+10458,literature,,validate_test
+10472,own_computation,,train
+10472,literature,,validate_test
+10473,own_computation,,train
+10473,literature,,validate_test
+10474,public_db,Materials Project database,screen
+10474,public_model,M3GNet,screen
+10475,public_db,Thermodynamic Cycle Electrochemical Windows Database (308 solvents),train
+10475,public_db,PARIS III,screen
+10475,literature,,validate_test
+10478,public_db,Materials Project database,train
+10494,own_experiment,,train
+10496,own_experiment,,train
+10497,own_computation,,train
+10501,public_db,COSMObase IL,train
+10501,own_computation,,train
+10501,own_experiment,,train
+10502,own_computation,,train
+10505,literature,,train
+10505,public_db,Materials Project database,train
+10505,public_db,ICSD,train
+10505,public_db,Phonon database (Kyoto University),screen
+10505,own_computation,,train
+10512,own_computation,,train
+10512,public_db,Materials Project database,train
+10512,public_db,ICSD,validate_test
+10513,public_db,Materials Project database,screen
+10513,literature,,train
+10514,own_computation,,train
+10514,own_experiment,,validate_test
+10515,public_db,Materials Project database,train
+10515,public_db,Magpie elemental information table,train
+10515,own_computation,,validate_test
+10517,public_db,Materials Project database,train
+10517,public_db,OQMD,train
+10517,public_db,AFLOW,train
+10517,literature,,train
+10517,own_experiment,,validate_test
+10518,public_db,IMET atomic properties database,train
+10518,literature,,train
+10519,own_computation,,train
+10519,literature,,validate_test
+10521,own_computation,,validate_test
+10521,literature,,validate_test
+10522,own_computation,,train
+10522,public_model,AMS QSPR,other
+10524,own_experiment,,train
+10527,own_experiment,,train
+10529,literature,,validate_test
+10529,own_computation,,train
+10533,public_db,Materials Project database,train
+10533,own_computation,,train
+10533,literature,,validate_test
+10535,unclear,,
+10536,own_experiment,,train
+10540,public_db,ILThermo,train
+10540,public_model,COSMO-RS conductivity QSPR,other
+10540,own_computation,,train
+10542,own_experiment,,train
+10543,public_db,Materials Project database,train
+10543,own_computation,,train
+10545,own_computation,,train
+10545,own_experiment,,validate_test
+10547,public_db,Materials Project database,train
+10547,public_model,M3GNet,validate_test
+10547,own_computation,,train
+10547,literature,,validate_test
+10550,own_computation,,train
+10550,literature,,validate_test
+10551,own_computation,,train
+10551,literature,,screen
+10554,literature,,train
+10556,public_db,Matterverse,screen
+10556,public_db,Materials Project database,screen
+10556,public_model,M3GNet,screen
+10556,public_model,MEGNet four-fidelity band-gap model,screen
+10556,own_computation,,train
+10556,literature,,validate_test
+10557,literature,,train
+10563,own_computation,,train
+10563,own_experiment,,validate_test
+10563,literature,,validate_test
+10565,public_db,Materials Project database,train
+10568,literature,,train
+10569,own_computation,,train
+10569,own_experiment,,train
+10575,own_experiment,,train
+10578,public_db,Materials Project database,train
+10578,own_computation,,validate_test
+10578,literature,,validate_test
+10579,public_model,ResNet101,fine_tune
+10579,public_model,ResNet152,fine_tune
+10579,public_model,ResNet18,fine_tune
+10579,public_model,ResNet34,fine_tune
+10579,public_model,ResNet50,fine_tune
+10579,own_computation,,train
+10579,own_experiment,,other
+10581,literature,,train
+10585,unclear,,
+10589,public_model,M3GNet,other
+10589,own_computation,,train
+10589,own_experiment,,validate_test
+10593,public_db,Magpie elemental information table,train
+10593,public_db,Materials Project database,train
+10593,own_computation,,validate_test
+10593,own_experiment,,validate_test
+10594,own_experiment,,train
+10596,own_computation,,validate_test
+10596,literature,,train
+10598,own_computation,,train
+10599,own_computation,,validate_test
+10599,literature,,train
+10605,unclear,,
+10614,own_computation,,train
+10614,literature,,validate_test
+10620,public_db,MolPort,train
+10620,own_computation,,train
+10620,industry_field,LG Energy Solution,train
+10623,public_db,ILThermo,validate_test
+10623,public_model,Transformer-CNN,other
+10623,literature,,train
+10624,own_computation,,screen
+10626,own_computation,,train
+10626,own_experiment,,validate_test
+10626,literature,,validate_test
+10628,own_computation,,train
+10628,own_experiment,,validate_test
+10629,public_db,Materials Project database,other
+10629,own_computation,,train
+10629,literature,,validate_test
+10631,own_experiment,,train
+10632,public_db,ILThermo,validate_test
+10632,public_db,IoLiTec,train
+10632,own_computation,,train
+10632,own_experiment,,validate_test
+10634,own_computation,,train
+10634,own_experiment,,validate_test
+10634,literature,,validate_test
+10635,public_db,3BPA,train
+10635,public_db,QM9,train
+10635,public_db,rMD17,train
+10635,own_computation,,train
+10638,own_experiment,,validate_test
+10638,literature,,train
+10640,own_experiment,,validate_test
+10640,literature,,train
+10641,unclear,,
+10651,own_computation,,train
+10655,public_model,PFP (Matlantis),other
+10655,own_computation,,validate_test
+10655,own_experiment,,validate_test
+10656,own_experiment,,train
+10657,own_experiment,,train
+10658,unclear,,
+10659,public_db,IMET atomic properties database,train
+10659,literature,,train
+10664,public_db,Materials Project database,screen
+10664,own_computation,,validate_test
+10664,literature,,train
+10666,own_computation,,train
+10668,own_computation,,train
+10677,own_computation,,train
+10677,literature,,train
+10682,own_computation,,train
+10682,literature,,validate_test
+10683,own_experiment,,validate_test
+10684,public_db,ICSD,validate_test
+10684,own_computation,,validate_test
+10684,literature,,train
+10692,own_computation,,train
+10694,own_computation,,validate_test
+10705,public_db,PubChem,screen
+10705,own_experiment,,validate_test
+10706,public_db,HTP-MD,train
+10706,own_computation,,validate_test
+10717,unclear,,
+10720,public_model,PFP (Matlantis),other
+10720,own_computation,,validate_test
+10720,own_experiment,,validate_test
+10721,literature,,train
+10724,own_computation,,train
+10730,public_db,ICSD,screen
+10730,public_db,Magpie elemental information table,train
+10730,literature,,train
+10732,own_computation,,train
+10734,own_computation,,train
+10741,own_experiment,,validate_test
+10741,literature,,train
+10742,own_computation,,train
+10742,literature,,validate_test
+10745,own_computation,,train
+10745,literature,,train
+10753,own_computation,,train
+10753,own_experiment,,validate_test
+10754,public_db,PolyInfo,screen
+10754,literature,,train
+10755,public_db,Materials Project database,validate_test
+10755,own_computation,,validate_test
+10755,literature,,train
+10757,public_db,Materials Project database,train
+10757,own_computation,,validate_test
+10757,literature,,train
+10763,unclear,,
+10764,own_computation,,train
+10767,own_experiment,,train
+10771,public_db,Materials Project database,train
+10771,public_model,PU learning,screen
+10771,own_computation,,validate_test
+10771,literature,,fine_tune
+10773,own_computation,,train
+10776,own_experiment,,train
+10782,own_computation,,validate_test
+10797,own_computation,,validate_test
+10797,own_experiment,,train
+10799,public_db,ZINC,screen
+10799,own_computation,,train
+10799,literature,,validate_test
+10804,literature,,train
+10805,public_db,NIST Atomic Spectra Database,train
+10805,own_experiment,,train
+10810,own_computation,,train
+10816,own_experiment,,train
+10819,public_db,Jean-Claude Bradley Open Melting Point Dataset,train
+10819,public_model,Junction Tree VAE,other
+10819,own_computation,,train
+10819,own_experiment,,validate_test
+10824,own_experiment,,train
+10826,own_computation,,train
+10826,literature,,validate_test
+10828,public_model,SANI,other
+10828,own_computation,,train
+10828,literature,,validate_test
+10834,own_experiment,,train
+10839,public_db,Materials Project database,train
+10839,public_model,Sendek superionic conductivity model,train
+10839,literature,,validate_test
+10847,own_experiment,,train
+10850,public_db,Materials Project database,train
+10858,own_experiment,,train
+10860,own_computation,,train
+10860,own_experiment,,validate_test
+10866,public_db,Materials Project database,train
+10866,own_computation,,train
+10866,own_experiment,,validate_test
+10877,own_computation,,train
+10882,own_experiment,,validate_test
+10882,literature,,train
+10891,own_computation,,train
+10893,public_db,Materials Project database,screen
+10893,literature,,train
+10907,own_computation,,train
+10909,public_db,Ionic Liquid Property Explorer,train
+10909,literature,,train
+10910,own_computation,,train
+10910,literature,,train
+10913,own_computation,,train
+10913,literature,,validate_test
+10914,public_db,Materials Project database,train
+10914,own_computation,,validate_test
+10920,unclear,,
+10921,public_db,Materials Project database,train
+10921,own_computation,,validate_test
+10921,literature,,train
+11040,public_db,IIT Thermodynamic Database,train
+11040,public_db,Materials Project database,train
+11040,public_db,SGTE SSUB,train
+11040,own_computation,,train
+11040,literature,,train
+11074,own_experiment,,train
+15002,own_experiment,,train
+15003,own_computation,,train
+15003,literature,,validate_test
+15005,public_db,Materials Project database,fine_tune
+15005,public_db,PubChem,screen
+15005,public_db,Stenutz,fine_tune
+15005,public_model,Uni-Mol (UniMol),fine_tune
+15005,own_computation,,fine_tune
+15005,own_experiment,,validate_test
+15005,literature,,train
+15007,own_computation,,train
+15009,own_experiment,,train
+15013,own_computation,,validate_test
+15013,own_experiment,,validate_test
+15014,public_db,PubChem,screen
+15014,public_model,Claude 3.7 Sonnet,screen
+15014,public_model,DeepSeek-V3,screen
+15014,own_computation,,validate_test
+15014,own_experiment,,validate_test
+15014,literature,,screen
+15017,public_db,DIPPR 801,train
+15017,public_db,GDB-13,screen
+15017,public_db,Mcule,screen
+15017,public_model,ANI-2x,screen
+15019,public_db,Materials Project database,validate_test
+15019,own_computation,,train
+15019,literature,,validate_test
+15020,public_db,OMat24 (OMAT),train
+15020,public_model,GRACE-1L-OMAT,other
+15020,public_model,GRACE-2L-OMAT,other
+15020,public_model,MACE-OMAT-0,other
+15020,public_model,Orb-v3,other
+15020,public_model,UMA,other
+15020,own_computation,,train
+15020,literature,,validate_test
+15021,own_experiment,,train
+15023,public_db,PubChem,screen
+15023,own_computation,,screen
+15023,own_experiment,,train
+15029,own_computation,,train
+15029,literature,,train
+15030,public_db,Materials Project database,train
+15030,public_db,OMat24 (OMAT),fine_tune
+15030,public_model,MACE-OMAT-0,fine_tune
+15030,own_computation,,fine_tune
+15031,public_model,CHGNet (neural network potential),validate_test
+15031,public_model,GRACE,validate_test
+15031,public_model,M3GNet,validate_test
+15031,public_model,MACE,validate_test
+15031,public_model,MatterSim,validate_test
+15031,public_model,Orb-v2,validate_test
+15031,public_model,Orb-v3,validate_test
+15031,public_model,SevenNet,validate_test
+15031,own_computation,,validate_test
+15033,public_db,ILThermo,train
+15033,own_computation,,validate_test
+15033,own_experiment,,validate_test
+15033,literature,,train
+15034,public_db,PubChemQC CHNOPS500noSalt,train
+15034,own_computation,,validate_test
+15034,own_experiment,,validate_test
+15035,public_model,M3GNet,screen
+15035,own_computation,,train
+15035,own_experiment,,validate_test
+15038,own_experiment,,train
+15042,own_experiment,,train
+15044,public_db,PubChem,train
+15044,own_computation,,train
+15044,own_experiment,,validate_test
+15045,own_computation,,train
+15045,own_experiment,,validate_test
+15046,own_computation,,train
+15048,public_db,Liverpool Ionics Dataset (LiIon),train
+15048,public_db,Materials Project database,train
+15048,public_db,OBELiX,train
+15048,public_db,OQMD,train
+15048,public_model,CHGNet (neural network potential),other
+15048,public_model,Llama-3.1-8B-Instruct,fine_tune
+15048,public_model,Mistral-7B-Instruct-v0.3,fine_tune
+15048,public_model,Qwen3-8B,fine_tune
+15048,own_computation,,train
+15054,public_db,Magpie elemental information table,train
+15054,public_db,Materials Project database,screen
+15054,public_db,OQMD,validate_test
+15054,own_computation,,validate_test
+15054,literature,,train
+15055,own_computation,,train
+15055,literature,,screen
+15056,own_experiment,,train
+15057,own_experiment,,train
+15059,public_db,Materials Project database,screen
+15059,own_computation,,train
+15059,own_experiment,,validate_test
+15061,own_experiment,,train
+15062,own_computation,,train
+15065,public_db,ILThermo,train
+15065,own_computation,,train
+15067,public_db,FreeSolv,train
+15067,public_db,QM9,screen
+15067,own_computation,,screen
+15068,own_experiment,,validate_test
+15068,literature,,validate_test
+15069,public_db,MATR (Stanford-MIT),train
+15069,own_computation,,train
+15071,public_db,GDB-11,train
+15071,public_db,QM9,train
+15071,own_computation,,validate_test
+15072,own_computation,,train
+15073,public_db,MolSets,train
+15073,public_db,SMI-TED electrolyte dataset,train
+15073,own_computation,,validate_test
+15075,public_db,Materials Project database,screen
+15075,public_model,SevenNet,screen
+15075,own_computation,,screen
+15076,own_computation,,train
+15076,own_experiment,,validate_test
+15077,own_computation,,train
+15077,own_experiment,,validate_test
+15078,own_experiment,,train
+15079,own_computation,,train
+15079,own_experiment,,validate_test
+15080,public_db,ICSD,screen
+15080,public_model,AFLOW-ML,screen
+15080,public_model,MatterSim,screen
+15080,own_computation,,screen
+15080,literature,,validate_test
+15082,public_model,CHGNet (neural network potential),fine_tune
+15082,own_computation,,fine_tune
+15083,own_experiment,,fine_tune
+15083,literature,,train
+15084,own_computation,,train
+15084,own_experiment,,validate_test
+15085,public_db,OMol25,train
+15085,public_model,SMI-TED,other
+15085,own_computation,,screen
+15087,own_computation,,train
+15087,own_experiment,,validate_test
+15091,own_experiment,,validate_test
+15091,literature,,train
+15093,literature,,train
+15094,own_experiment,,validate_test
+15094,literature,,train
+15098,public_db,Liverpool Ionics Dataset (LiIon),train
+15098,public_db,Magpie elemental information table,train
+15098,own_computation,,train
+15098,literature,,train
+15100,public_db,NIST Chemistry WebBook,train
+15100,public_db,PubChem,train
+15100,own_experiment,,train
+15100,literature,,train
+15103,own_computation,,train
+15110,own_computation,,train
+15110,literature,,train
+15112,public_db,ILThermo,train
+15112,public_db,NCI Chemical Identifier Resolver,train
+15112,public_db,PubChem,train
+15114,public_db,Magpie elemental information table,train
+15114,public_db,Materials Project database,train
+15114,own_computation,,train
+15115,own_computation,,validate_test
+15115,own_experiment,,train
+15115,literature,,train
+15116,public_db,Materials Project database,validate_test
+15116,public_model,CHGGen,screen
+15116,public_model,CHGNet (neural network potential),fine_tune
+15116,own_computation,,fine_tune
+15117,public_db,Ab Initio Amorphous Materials Database,train
+15117,public_db,Materials Project database,screen
+15117,public_model,CHGNet (neural network potential),screen
+15117,own_computation,,train
+15119,public_db,PubChem,train
+15119,own_computation,,train
+15120,public_db,PubChem,train
+15120,own_computation,,train
+15120,own_experiment,,validate_test
+15121,public_db,QM9,train
+15121,own_computation,,train
+15122,own_computation,,train
+15124,public_db,Cambridge EIS,validate_test
+15124,own_experiment,,train
+15130,public_db,Materials Project database,validate_test
+15130,public_model,DPA3-v1-MPtrj,validate_test
+15130,public_model,EqV2 S DeNS,validate_test
+15130,public_model,MACE-MP-0,validate_test
+15130,public_model,Orb-v2,validate_test
+15130,public_model,SevenNet,validate_test
+15130,own_computation,,validate_test
+15132,own_computation,,train
+15133,public_db,HUST,train
+15133,public_db,MATR (Stanford-MIT),train
+15133,public_db,XJTU,train
+15134,own_computation,,train
+15134,literature,,train
+15135,public_db,Test_Data,train
+15135,own_computation,,train
+15139,public_db,ChEMBL,train
+15139,own_computation,,train
+15139,literature,,validate_test
+15140,own_computation,,train
+15141,public_model,Orb-OMat,validate_test
+15141,public_model,SevenNet-OMat,validate_test
+15141,public_model,UMA-OMol,validate_test
+15141,own_experiment,,validate_test
+15142,public_model,GPT-4o-mini,other
+15142,literature,,train
+15143,public_db,NIST Chemistry WebBook,train
+15143,public_db,PubChem,train
+15143,public_db,QM9,train
+15143,public_model,GPT-4-turbo,other
+15143,literature,,train
+15147,public_db,PubChem,train
+15147,own_computation,,train
+15148,public_db,ICSD,screen
+15148,public_db,Materials Project database,train
+15148,public_model,CHGNet (neural network potential),screen
+15148,own_computation,,validate_test
+15150,public_model,uMLP,screen
+15150,own_experiment,,validate_test
+15155,public_db,GDB-13,train
+15155,own_computation,,train
+15155,own_experiment,,validate_test
+15156,public_db,Materials Project database,screen
+15156,own_computation,,validate_test
+15160,public_model,EfficientNet-B0,fine_tune
+15160,own_experiment,,train
+15161,public_db,ICSD,screen
+15161,public_db,JARVIS-DFT,train
+15161,public_db,OQMD,screen
+15161,public_model,MACE-MPA-0,fine_tune
+15161,own_computation,,fine_tune
+15164,public_db,Electrolyte Genome,train
+15164,public_db,MPcules,train
+15164,public_db,Minnesota Solvation Database (MNSOL),train
+15164,public_db,PubChem,train
+15164,public_model,MACE-OFF23,other
+15164,own_computation,,train
+15164,literature,,train
+15166,own_experiment,,train
+15167,own_computation,,train
+15167,literature,,train
+15169,public_model,CGCNN experts,fine_tune
+15169,literature,,train
+15171,public_db,ICSD,train
+15171,own_computation,,train
+15172,public_db,QM9-GCDQE,train
+15172,own_computation,,validate_test
+15173,own_experiment,,train
+15174,own_computation,,train
+15175,own_experiment,,validate_test
+15175,literature,,validate_test
+15178,own_experiment,,train
+15179,literature,,train
+15181,public_db,Materials Project database,screen
+15181,public_model,CSLLM,screen
+15181,public_model,GPT-4o,validate_test
+15181,public_model,StructLLM,screen
+15181,own_computation,,screen
+15181,own_experiment,,validate_test
+15181,literature,,other
+15183,public_db,MPtrj,fine_tune
+15183,public_model,MACE-MPA-0,fine_tune
+15183,own_computation,,fine_tune
+15183,literature,,fine_tune
+15184,public_db,CSD (Cambridge Structural Database),train
+15184,own_computation,,train
+15185,public_db,Materials Project database,screen
+15185,literature,,train
+15186,public_model,MACE,validate_test
+15186,own_computation,,train
+15186,own_experiment,,validate_test
+15187,public_db,PubChem,validate_test
+15187,own_computation,,train
+15187,own_experiment,,validate_test
+15187,literature,,train
+15188,public_db,Materials Project database,train
+15188,own_computation,,validate_test
+15189,own_experiment,,train
+15189,literature,,train
+15190,own_experiment,,train
+15191,own_experiment,,train
+15192,public_model,EfficientNet-B3,fine_tune
+15192,own_experiment,,train
+15193,own_computation,,train
+15193,literature,,train
+15195,public_model,Allegro OAM-L,other
+15196,own_computation,,train
+15196,literature,,validate_test
+15197,own_computation,,train
+15197,literature,,validate_test
+15198,own_computation,,train
+15198,literature,,train
+15199,public_db,GDB-17,train
+15199,public_db,Materials Project database,validate_test
+15199,public_db,PubChem,train
+15199,public_db,eMolecules,train
+15199,own_experiment,,validate_test
+15199,literature,,train
+15200,own_computation,,train
+15200,literature,,validate_test
+15201,public_model,CHGNet (neural network potential),fine_tune
+15201,own_computation,,fine_tune
+15201,literature,,train
+15202,own_computation,,train
+15203,public_db,Dynamic Database of Solid-State Electrolytes (DDSE),train
+15203,public_db,Magpie elemental information table,train
+15203,own_computation,,validate_test
+15204,public_db,Materials Project database,train
+15204,own_computation,,train
+15205,own_computation,,train
+15205,literature,,validate_test
+15206,public_db,CaltechDATA,validate_test
+15206,public_db,Liverpool Ionics Dataset (LiIon),validate_test
+15206,public_db,Magpie elemental information table,train
+15206,literature,,train
+15207,own_computation,,train
+15208,public_db,ANI-2x,train
+15208,public_db,GEMS,train
+15208,public_db,HEA-25,train
+15208,public_db,MPtrj,train
+15208,public_db,MatPES-r2SCAN,train
+15208,public_db,NABLA,train
+15208,public_db,OC20,train
+15208,public_db,ODAC,train
+15208,public_db,OMat24 (OMAT),train
+15208,public_db,RGD1,train
+15208,public_db,SPICE,train
+15208,public_db,Transition1X,train
+15208,public_db,sAlex,train
+15208,own_computation,,validate_test
+15209,public_db,ICSD,train
+15209,public_db,Materials Project database,train
+15209,public_model,MACE-MATPES-PBE-0,fine_tune
+15209,public_model,MACE-MP-0b3,fine_tune
+15209,public_model,MACE-MPA-0,fine_tune
+15209,public_model,MACE-OMAT-0,fine_tune
+15209,public_model,MatterSim-1m,fine_tune
+15209,public_model,MatterSim-5m,fine_tune
+15209,public_model,Orb-v2,fine_tune
+15209,public_model,Orb-v3-direct-inf-mpa,fine_tune
+15209,public_model,Orb-v3-direct-inf-omat,fine_tune
+15209,own_computation,,train
+15209,literature,,validate_test
+15210,literature,,train
+15213,own_computation,,validate_test
+15213,literature,,train
+15214,public_model,CHGNet (neural network potential),fine_tune
+15214,own_computation,,fine_tune
+15215,public_db,MPRelax,fine_tune
+15215,public_model,DeePMD (Luo NaPSO),validate_test
+15215,public_model,GRACE-GSE,validate_test
+15215,public_model,MACE-MATPES-PBE-0,validate_test
+15215,public_model,MACE-MATPES-r2SCAN-0,validate_test
+15215,public_model,MACE-MP-0,fine_tune
+15215,own_computation,,fine_tune
+15215,literature,,validate_test
+15217,own_experiment,,validate_test
+15217,literature,,train
+15218,own_experiment,,train
+15219,own_experiment,,validate_test
+15219,literature,,train
+15221,own_computation,,train
+15223,own_computation,,train
+15223,own_experiment,,validate_test
+15224,own_computation,,train
+15225,public_db,PubChem,screen
+15225,own_computation,,validate_test
+15225,own_experiment,,validate_test
+15225,literature,,train
+15227,own_computation,,train
+15228,own_computation,,train
+15230,public_model,CHGNet (neural network potential),fine_tune
+15230,public_model,M3GNet,screen
+15230,public_model,SevenNet-MF-ompa,validate_test
+15230,own_computation,,fine_tune
+15230,literature,,validate_test
+15231,own_computation,,train
+15232,own_experiment,,train
+15234,own_computation,,train
+15236,public_model,PFP (Matlantis),other
+15236,own_computation,,validate_test
+15237,own_computation,,train
+15238,public_model,DeepSeek-V3.2,validate_test
+15238,public_model,GPT-4o,validate_test
+15238,literature,,validate_test
+15239,public_db,CSD (Cambridge Structural Database),train
+15239,own_computation,,train
+15239,own_experiment,,train
+15239,literature,,train
+15240,own_computation,,train
+15241,own_computation,,train
+15242,own_computation,,train
+15242,own_experiment,,train
+15243,own_computation,,train
+15243,literature,,validate_test
+15244,own_computation,,train
+15244,literature,,validate_test
+15245,own_experiment,,train
+15246,own_computation,,train
+15247,own_computation,,train
+15247,own_experiment,,validate_test
+20008,own_computation,,train
+20015,own_computation,,train
+20018,own_experiment,,train
+20018,literature,,screen
+20019,literature,,train
+20022,own_experiment,,train
+20028,unclear,,
+20030,public_db,ICSD,screen
+20030,public_model,CHGNet (neural network potential),other
+20030,own_computation,,validate_test
+20031,public_db,Materials Project database,train
+20033,own_computation,,train
+20033,literature,,train
+20035,own_experiment,,validate_test
+20037,own_experiment,,validate_test
+20037,literature,,train
+20038,public_db,NASA,train
+20038,own_experiment,,train
+20041,public_db,AFLOW,screen
+20041,public_db,OQMD,screen
+20041,public_model,M3GNet,screen
+20041,own_computation,,train
+20048,literature,,train
+20049,public_db,GNoME,screen
+20049,public_db,Materials Project database,train
+20049,own_computation,,validate_test
+20049,literature,,validate_test
+20057,public_model,MACE-MP-0,other
+20057,own_computation,,validate_test
+20057,own_experiment,,validate_test
+20057,literature,,validate_test
+20058,literature,,train
+20059,own_computation,,train
+20059,own_experiment,,train
+20064,public_db,Materials Project database,train
+20064,own_computation,,train
+20065,public_model,PFP (Matlantis),other
+20065,own_computation,,validate_test
+20065,own_experiment,,validate_test
+20065,literature,,validate_test
+20066,unclear,,
+20068,public_db,Magpie elemental information table,train
+20068,public_db,Materials Project database,train
+20068,own_computation,,validate_test
+20068,own_experiment,,validate_test
+20069,own_computation,,train
+20074,public_model,SCScore,screen
+20074,own_computation,,screen
+20074,own_experiment,,validate_test
+20074,literature,,screen
+20075,literature,,train
+20078,own_experiment,,validate_test
+20078,industry_field,,train
+20079,public_model,CHGNet (neural network potential),validate_test
+20079,public_model,GRACE-2L,validate_test
+20079,public_model,MACE,validate_test
+20079,public_model,ORB,screen
+20079,public_model,SevenNet,screen
+20079,public_model,eqV2,validate_test
+20079,own_computation,,validate_test
+20080,own_computation,,train
+20085,public_db,PubChem,screen
+20085,own_computation,,screen
+20085,own_experiment,,validate_test
+20085,literature,,screen
+20091,public_model,M3GNet,screen
+20091,own_computation,,validate_test
+20091,literature,,screen
+20093,own_computation,,train
+20102,public_db,Materials Project database,train
+20102,own_computation,,screen
+20102,literature,,fine_tune
+20107,public_db,COSMObase2022,screen
+20107,public_model,ILTransR,screen
+20107,own_computation,,screen
+20107,own_experiment,,validate_test
+20108,public_db,GDB-17,screen
+20108,public_db,Materials Project database,train
+20108,public_db,PubChem,screen
+20108,public_db,eMolecules,screen
+20108,own_computation,,validate_test
+20108,own_experiment,,validate_test
+20108,literature,,train
+20109,own_computation,,train
+20110,own_experiment,,validate_test
+20116,public_db,Materials Project database,train
+20116,own_computation,,train
+20117,literature,,train
+20118,own_experiment,,train
+20121,literature,,train
+20124,own_experiment,,validate_test
+20124,literature,,train
+20127,public_db,Materials Project database,train
+20127,literature,,validate_test
+20128,own_experiment,,train
+20129,public_db,Materials Project database,train
+20129,own_computation,,train
+20129,literature,,validate_test
+20137,own_experiment,,train
+20143,own_computation,,train
+20143,own_experiment,,validate_test
+20144,public_model,PFP (Matlantis),screen
+20144,own_computation,,validate_test
+20144,own_experiment,,validate_test
+20145,own_experiment,,train
+20149,public_db,Materials Project database,screen
+20149,public_model,CHGNet (neural network potential),screen
+20149,own_computation,,train
+20150,public_db,Materials Project database,screen
+20150,own_computation,,validate_test
+20150,literature,,train
+20151,own_computation,,train
+20152,public_db,Materials Project database,train
+20158,own_computation,,train
+20160,public_db,Materials Project database,validate_test
+20160,public_db,MatterGen training dataset,validate_test
+20160,public_model,MatterGen,screen
+20160,public_model,MatterSim,screen
+20160,own_computation,,validate_test
+20164,own_experiment,,validate_test
+20164,literature,,train
+20167,public_db,P3–O3 HEOs dataset,train
+20167,own_computation,,screen
+20167,own_experiment,,validate_test
+20167,literature,,screen
+20174,public_db,Magpie elemental information table,train
+20174,public_db,Materials Project database,train
+20174,own_computation,,train
+20176,own_experiment,,train
+20177,public_db,Citrine,train
+20177,public_db,Magpie elemental information table,train
+20177,public_db,Materials Project database,train
+20177,own_computation,,train
+20177,literature,,train
+20180,public_db,Materials Project database,other
+20180,own_computation,,validate_test
+20185,own_computation,,train
+20188,public_model,BatteryBERT,fine_tune
+20188,public_model,BatteryOnlyBERT,other
+20188,literature,,fine_tune
+20193,own_computation,,train
+20193,literature,,validate_test
+20195,own_computation,,train
+20195,literature,,validate_test
+20196,public_model,CHGNet (neural network potential),screen
+20196,own_computation,,validate_test
+20197,own_computation,,train
+20197,own_experiment,,validate_test
+20197,literature,,validate_test
+20198,public_db,OMEAD,train
+20198,public_db,QM9,train
+20198,own_computation,,train
+20198,own_experiment,,validate_test
+20199,own_computation,,validate_test
+20200,own_computation,,train
+20204,own_experiment,,train
+20205,public_model,CHGNet (neural network potential),screen
+20205,public_model,MACE-MP-0,screen
+20205,own_computation,,validate_test
+20206,own_experiment,,train
+20211,public_model,MEGNet,fine_tune
+20211,own_computation,,fine_tune
+20215,own_computation,,train
+20218,own_experiment,,train
+20219,public_db,Materials Project database,train
+20219,public_model,M3GNet,other
+20219,own_computation,,train
+20220,public_db,Materials Project database,screen
+20220,public_model,CHGNet (neural network potential),fine_tune
+20220,own_computation,,fine_tune
+20222,public_model,CHGNet (neural network potential),other
+20222,own_experiment,,validate_test
+20227,public_db,Ptable,train
+20227,own_computation,,train
+20229,own_computation,,train
+20230,own_computation,,validate_test
+20230,own_experiment,,train
+20233,public_model,CHGNet (neural network potential),other
+20233,public_model,M3GNet,other
+20233,own_computation,,validate_test
+20233,literature,,validate_test
+20234,own_experiment,,train
+20235,own_computation,,train
+20235,own_experiment,,validate_test
+20235,literature,,validate_test
+20236,unclear,,
+20238,own_computation,,train
+20242,public_model,mat2vec,other
+20242,own_experiment,,train
+20242,literature,,train
+20245,own_computation,,train
+20245,own_experiment,,train
+20247,own_computation,,train
+20249,own_experiment,,train
+20249,literature,,train
+20250,public_model,VGG-19,other
+20250,own_computation,,train
+20250,own_experiment,,train
+20254,own_computation,,train
+20254,literature,,validate_test
+20256,own_computation,,train
+20257,own_experiment,,train
+20259,public_db,Materials Project database,train
+20260,own_experiment,,train
+20263,own_experiment,,fine_tune
+20264,own_computation,,train
+20268,public_db,Magpie elemental information table,train
+20268,own_computation,,train
+20269,own_computation,,train
+20269,own_experiment,,train
+20274,own_computation,,train
+20275,unclear,,
+20277,public_db,IMET atomic properties database,train
+20277,literature,,train
+20279,public_db,Materials Project database,train
+20282,public_model,CHGNet (neural network potential),screen
+20282,own_computation,,train
+20284,literature,,train
+20286,public_db,Computational 2D Materials Database (C2DB),train
+20286,own_computation,,train
+20289,own_experiment,,train
+20290,own_computation,,train
+20290,own_experiment,,validate_test
+20296,public_db,Materials Project database,screen
+20296,public_db,SPSE,train
+20296,literature,,validate_test
+20298,own_experiment,,train
+20303,own_computation,,train
+20303,literature,,validate_test
+20305,literature,,validate_test
+20306,own_computation,,train
+20307,own_computation,,train
+20307,literature,,train
+20311,public_db,Moses battery electrode database,train
+20313,public_model,AtomSegNet,other
+20313,own_computation,,train
+20313,own_experiment,,validate_test
+20314,unclear,,
+20316,own_computation,,train
+20317,public_db,ZINC,validate_test
+20317,public_model,SCScore,screen
+20317,own_computation,,screen
+20319,public_db,GDB-17,screen
+20319,own_computation,,train
+20319,literature,,train
+20320,public_db,Materials Project database,train
+20320,own_computation,,validate_test
+20320,own_experiment,,validate_test
+20323,own_computation,,train
+20328,public_db,Materials Project database,train
+20328,own_computation,,train
+20331,public_db,ICSD,train
+20331,public_db,Ion Transport Database for Battery Materials,train
+20331,own_computation,,validate_test
+20331,literature,,screen
+20332,own_experiment,,train
+20333,own_experiment,,train
+20336,own_computation,,train
+20337,public_model,AtomSegNet,other
+20337,own_experiment,,validate_test
+20339,own_computation,,train
+20339,own_experiment,,validate_test
+20339,industry_field,Samsung SDI,validate_test
+20341,public_db,NREL Battery Microstructures Library,train
+20341,own_experiment,,validate_test
+20342,public_db,COD,train
+20343,own_experiment,,train
+20345,public_db,Materials Project database,train
+20345,own_computation,,validate_test
+20348,own_computation,,train
+20349,unclear,,
+20350,industry_field,,train
+20362,own_computation,,train
+20362,own_experiment,,validate_test
+20366,unclear,,
+20367,literature,,train
+20368,own_experiment,,train
+20370,literature,,train
+20371,own_experiment,,train
+20374,public_db,Materials Project database,train
+20374,own_computation,,train
+20376,public_db,Oxford,train
+20377,own_computation,,train
+20377,literature,,train
+20388,own_computation,,train
+20392,literature,,train
+20392,own_experiment,,validate_test
+20394,own_computation,,other
+20396,public_db,Web of Science,train
+20396,public_db,Scopus,train
+20396,public_db,Science Direct,train
+20396,public_db,Springer Nature,train
+20397,own_computation,,train
+20398,own_computation,,train
+20398,own_experiment,,validate_test
+25001,own_computation,,train
+25003,own_experiment,,train
+25006,public_model,TabPFN,other
+25006,own_experiment,,validate_test
+25006,literature,,train
+25010,literature,,train
+25011,own_computation,,train
+25014,literature,,train
+25015,literature,,train
+25016,own_computation,,train
+25017,industry_field,Vehicle projects A/B,train
+25018,own_experiment,,train
+25021,public_db,Materials Project database,train
+25021,public_db,OQMD,train
+25021,own_computation,,train
+25021,literature,,validate_test
+25023,own_computation,,train
+25024,own_experiment,,train
+25026,public_db,OMat24 (OMAT),train
+25026,public_model,M3GNet,other
+25026,public_model,MACE,other
+25026,own_computation,,train
+25026,literature,,train
+25027,public_model,MACE-MP-0,fine_tune
+25027,own_computation,,fine_tune
+25027,literature,,validate_test
+25029,own_experiment,,train
+25030,own_experiment,,train
+25031,own_experiment,,train
+25032,public_db,Materials Project database,train
+25032,own_computation,,train
+25033,own_computation,,validate_test
+25033,own_experiment,,validate_test
+25033,literature,,train
+25034,public_db,Materials Project database,fine_tune
+25034,public_db,OQMD,fine_tune
+25034,public_model,MatterSim-5m,fine_tune
+25034,own_computation,,fine_tune
+25035,public_db,Materials Project database,train
+25035,own_computation,,train
+25035,literature,,validate_test
+25036,public_model,DPA-2.4-7M,fine_tune
+25036,public_model,DPA-3.1-3M,fine_tune
+25036,own_computation,,train
+25036,literature,,validate_test
+25037,own_computation,,train
+25037,own_experiment,,validate_test
+25039,public_model,SevenNet-0,fine_tune
+25039,own_computation,,fine_tune
+30013,public_model,M3GNet,other
+30026,own_experiment,,train
+30076,public_db,NASA,train
+30076,public_db,CALCE,train
+30112,own_experiment,,train
+30120,public_db,Scopus,validate_test
+30120,public_model,GPT-4o,validate_test
+30120,public_model,GPT-4o-mini,validate_test
+30120,public_model,GPT-3.5-turbo,validate_test
+30125,literature,,train
+30172,own_experiment,,train
+30252,own_experiment,CAMP,train
+30281,literature,,train
+30287,own_computation,,train
+30302,public_db,AFLOW,train
+30302,public_db,Magpie elemental information table,train
+30302,public_db,ICSD,screen
+30302,literature,,validate_test
+30302,own_computation,,validate_test
+30312,own_experiment,,train
+30358,own_experiment,,train
+30364,own_computation,,train
+30364,literature,,validate_test
+30378,own_experiment,,other
+30383,own_experiment,,train
+30423,own_experiment,,train
+30430,unclear,,
+35001,own_experiment,,validate_test
+35001,literature,,train
+35002,own_experiment,,train
+35005,own_experiment,,train
+35005,literature,,train
+35008,literature,,train
+35009,public_model,M3GNet,screen
+35009,own_computation,,validate_test
+35010,public_db,Materials Project database,train
+35011,public_db,MATR (Stanford-MIT),train
+35011,public_db,Tongji,train
+35012,public_db,DRX (Zhong),train
+35013,public_db,ICSD,validate_test
+35013,public_db,Materials Project database,fine_tune
+35013,public_db,OQMD,validate_test
+35013,public_model,M3GNet,screen
+35013,public_model,MatterGen,fine_tune
+35013,own_computation,,validate_test
+35014,public_db,Materials Project database,train
+35014,own_computation,,train
+35014,own_experiment,,validate_test
+35016,own_computation,,train
+35016,own_experiment,,train
+35019,public_db,PubChem,train
+35019,own_computation,,train
+35019,own_experiment,,validate_test
+35021,public_db,GNoME,validate_test
+35021,public_db,Materials Project database,train
+35021,public_model,MACE-OMAT,validate_test
+35021,public_model,RoBERTa-base,fine_tune
+35021,public_model,UMA (uma-s-1p1),screen
+35021,own_computation,,validate_test
+35022,public_model,CHGNet (neural network potential),screen
+35022,own_computation,,validate_test
+35023,public_db,NASA,train
+35023,public_db,Oxford,validate_test
+35023,own_experiment,,validate_test
+35026,public_db,Materials Project database,train
+35026,own_computation,,validate_test
+35026,literature,,validate_test
+35027,own_computation,,train
+35027,own_experiment,,validate_test
+35029,public_db,Materials Project database,train
+35029,literature,,validate_test
+35031,literature,,train
+35032,public_db,ZINC,screen
+35032,public_model,ChemBERTa-zinc-base-v1,other
+35032,own_experiment,,validate_test
+35032,literature,,train
+35033,public_db,Materials Project database,train
+35033,own_computation,,validate_test
+35034,public_db,Magpie elemental information table,train
+35034,public_db,Materials Project database,train
+35034,public_model,CHGNet (neural network potential),screen
+35034,own_computation,,train
+35035,public_db,AFLOW,train
+35035,public_db,Materials Project database,screen
+35035,own_computation,,validate_test
+35035,literature,,validate_test
+35036,own_experiment,,validate_test
+35036,literature,,train
+35037,industry_field,Zhejiang Natrium Energy,train
+35038,own_computation,,train
+35039,public_model,CHGNet (neural network potential),screen
+35039,own_computation,,validate_test
+35040,own_experiment,,validate_test
+35040,literature,,train
+35042,public_model,MACE-MP-0,screen
+35042,own_computation,,validate_test
+35046,public_model,GPT,other
+35046,own_experiment,,validate_test
+35046,literature,,train
+35047,own_computation,,train
+35048,own_computation,,train
+35048,literature,,validate_test
+35049,public_model,NEP89,other
+35049,own_computation,,validate_test
+35052,own_computation,,train
+35053,own_experiment,,train
+35054,public_db,Battery Archive,other
+35054,own_experiment,,validate_test
+35054,literature,,train
+35055,public_db,Materials Project database,train
+35056,unclear,,
+35057,own_computation,,train
+35057,own_experiment,,validate_test
+35058,public_model,PFP (Matlantis),other
+35058,own_computation,,validate_test
+35058,literature,,validate_test
+35059,public_db,Materials Project database,train
+35060,own_experiment,,train
+35060,literature,,validate_test
+35061,own_experiment,,train
+35061,literature,,train
+35062,own_computation,,train
+35062,own_experiment,,validate_test
+35063,public_db,LASP Li–Ni–O,train
+35063,own_computation,,train
+35064,public_model,DeepLabv3 MobileNetV3-Large,fine_tune
+35064,public_model,DeepLabv3 ResNet-50,fine_tune
+35064,own_experiment,,train
+35065,public_model,NEP89,fine_tune
+35065,own_computation,,train
+35065,literature,,validate_test
+35066,public_db,Materials Project database,train
+35067,public_db,Materials Project database,train
+35067,public_model,MatBERT,other
+35067,own_experiment,,fine_tune
+35068,public_db,Materials Project database,train
+35068,public_model,CHGNet (neural network potential),fine_tune
+35068,own_computation,,fine_tune
+35070,own_experiment,,train
+35071,own_experiment,,train
+35072,public_model,PFP (Matlantis),screen
+35072,own_computation,,validate_test
+40015,literature,,train
+40020,own_experiment,,train
+40023,own_computation,,train
+40023,public_db,Magpie elemental information table,train
+40026,own_experiment,,train
+40026,public_db,XenonPy,train
+40030,own_experiment,,train
+40030,public_db,Tongji,validate_test
+40037,own_experiment,,train
+40039,public_db,Materials Project database,screen
+40039,public_model,M3GNet,other
+40039,own_computation,,validate_test
+40039,own_experiment,,validate_test
+40043,literature,,train
+40044,own_computation,,train
+40044,own_experiment,,train
+40044,literature,,train
+40057,unclear,,
+40066,literature,,train
+40074,public_db,Materials Project database,train
+40074,own_computation,,train
+40074,own_experiment,,validate_test
+40076,own_computation,,train
+40077,public_db,Materials Project database,train
+40077,public_db,AFLOW,train
+40077,literature,,validate_test
+40084,literature,,train
+40084,own_computation,,screen
+40084,own_experiment,,validate_test
+40085,own_computation,,train
+40085,public_db,Materials Project database,screen
+40085,public_db,OQMD,screen
+40085,literature,,screen
+40088,own_computation,,train
+40094,own_experiment,,train
+40095,public_db,Materials Project database,screen
+40095,public_db,Liverpool Ionics Dataset (LiIon),train
+40095,own_computation,,screen
+40095,own_experiment,,validate_test
+40096,own_experiment,,train
+40097,own_experiment,,train
+40101,literature,,train
+40102,own_computation,,train
+40102,own_experiment,,train
+40103,own_experiment,,train
+40104,public_model,SNAP,other
+40107,own_computation,,train
+40107,literature,,validate_test
+40109,unclear,,
+40111,own_computation,,other
+40118,own_computation,,train
+40118,own_experiment,,train
+40125,own_computation,,train
+40126,own_experiment,,train
+40130,own_computation,,validate_test
+40130,own_experiment,,train
+40132,own_computation,,train
+40134,unclear,,
+40141,unclear,,
+40143,own_experiment,,train
+40148,own_computation,,train
+40150,own_computation,,train
+40151,public_db,NASA,train
+40151,public_db,Oxford,train
+40155,own_computation,,train
+40155,literature,,validate_test
+40158,own_computation,,train
+40158,own_experiment,,train
+40162,own_experiment,,train
+40164,own_experiment,,validate_test
+40165,own_experiment,,train
+40167,own_computation,,train
+40167,own_experiment,,validate_test
+40172,own_experiment,,train
+40173,own_experiment,,validate_test
+40173,literature,,train
+40174,own_experiment,,train
+40176,own_experiment,,train
+40181,own_experiment,,train
+40182,own_experiment,,train
+40184,own_computation,,validate_test
+40188,own_experiment,,train
+40189,own_experiment,,train
+40193,own_experiment,,train
+40197,unclear,,
+40201,own_experiment,,train
+40201,literature,,train
+40205,own_experiment,,train
+40206,own_computation,,train
+40206,own_experiment,,validate_test
+40210,own_experiment,,train
+40212,own_computation,,train
+40213,public_db,PubChem,train
+40213,own_computation,,train
+40220,own_experiment,,train
+40227,public_db,2DMatPedia,screen
+40227,own_computation,,train
+10243,public_db,AFLOW,validate_test
+10243,public_db,KAHLE2020,train
+40201,public_db,AFLOW,train
+40201,public_db,Materials Project database,train
+40201,public_db,OQMD,train
+10720,public_db,ICSD,other
+15017,public_db,PubChem,screen
+10613,public_db,Electrolyte Genome,other
+10613,public_db,QM9,other
+10225,public_db,COD,validate_test
+40026,public_db,COD,validate_test
+10540,public_db,COSMObase2022,train
+10406,public_db,ICSD,train
+20107,public_db,ChemSpider,other
+10171,public_db,Dynamic Database of Solid-State Electrolytes (DDSE),other
+10197,public_db,GNoME,validate_test
+10197,public_db,ICSD,validate_test
+10197,public_db,Materials Project database,validate_test
+10512,public_db,GNoME,validate_test
+10102,public_db,Magpie elemental information table,train
+10277,public_db,ICSD,validate_test
+10409,public_db,ICSD,validate_test
+10135,public_db,Magpie elemental information table,train
+15232,public_db,ICSD,other
+20149,public_db,ICSD,screen
+20346,public_db,ICSD,other
+20346,public_db,Materials Project database,other
+20374,public_db,ICSD,other
+10754,public_db,Oyaizu polymer electrolyte dataset,train
+30252,public_db,MATR (Stanford-MIT),train
+35021,public_db,Magpie elemental information table,train
+35062,public_db,Magpie elemental information table,train
+10039,public_db,Materials Project database,validate_test
+10111,public_db,Materials Project database,screen
+10142,public_db,Materials Project database,screen
+10164,public_db,Materials Project database,screen
+10311,public_db,Materials Project database,validate_test
+10563,public_db,Materials Project database,validate_test
+10599,public_db,Materials Project database,screen
+10684,public_db,Materials Project database,validate_test
+15020,public_db,Materials Project database,train
+20091,public_db,Materials Project database,other
+20331,public_db,Materials Project database,validate_test
+35058,public_db,Materials Project database,other
+40096,public_db,Materials Project database,train
+40212,public_db,Materials Project database,validate_test
+10173,public_db,Mcule,screen
+10173,public_db,MolPort,screen
+15239,public_db,Minnesota Solvation Database (MNSOL),validate_test
+20074,public_db,MolPort,screen
+20074,public_db,ZINC,screen
+20319,public_db,OMEAD,train
+10819,public_db,Oyaizu polymer electrolyte dataset,train
+10515,public_db,Phonon database (Kyoto University),validate_test
+10593,public_db,Phonon database (Kyoto University),validate_test
+10232,public_db,Stenutz,train
+10109,public_db,Thermodynamic Cycle Electrochemical Windows Database (308 solvents),screen
+10640,public_db,Thermodynamic Cycle Electrochemical Windows Database (308 solvents),train
+15110,public_db,Thermodynamic Cycle Electrochemical Windows Database (308 solvents),train
+15121,public_db,PubChemQC database,train
+20041,public_db,Materials Project database,screen
+20199,public_db,Materials Project database,train
+20211,public_db,Materials Project database,train
+20227,public_db,Materials Project database,train
+20251,public_db,Materials Project database,train
+10019,public_db,Liverpool Ionics Dataset (LiIon),train
+10111,public_db,Liverpool Ionics Dataset (LiIon),train
+10130,public_db,Liverpool Ionics Dataset (LiIon),train
+20256,public_db,Materials Project database,validate_test

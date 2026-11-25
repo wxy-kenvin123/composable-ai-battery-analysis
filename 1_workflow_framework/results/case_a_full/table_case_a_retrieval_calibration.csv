@@ -1,0 +1,7 @@
+﻿regime,query,best_score,worst_score,n_above_floor
+on_topic,lithium argyrodite sulfide chloride solid electrolyte moisture stability,0.72,0.631,5
+on_topic,machine learning screening of lithium solid electrolytes,0.792,0.738,5
+adjacent,silicon anode volume expansion binder design,0.672,0.618,5
+off_topic,perovskite photovoltaic tandem cell power conversion efficiency,0.555,0.503,0
+off_topic,large language model attention head interpretability,0.494,0.47,0
+nonsense,banana bicycle weather forecast tuesday,0.411,0.383,0

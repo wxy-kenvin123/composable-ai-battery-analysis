@@ -1,0 +1,69 @@
+paper_id,title,code_status,github_url,R1,R2,R3,R4,R5,R6,R7,D1,D2,D3,RRL,CRL
+10015,Disorder-induced enhancement of lithium-ion transport in solid-state electrolyte,yes,https://github.com/OxideGlassGroupAAU/LiPS,True,False,False,False,True,True,False,False,False,False,2,0
+10018,Active learning accelerates electrolyte solvent screening for anode-free lithium,yes,https://github.com/AmanchukwuLab/AL-anode-free,True,True,True,False,True,True,False,True,True,False,4,2
+10020,Chemical foundation model-guided design of high ionic conductivity electrolyte f,yes,https://github.com/murtazazohair/IBM_SMI-TED-IC,True,True,True,True,True,True,False,True,True,True,5,3
+10060,Deep learning prediction of ionic conductivity in polymer electrolytes using hie,yes,https://github.com/spark8ku/HPG,True,True,True,True,True,True,False,True,True,True,5,3
+10102,Unveiling potential lithium ionic conductors through machine learning and atomic,yes,https://github.com/muhamad-kurniawan/ML-SSE,True,False,True,True,False,True,False,True,True,True,3,3
+10106,The search for superionic solid-state electrolytes using a physics-informed gene,yes,https://github.com/ngminhtri0394/SHAFT-Density,True,False,False,False,False,True,False,True,True,False,1,2
+10113,Multi-Agent-Network-Based Idea Generator for Zinc-Ion Battery Electrolyte Discov,yes,https://github.com/mjrobson/multi-agent-electrolyte-discovery,True,True,True,True,False,False,False,False,False,True,3,1
+10130,Compositional machine learning and high-throughput screening aided discovery of ,yes,https://github.com/uncledrew0816/ML-DFT-AP-SSE-Screening,True,False,True,True,False,True,False,True,True,True,3,3
+10152,A knowledge acquisition automatizing framework from literature exemplified by Na,yes,https://github.com/orphanwu/DataSet,True,False,False,True,False,True,False,False,False,False,2,0
+10164,A new class of solid electrolytes with an ultra-low Na-ion migration barrier,yes,https://github.com/dembart/mlyzed,True,True,True,True,False,False,False,False,True,True,3,2
+10171,Unraveling the Complexity of Divalent Hydride Electrolytes in Solid-State Batter,yes,https://github.com/qianwangfe/Data-Driven-Framework-for-Divalent-Electrolytes,True,False,False,False,False,True,False,False,True,False,1,1
+10173,"RedCat, an automated discovery workflow for aqueous organic electrolytes",yes,,True,True,True,True,True,True,True,True,True,True,5,3
+10179,Unlocking Enhanced Ionic Transport A Machine Learning-Driven AIMD Study on Dopin,yes,https://github.com/ChuangLin-NEU/Machine-Learning-Driven-AIMD-of-AP-SSEs,True,False,False,False,False,True,False,False,True,False,1,1
+10207,Investigating Ionic Diffusivity in Amorphous LiPON using Machine-Learned Interat,yes,https://github.com/sai-mat-group/ann-lipon,True,False,False,False,True,True,False,True,True,False,2,2
+10208,Machine-Learning-Guided Screening of Advantageous Solvents for Solid Polymer Ele,yes,https://github.com/mejiadongs/Solid-Polymer-Electrolytes-in-Lithium-Metal-Batteries,True,True,True,True,False,True,False,True,True,True,4,3
+10213,Compensating K Ions Through an Organic Salt in Electrolytes for Practical K-Ion ,yes,https://github.com/Peng-Gaoresearchgroup/Electrolyte-based-K-ion-compensation,True,False,False,False,False,True,False,False,True,False,1,1
+10228,Decoding the Competing Effects of Dynamic Solvation Structures on Nuclear Magnet,yes,https://github.com/chenggroup/ai2-kit,True,True,True,True,False,True,True,True,True,True,5,3
+10245,Computational Micromechanics and Machine Learning-Informed Design of Composite C,yes,https://github.com/MohamadA-RJ/OptiANN_BatteryCapPred,True,False,False,False,False,False,False,True,False,True,0,2
+10258,A predictive machine learning force-field framework for liquid electrolyte devel,yes,https://github.com/bytedance/bamboo,True,False,True,False,True,True,False,True,False,True,3,2
+10259,Scalable and accurate simulation of electrolyte solutions with quantum chemical ,yes,https://github.com/timduignan/Scalable-Electrolyte-Simulation,True,False,True,True,True,True,False,True,True,True,4,3
+10264,End-To-End Learning of Classical Interatomic Potentials for Benchmarking Anion P,yes,https://github.com/learningmatter-mit/AutoBADDIE,True,True,True,False,False,True,False,True,True,True,3,3
+10265,Active-Learning Assisted General Framework for Efficient Parameterization of For,yes,https://github.com/cocokane/LJ_paramopt_framework,True,True,True,False,False,True,False,False,False,False,3,0
+10269,Machine-Learned Modeling for Accelerating Organic Solvent Design in Metal-Ion Ba,yes,https://github.com/WSukmas/metal_organic_ML,True,False,False,False,False,True,False,False,True,False,1,1
+10291,Harnessing lateral transfer learning for pioneering solid electrolyte interphase,yes,https://github.com/taokehao/SE-buffer-layer,True,False,False,True,False,True,False,True,True,True,2,3
+10307,Machine Learning Assisted Prediction of Donor Numbers Guiding Rational Fabricati,yes,https://github.com/yqoliviagao/DN-Prediction-Model,True,True,True,True,False,True,False,True,False,True,4,2
+10309,Machine Learning Prediction of Physicochemical Properties in Lithium-Ion Battery,yes,https://github.com/Debojyoti91/ActiveLearning-LiBattery,True,True,True,True,False,False,False,True,True,True,3,3
+10347,Early Cycle Life Prediction of Lithium-Metal Batteries with the Aid of Machine L,yes,https://github.com/ngminhtri0394/BatteryLifeCycle,True,False,True,False,False,True,False,False,True,False,2,1
+10383,Computational screening of sodium solid electrolytes through unsupervised learni,partial,https://github.com/damdaepark/pymatcc,True,True,True,True,True,True,False,True,True,True,5,3
+10389,Composition and state prediction of lithium-ion cathode via convolutional neural,yes,https://github.com/MIIMSEKAIST/CNN_for_NCM-composition-and-state-prediction,True,True,True,False,True,False,False,False,False,True,3,1
+10391,An integrated high-throughput robotic platform and active learning approach for ,yes,https://github.com/MolecularMaterials/AL-HTE-Electrolyte,True,False,True,True,False,True,False,True,True,True,3,3
+10613,Evolutionary Monte Carlo of QM Properties in Chemical Space Electrolyte Design,yes,https://github.com/chemspacelab/mosaics,True,True,True,True,False,False,True,True,True,True,4,3
+10614,Efficient Molecular Dynamics Simulations of Deep Eutectic Solvents with First-Pr,partial,,True,False,False,True,False,True,False,True,True,False,2,2
+10632,Machine learning-guided discovery of ionic polymer electrolytes for lithium meta,yes,https://github.com/wangyingxie/ILP,True,False,False,False,False,True,False,False,True,False,1,1
+10635,Learning local equivariant representations for large-scale atomistic dynamics,yes,https://github.com/mir-group/allegro,True,True,True,True,False,False,False,True,True,True,3,3
+10664,Discovery of Superionic Solid-State Electrolyte for Li-Ion Batteries via Machine,yes,https://github.com/kminmin/LiSSE-MP,True,False,True,True,False,True,False,False,True,True,3,2
+10771,Accelerating the Search for New Solid Electrolytes Exploring Vast Chemical Space,yes,https://github.com/SeoinBack/ML-HTVS-Li-SE,True,False,True,True,False,True,False,True,True,True,3,3
+10797,Autonomous optimization of non-aqueous Li-ion battery electrolytes via robotic e,yes,https://github.com/BattModels/Clio-LabViewControl,True,False,True,False,False,False,False,False,False,False,1,0
+10799,Accelerating amorphous polymer electrolyte screening by learning to reduce error,yes,https://github.com/txie-93/polymernet,True,False,True,False,False,True,False,False,True,True,2,2
+10810,Argyrodite configuration determination for DFT and AIMD calculations using an in,yes,https://github.com/socoolblue/optimization,True,False,True,True,False,False,False,True,False,True,2,2
+10816,One-Shot Active Learning for Globally Optimal Battery Electrolyte Conductivity,yes,https://github.com/BIG-MAP/electrolyte_optimization_one_shot_active_learning,True,False,False,False,True,True,False,False,False,False,2,0
+10834,Learning the laws of lithium-ion transport in electrolytes using symbolic regres,yes,https://github.com/BIG-MAP/SR-electrolytes,True,False,True,True,False,True,False,True,False,True,3,2
+10914,Harnessing artificial intelligence to holistic design and identification for sol,yes,https://github.com/dmlc/xgboost,True,True,False,True,False,True,False,True,False,True,3,2
+20010,Energy-GNoME: A living database of selected materials for energy applications,yes,https://github.com/paolodeangelis/Energy-GNoME,True,True,True,True,False,True,False,True,True,True,4,3
+20018,Data-driven design of electrolyte additives supporting high-performance 5 V LiNi,yes,https://github.com/hieuadoan/ML-LNMO-additives,True,False,True,True,True,True,False,True,True,True,4,3
+20035,An interpretable machine learning model for Mn-based cathode development mapping,yes,https://github.com/Westerly-wind-ui/Mn-Based-Cathode,True,False,False,True,False,True,False,True,False,True,2,2
+20064,Structural origin of disorder-induced ion conduction in NaFePO4 cathode material,yes,https://github.com/R-Chr/NaFePO4_potential,True,False,True,True,False,False,False,False,False,False,2,0
+20079,InterOptimus An AI-assisted robust workflow for screening ground-state heterogen,yes,https://github.com/HouGroup/InterOptimus,True,True,True,True,True,False,False,True,True,True,4,3
+20102,High-throughput screening of Ni-rich layered cathode materials for sodium-ion ba,yes,https://gitee.com/leihaor/dnn_combine_-tl.git,True,False,True,True,True,True,False,True,True,True,4,3
+20160,Mining Chemical Space with Generative Models for Battery Materials,yes,https://github.com/chiku-parida/genAI4LIBs,True,False,True,True,False,True,False,False,True,True,3,2
+20174,Voltage Mining for (De)lithiation-Stabilized Cathodes and a Machine Learning Mod,yes,https://github.com/hmlli/voltage_mining_model_demo,True,True,True,True,False,True,False,True,True,True,4,3
+20176,Enhancing composite cathode manufacturing with machine learning for polymer elec,yes,https://github.com/gallo-marinero/mod,True,False,False,False,True,True,False,False,True,False,2,1
+20180,Study of Cathode Materials for Na-Ion Batteries Comparison Between Machine Learn,yes,https://gitlab.brindisi.enea.it/claudio.ronchetti/ai4mat,True,True,True,True,False,True,False,True,True,True,4,3
+20188,A document-level information extraction pipeline for layered cathode materials f,yes,https://github.com/GGNoWayBack/cathodedataextractor,True,True,True,True,False,True,False,False,True,True,4,2
+20197,Flotation separation of lithium–ion battery electrodes predicted by a long short,yes,https://github.com/adgfo/Gomez-Flores-etal_12,True,False,False,False,False,True,False,False,False,False,1,0
+20199,Artificial intelligence driven design of cathode materials for sodium-ion batter,yes,https://github.com/Shaoruisun/MBVGNN,True,False,True,True,True,True,False,True,True,True,4,3
+20206,High-fidelity reconstruction of porous cathode microstructures from FIB-SEM data,yes,https://github.com/Jerry191202/Swin-Fuse,True,True,True,True,True,True,True,True,False,True,5,2
+20211,Data-Driven Design of NASICON-Type Electrodes Using Graph-Based Neural Networks,yes,https://github.com/kaist-amsg/Synthesizability-PU-CGCNN,True,False,True,False,False,True,False,False,True,True,2,2
+20229,Bridging scales with Machine Learning From first principles statistical mechanic,yes,https://github.com/dftfeDevelopers/dftfe,True,False,True,True,False,True,False,False,False,False,3,0
+20251,Employing Graph Neural Networks for Predicting Electrode Average Voltages and Sc,yes,https://github.com/AlexHeustc/TransformerGNN,True,False,False,False,False,True,False,False,True,True,1,2
+20289,Bridging the Gap Electrode Microstructure and Interphase Characterization by Com,yes,https://github.com/stke9/SliceGAN,True,False,True,True,False,True,False,False,False,True,3,1
+20303,Nanosecond MD of battery cathode materials with electron density description,partial,,True,True,True,True,True,True,False,True,True,True,5,3
+20313,Deep-Learning Aided Atomic-Scale Phase Segmentation toward Diagnosing Complex Ox,yes,https://github.com/A-zhudong/HaUnet_paper,True,True,True,True,True,True,False,True,False,True,5,2
+20328,Unconstrained Machine Learning Screening for New Li-Ion Cathode Materials Enhanc,yes,https://github.com/Voznyy-Clean-Energy-Lab-UToronto/Voltage-Model,True,False,False,False,False,True,False,False,True,True,1,2
+20382,A combined ionic Lewis acid descriptor and machine-learning approach to predicti,yes,https://github.com/nlpcui/MLORR,True,True,True,False,False,True,False,True,False,True,3,2
+40044,Machine Learning Assisted Design of High-Entropy Alloy Interphase Layer for Lith,yes,https://github.com/researchworker1/ML-assisted-HEA-1,True,False,True,True,False,True,False,True,True,True,3,3
+40149,Forecasting the Mass Activity of Platinum Anode Catalysts on Various Carbon Nano,yes,https://github.com/ganesancy/DMFC,True,False,True,True,False,True,False,True,False,True,3,2
+40150,Machine learning-assisted DFT-prediction of pristine and endohedral doped (O and,partial,https://github.com/EgemonyeThankGod200/ThankGod_C_Egemonye_and_Tomsmith_O_Unimuke_Ge12C12_and_Si12C12_Nanostructure_Battery,True,False,True,True,False,False,False,True,False,True,2,2
+40213,Machine learning for data-driven design of high-safety lithium metal anode,yes,https://github.com/ChaoPeng716/Li-metal-anode,True,False,False,False,True,True,False,False,False,False,2,0

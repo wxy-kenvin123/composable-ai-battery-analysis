@@ -1,0 +1,3 @@
+# Preserve exact line endings across Windows, macOS and Linux
+# (required so SHA-256 checksums of OEDB CSVs, rule packs and hard_fail_sets.json remain identical on clone).
+* -text

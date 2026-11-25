@@ -1,0 +1,113 @@
+﻿"pair","problem_a","problem_b","family","family_key","n_algorithms","algorithms","ribbon_total"
+"C1-C2","C1 Atomistic dynamics & transport","C2 Molecular & polymer properties","classical","Classical ML (random forest, SVM, XGBoost …)",1,"linear regression",2
+"C1-C2","C1 Atomistic dynamics & transport","C2 Molecular & polymer properties","shap","SHAP explanation",0,"",2
+"C1-C2","C1 Atomistic dynamics & transport","C2 Molecular & polymer properties","deep","Deep learning (CNN, LSTM, MLP, GNN …)",1,"graph neural networks",2
+"C1-C2","C1 Atomistic dynamics & transport","C2 Molecular & polymer properties","active","Optimisation & evolutionary search",0,"",2
+"C1-C3","C1 Atomistic dynamics & transport","C3 Solid-material properties","classical","Classical ML (random forest, SVM, XGBoost …)",1,"linear regression",3
+"C1-C3","C1 Atomistic dynamics & transport","C3 Solid-material properties","shap","SHAP explanation",0,"",3
+"C1-C3","C1 Atomistic dynamics & transport","C3 Solid-material properties","deep","Deep learning (CNN, LSTM, MLP, GNN …)",2,"graph neural networks; multi layer perceptron",3
+"C1-C3","C1 Atomistic dynamics & transport","C3 Solid-material properties","active","Optimisation & evolutionary search",0,"",3
+"C1-C4","C1 Atomistic dynamics & transport","C4 Microstructure & manufacturing","classical","Classical ML (random forest, SVM, XGBoost …)",1,"linear regression",1
+"C1-C4","C1 Atomistic dynamics & transport","C4 Microstructure & manufacturing","shap","SHAP explanation",0,"",1
+"C1-C4","C1 Atomistic dynamics & transport","C4 Microstructure & manufacturing","deep","Deep learning (CNN, LSTM, MLP, GNN …)",0,"",1
+"C1-C4","C1 Atomistic dynamics & transport","C4 Microstructure & manufacturing","active","Optimisation & evolutionary search",0,"",1
+"C1-C5","C1 Atomistic dynamics & transport","C5 Materials design & optimization","classical","Classical ML (random forest, SVM, XGBoost …)",1,"linear regression",1
+"C1-C5","C1 Atomistic dynamics & transport","C5 Materials design & optimization","shap","SHAP explanation",0,"",1
+"C1-C5","C1 Atomistic dynamics & transport","C5 Materials design & optimization","deep","Deep learning (CNN, LSTM, MLP, GNN …)",0,"",1
+"C1-C5","C1 Atomistic dynamics & transport","C5 Materials design & optimization","active","Optimisation & evolutionary search",0,"",1
+"C1-C6","C1 Atomistic dynamics & transport","C6 Battery state & lifetime","classical","Classical ML (random forest, SVM, XGBoost …)",1,"linear regression",2
+"C1-C6","C1 Atomistic dynamics & transport","C6 Battery state & lifetime","shap","SHAP explanation",0,"",2
+"C1-C6","C1 Atomistic dynamics & transport","C6 Battery state & lifetime","deep","Deep learning (CNN, LSTM, MLP, GNN …)",1,"multi layer perceptron",2
+"C1-C6","C1 Atomistic dynamics & transport","C6 Battery state & lifetime","active","Optimisation & evolutionary search",0,"",2
+"C1-C7","C1 Atomistic dynamics & transport","C7 Electrode performance prediction","classical","Classical ML (random forest, SVM, XGBoost …)",1,"linear regression",2
+"C1-C7","C1 Atomistic dynamics & transport","C7 Electrode performance prediction","shap","SHAP explanation",0,"",2
+"C1-C7","C1 Atomistic dynamics & transport","C7 Electrode performance prediction","deep","Deep learning (CNN, LSTM, MLP, GNN …)",1,"multi layer perceptron",2
+"C1-C7","C1 Atomistic dynamics & transport","C7 Electrode performance prediction","active","Optimisation & evolutionary search",0,"",2
+"C1-C8","C1 Atomistic dynamics & transport","C8 Structural stability & mechanisms","classical","Classical ML (random forest, SVM, XGBoost …)",1,"linear regression",2
+"C1-C8","C1 Atomistic dynamics & transport","C8 Structural stability & mechanisms","shap","SHAP explanation",0,"",2
+"C1-C8","C1 Atomistic dynamics & transport","C8 Structural stability & mechanisms","deep","Deep learning (CNN, LSTM, MLP, GNN …)",1,"multi layer perceptron",2
+"C1-C8","C1 Atomistic dynamics & transport","C8 Structural stability & mechanisms","active","Optimisation & evolutionary search",0,"",2
+"C2-C3","C2 Molecular & polymer properties","C3 Solid-material properties","classical","Classical ML (random forest, SVM, XGBoost …)",7,"decision tree; gaussian process regression; linear regression; random forest; support vector machine; support vector regression; xgboost",11
+"C2-C3","C2 Molecular & polymer properties","C3 Solid-material properties","shap","SHAP explanation",1,"shapley additive explanations",11
+"C2-C3","C2 Molecular & polymer properties","C3 Solid-material properties","deep","Deep learning (CNN, LSTM, MLP, GNN …)",2,"convolutional neural network; graph neural networks",11
+"C2-C3","C2 Molecular & polymer properties","C3 Solid-material properties","active","Optimisation & evolutionary search",1,"bayesian optimization",11
+"C2-C4","C2 Molecular & polymer properties","C4 Microstructure & manufacturing","classical","Classical ML (random forest, SVM, XGBoost …)",4,"decision tree; linear regression; random forest; support vector machine",5
+"C2-C4","C2 Molecular & polymer properties","C4 Microstructure & manufacturing","shap","SHAP explanation",0,"",5
+"C2-C4","C2 Molecular & polymer properties","C4 Microstructure & manufacturing","deep","Deep learning (CNN, LSTM, MLP, GNN …)",1,"convolutional neural network",5
+"C2-C4","C2 Molecular & polymer properties","C4 Microstructure & manufacturing","active","Optimisation & evolutionary search",0,"",5
+"C2-C5","C2 Molecular & polymer properties","C5 Materials design & optimization","classical","Classical ML (random forest, SVM, XGBoost …)",6,"decision tree; linear regression; random forest; support vector machine; support vector regression; xgboost",9
+"C2-C5","C2 Molecular & polymer properties","C5 Materials design & optimization","shap","SHAP explanation",1,"shapley additive explanations",9
+"C2-C5","C2 Molecular & polymer properties","C5 Materials design & optimization","deep","Deep learning (CNN, LSTM, MLP, GNN …)",1,"convolutional neural network",9
+"C2-C5","C2 Molecular & polymer properties","C5 Materials design & optimization","active","Optimisation & evolutionary search",1,"bayesian optimization",9
+"C2-C6","C2 Molecular & polymer properties","C6 Battery state & lifetime","classical","Classical ML (random forest, SVM, XGBoost …)",7,"decision tree; gaussian process regression; linear regression; random forest; support vector machine; support vector regression; xgboost",10
+"C2-C6","C2 Molecular & polymer properties","C6 Battery state & lifetime","shap","SHAP explanation",1,"shapley additive explanations",10
+"C2-C6","C2 Molecular & polymer properties","C6 Battery state & lifetime","deep","Deep learning (CNN, LSTM, MLP, GNN …)",1,"convolutional neural network",10
+"C2-C6","C2 Molecular & polymer properties","C6 Battery state & lifetime","active","Optimisation & evolutionary search",1,"bayesian optimization",10
+"C2-C7","C2 Molecular & polymer properties","C7 Electrode performance prediction","classical","Classical ML (random forest, SVM, XGBoost …)",6,"decision tree; linear regression; random forest; support vector machine; support vector regression; xgboost",8
+"C2-C7","C2 Molecular & polymer properties","C7 Electrode performance prediction","shap","SHAP explanation",1,"shapley additive explanations",8
+"C2-C7","C2 Molecular & polymer properties","C7 Electrode performance prediction","deep","Deep learning (CNN, LSTM, MLP, GNN …)",0,"",8
+"C2-C7","C2 Molecular & polymer properties","C7 Electrode performance prediction","active","Optimisation & evolutionary search",1,"bayesian optimization",8
+"C2-C8","C2 Molecular & polymer properties","C8 Structural stability & mechanisms","classical","Classical ML (random forest, SVM, XGBoost …)",5,"decision tree; linear regression; random forest; support vector regression; xgboost",7
+"C2-C8","C2 Molecular & polymer properties","C8 Structural stability & mechanisms","shap","SHAP explanation",1,"shapley additive explanations",7
+"C2-C8","C2 Molecular & polymer properties","C8 Structural stability & mechanisms","deep","Deep learning (CNN, LSTM, MLP, GNN …)",1,"convolutional neural network",7
+"C2-C8","C2 Molecular & polymer properties","C8 Structural stability & mechanisms","active","Optimisation & evolutionary search",0,"",7
+"C3-C4","C3 Solid-material properties","C4 Microstructure & manufacturing","classical","Classical ML (random forest, SVM, XGBoost …)",4,"decision tree; linear regression; random forest; support vector machine",5
+"C3-C4","C3 Solid-material properties","C4 Microstructure & manufacturing","shap","SHAP explanation",0,"",5
+"C3-C4","C3 Solid-material properties","C4 Microstructure & manufacturing","deep","Deep learning (CNN, LSTM, MLP, GNN …)",1,"convolutional neural network",5
+"C3-C4","C3 Solid-material properties","C4 Microstructure & manufacturing","active","Optimisation & evolutionary search",0,"",5
+"C3-C5","C3 Solid-material properties","C5 Materials design & optimization","classical","Classical ML (random forest, SVM, XGBoost …)",7,"decision tree; k nearest neighbours; linear regression; random forest; support vector machine; support vector regression; xgboost",10
+"C3-C5","C3 Solid-material properties","C5 Materials design & optimization","shap","SHAP explanation",1,"shapley additive explanations",10
+"C3-C5","C3 Solid-material properties","C5 Materials design & optimization","deep","Deep learning (CNN, LSTM, MLP, GNN …)",1,"convolutional neural network",10
+"C3-C5","C3 Solid-material properties","C5 Materials design & optimization","active","Optimisation & evolutionary search",1,"bayesian optimization",10
+"C3-C6","C3 Solid-material properties","C6 Battery state & lifetime","classical","Classical ML (random forest, SVM, XGBoost …)",9,"decision tree; ensemble learning; gaussian process regression; k nearest neighbours; linear regression; random forest; support vector machine; support vector regression; xgboost",13
+"C3-C6","C3 Solid-material properties","C6 Battery state & lifetime","shap","SHAP explanation",1,"shapley additive explanations",13
+"C3-C6","C3 Solid-material properties","C6 Battery state & lifetime","deep","Deep learning (CNN, LSTM, MLP, GNN …)",2,"convolutional neural network; multi layer perceptron",13
+"C3-C6","C3 Solid-material properties","C6 Battery state & lifetime","active","Optimisation & evolutionary search",1,"bayesian optimization",13
+"C3-C7","C3 Solid-material properties","C7 Electrode performance prediction","classical","Classical ML (random forest, SVM, XGBoost …)",8,"decision tree; ensemble learning; k nearest neighbours; linear regression; random forest; support vector machine; support vector regression; xgboost",11
+"C3-C7","C3 Solid-material properties","C7 Electrode performance prediction","shap","SHAP explanation",1,"shapley additive explanations",11
+"C3-C7","C3 Solid-material properties","C7 Electrode performance prediction","deep","Deep learning (CNN, LSTM, MLP, GNN …)",1,"multi layer perceptron",11
+"C3-C7","C3 Solid-material properties","C7 Electrode performance prediction","active","Optimisation & evolutionary search",1,"bayesian optimization",11
+"C3-C8","C3 Solid-material properties","C8 Structural stability & mechanisms","classical","Classical ML (random forest, SVM, XGBoost …)",5,"decision tree; linear regression; random forest; support vector regression; xgboost",8
+"C3-C8","C3 Solid-material properties","C8 Structural stability & mechanisms","shap","SHAP explanation",1,"shapley additive explanations",8
+"C3-C8","C3 Solid-material properties","C8 Structural stability & mechanisms","deep","Deep learning (CNN, LSTM, MLP, GNN …)",2,"convolutional neural network; multi layer perceptron",8
+"C3-C8","C3 Solid-material properties","C8 Structural stability & mechanisms","active","Optimisation & evolutionary search",0,"",8
+"C4-C5","C4 Microstructure & manufacturing","C5 Materials design & optimization","classical","Classical ML (random forest, SVM, XGBoost …)",4,"decision tree; linear regression; random forest; support vector machine",5
+"C4-C5","C4 Microstructure & manufacturing","C5 Materials design & optimization","shap","SHAP explanation",0,"",5
+"C4-C5","C4 Microstructure & manufacturing","C5 Materials design & optimization","deep","Deep learning (CNN, LSTM, MLP, GNN …)",1,"convolutional neural network",5
+"C4-C5","C4 Microstructure & manufacturing","C5 Materials design & optimization","active","Optimisation & evolutionary search",0,"",5
+"C4-C6","C4 Microstructure & manufacturing","C6 Battery state & lifetime","classical","Classical ML (random forest, SVM, XGBoost …)",4,"decision tree; linear regression; random forest; support vector machine",10
+"C4-C6","C4 Microstructure & manufacturing","C6 Battery state & lifetime","shap","SHAP explanation",0,"",10
+"C4-C6","C4 Microstructure & manufacturing","C6 Battery state & lifetime","deep","Deep learning (CNN, LSTM, MLP, GNN …)",5,"adam optimizer; convolutional neural network; long short term memory network; neural networks with rectangular linear activations; recurrent neural network",10
+"C4-C6","C4 Microstructure & manufacturing","C6 Battery state & lifetime","active","Optimisation & evolutionary search",1,"genetic algorithm",10
+"C4-C7","C4 Microstructure & manufacturing","C7 Electrode performance prediction","classical","Classical ML (random forest, SVM, XGBoost …)",4,"decision tree; linear regression; random forest; support vector machine",5
+"C4-C7","C4 Microstructure & manufacturing","C7 Electrode performance prediction","shap","SHAP explanation",0,"",5
+"C4-C7","C4 Microstructure & manufacturing","C7 Electrode performance prediction","deep","Deep learning (CNN, LSTM, MLP, GNN …)",1,"neural networks with rectangular linear activations",5
+"C4-C7","C4 Microstructure & manufacturing","C7 Electrode performance prediction","active","Optimisation & evolutionary search",0,"",5
+"C4-C8","C4 Microstructure & manufacturing","C8 Structural stability & mechanisms","classical","Classical ML (random forest, SVM, XGBoost …)",3,"decision tree; linear regression; random forest",5
+"C4-C8","C4 Microstructure & manufacturing","C8 Structural stability & mechanisms","shap","SHAP explanation",0,"",5
+"C4-C8","C4 Microstructure & manufacturing","C8 Structural stability & mechanisms","deep","Deep learning (CNN, LSTM, MLP, GNN …)",1,"convolutional neural network",5
+"C4-C8","C4 Microstructure & manufacturing","C8 Structural stability & mechanisms","active","Optimisation & evolutionary search",1,"genetic algorithm",5
+"C5-C6","C5 Materials design & optimization","C6 Battery state & lifetime","classical","Classical ML (random forest, SVM, XGBoost …)",7,"decision tree; k nearest neighbours; linear regression; random forest; support vector machine; support vector regression; xgboost",10
+"C5-C6","C5 Materials design & optimization","C6 Battery state & lifetime","shap","SHAP explanation",1,"shapley additive explanations",10
+"C5-C6","C5 Materials design & optimization","C6 Battery state & lifetime","deep","Deep learning (CNN, LSTM, MLP, GNN …)",1,"convolutional neural network",10
+"C5-C6","C5 Materials design & optimization","C6 Battery state & lifetime","active","Optimisation & evolutionary search",1,"bayesian optimization",10
+"C5-C7","C5 Materials design & optimization","C7 Electrode performance prediction","classical","Classical ML (random forest, SVM, XGBoost …)",7,"decision tree; k nearest neighbours; linear regression; random forest; support vector machine; support vector regression; xgboost",9
+"C5-C7","C5 Materials design & optimization","C7 Electrode performance prediction","shap","SHAP explanation",1,"shapley additive explanations",9
+"C5-C7","C5 Materials design & optimization","C7 Electrode performance prediction","deep","Deep learning (CNN, LSTM, MLP, GNN …)",0,"",9
+"C5-C7","C5 Materials design & optimization","C7 Electrode performance prediction","active","Optimisation & evolutionary search",1,"bayesian optimization",9
+"C5-C8","C5 Materials design & optimization","C8 Structural stability & mechanisms","classical","Classical ML (random forest, SVM, XGBoost …)",5,"decision tree; linear regression; random forest; support vector regression; xgboost",7
+"C5-C8","C5 Materials design & optimization","C8 Structural stability & mechanisms","shap","SHAP explanation",1,"shapley additive explanations",7
+"C5-C8","C5 Materials design & optimization","C8 Structural stability & mechanisms","deep","Deep learning (CNN, LSTM, MLP, GNN …)",1,"convolutional neural network",7
+"C5-C8","C5 Materials design & optimization","C8 Structural stability & mechanisms","active","Optimisation & evolutionary search",0,"",7
+"C6-C7","C6 Battery state & lifetime","C7 Electrode performance prediction","classical","Classical ML (random forest, SVM, XGBoost …)",8,"decision tree; ensemble learning; k nearest neighbours; linear regression; random forest; support vector machine; support vector regression; xgboost",12
+"C6-C7","C6 Battery state & lifetime","C7 Electrode performance prediction","shap","SHAP explanation",1,"shapley additive explanations",12
+"C6-C7","C6 Battery state & lifetime","C7 Electrode performance prediction","deep","Deep learning (CNN, LSTM, MLP, GNN …)",2,"multi layer perceptron; neural networks with rectangular linear activations",12
+"C6-C7","C6 Battery state & lifetime","C7 Electrode performance prediction","active","Optimisation & evolutionary search",1,"bayesian optimization",12
+"C6-C8","C6 Battery state & lifetime","C8 Structural stability & mechanisms","classical","Classical ML (random forest, SVM, XGBoost …)",5,"decision tree; linear regression; random forest; support vector regression; xgboost",9
+"C6-C8","C6 Battery state & lifetime","C8 Structural stability & mechanisms","shap","SHAP explanation",1,"shapley additive explanations",9
+"C6-C8","C6 Battery state & lifetime","C8 Structural stability & mechanisms","deep","Deep learning (CNN, LSTM, MLP, GNN …)",2,"convolutional neural network; multi layer perceptron",9
+"C6-C8","C6 Battery state & lifetime","C8 Structural stability & mechanisms","active","Optimisation & evolutionary search",1,"genetic algorithm",9
+"C7-C8","C7 Electrode performance prediction","C8 Structural stability & mechanisms","classical","Classical ML (random forest, SVM, XGBoost …)",5,"decision tree; linear regression; random forest; support vector regression; xgboost",7
+"C7-C8","C7 Electrode performance prediction","C8 Structural stability & mechanisms","shap","SHAP explanation",1,"shapley additive explanations",7
+"C7-C8","C7 Electrode performance prediction","C8 Structural stability & mechanisms","deep","Deep learning (CNN, LSTM, MLP, GNN …)",1,"multi layer perceptron",7
+"C7-C8","C7 Electrode performance prediction","C8 Structural stability & mechanisms","active","Optimisation & evolutionary search",0,"",7

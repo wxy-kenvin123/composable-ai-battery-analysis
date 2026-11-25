@@ -1,0 +1,144 @@
+dataset,pattern,source,narrow_excluded
+Materials Project database,"(?i:materials?\s*-?\s*project)|materialsproject|\bMP\b(?=\s*(?:database|Database|data|website|repository|API|\[|\*|’s|'s|\)|\d))|Project\s*\(MP\)|\bmp-\s?\d{3,}",v2_catalog,False
+PubChem,(?i:pub\s?chem)(?!\s*QC),v2_catalog,False
+Magpie elemental information table,(?i:\bmagpie),v2_catalog,True
+ICSD,\bICSD\b|Inorganic\s+Crystal\s+Structure\s+Data\s*base,v2_catalog,False
+OQMD,\bOQMD\b|Open\s+Quantum\s+Materials?\s+Database,v2_catalog,False
+QM9,\bQM-?9\b(?!-GCDQE),v2_catalog,False
+AFLOW,\bAFLOW|\baflowlib|\bAflow\b,v2_catalog,False
+ILThermo,\bIL\s?Thermo\b|ILThermo,v2_catalog,False
+Liverpool Ionics Dataset (LiIon),Liverpool\s+Ionics|LiIon\s*(?:[Dd]atabase|[Dd]ataset)|University\s+of\s+Liverpool\s+Dataset|\bLISSE\b,v2_catalog,False
+NASA,\bNASA\b|Prognostics\s+Cent(?:er|re)\s+of\s+Excellence|\bPCoE\b,v2_catalog,False
+ZINC,\bZINC(?:\s?-?(?:12|15|20|22))?\b(?![-\s]*(?:ION|ANODE|METAL|OXIDE|BATTER|AIR|SULF|ELECTRO|-))|\bZinc\s?-?\s?(?:12|15|20|22)\b|(?i:zinc\.docking),v2_catalog,False
+GDB-17,\bGDB-?17\b,v2_catalog,False
+OMat24 (OMAT),(?i:\bomat24\b)|\bOMAT\b|Open\s+Materials\s+2024,v2_catalog,False
+COD,\bCOD\b|Crystallography\s+Open\s+Database,v2_catalog,False
+IMET atomic properties database,\bIMET\b,v2_catalog,True
+MATR (Stanford-MIT),\bMATR\b|Severson|\bAttia\b|Toyota\s+Research\s+Institute|\bTRI\b|Stanford[\s–-]+MIT|MIT[\s–-]+Stanford|MIT\s+(?:battery\s+)?data,v2_catalog,False
+Oxford,"(?<!University of )\bOxford\b(?!\s+(?:Instruments|University\s+Press|Graduate|OX\d))(?!,\s*(?:UK|U\.K\.|United\s+Kingdom|England|\d{4}))",v2_catalog,False
+eMolecules,eMolecules,v2_catalog,False
+CSD (Cambridge Structural Database),\bCSD\b|Cambridge\s+Structural\s+Database,v2_catalog,False
+Electrolyte Genome,Electrolyte\s+Genome,v2_catalog,False
+GDB-13,\bGDB-?13\b,v2_catalog,False
+GNoME,(?i:\bgnome\b)|Google\s+DeepMind|\bDeepMind\b,v2_catalog,False
+Ionic Liquid Property Explorer,Ionic\s+Liquids?\s+Property\s+Explorer|\bILPE\b,v2_catalog,False
+LiBE,\bLiBE\b|\bLIBE\b,v2_catalog,False
+MNIST,\bMNIST\b,v2_catalog,True
+MPcules,MPcules,v2_catalog,False
+MPtrj,(?i:\bmp-?trj\b),v2_catalog,False
+NIST Chemistry WebBook,Chemistry\s+WebBook|NIST\s+WebBook|webbook\.nist,v2_catalog,False
+OBELiX,OBELiX,v2_catalog,False
+Stenutz,Stenutz,v2_catalog,True
+Tongji,\bTongji\b(?!\s+University),v2_catalog,False
+2DMatPedia,2DMatPedia|2D\s*Mat\s*Pedia,v2_catalog,False
+3BPA,\b3BPA\b,v2_catalog,False
+ANI-2x,\bANI-?\s?2\s?[xX]\b,v2_catalog,False
+Ab Initio Amorphous Materials Database,Amorphous\s+Materials\s+Database,v2_catalog,False
+Battery Archive,Battery\s*Archive|batteryarchive,v2_catalog,False
+CALCE,\bCALCE\b|Center\s+for\s+Advanced\s+Life\s+Cycle\s+Engineering,v2_catalog,False
+CALiSol-23,CALiSol,v2_catalog,False
+CAMD,\bCAMD\b,v2_catalog,False
+CIFAR-10,CIFAR,v2_catalog,True
+COSMObase IL,COSMObase\s*I\s?L\b|COSMObaselL,v2_catalog,False
+COSMObase2022,COSMObase(?!\s*I\s?L\b)(?!lL),v2_catalog,False
+CaltechDATA,Caltech\s*DATA,v2_catalog,False
+Cambridge EIS,Cavendish|Cambridge\s+EIS,v2_catalog,False
+ChEMBL,ChEMBL,v2_catalog,False
+ChemSpider,ChemSpider,v2_catalog,False
+Citrine,\bCitrine\b|Citrination,v2_catalog,False
+ComBat,\bComBat\b,v2_catalog,False
+Computational 2D Materials Database (C2DB),\bC2DB\b|Computational\s+2D\s+Materials\s+Database,v2_catalog,False
+DIPPR 801,\bDIPPR\b,v2_catalog,False
+DRX (Zhong),"\bDRX\b.{0,120}?\b(?:dataset|database)|(?:dataset|database)\b.{0,120}?\bDRX\b",v2_catalog,False
+Dynamic Database of Solid-State Electrolytes (DDSE),\bDDSE\b|Dynamic\s+Database\s+of\s+Solid,v2_catalog,False
+FreeSolv,FreeSolv,v2_catalog,False
+GDB-11,\bGDB-?11\b,v2_catalog,False
+GEMS,\bGEMS\b,v2_catalog,False
+HEA-25,\bHEA-?25\b,v2_catalog,False
+HTP-MD,\bHTP-?MD\b,v2_catalog,False
+HUST,\bHUST\b,v2_catalog,False
+IIT Thermodynamic Database,Illinois\s+Institute\s+of\s+Technology|Thermal\s+Processing\s+Technology\s+Cent,v2_catalog,False
+IoLiTec,IoLiTec|Iolitec,v2_catalog,False
+Ion Transport Database for Battery Materials,Ion\s+Transport\s+Database|database\s+of\s+the\s+Institute\s+of\s+Physics,v2_catalog,False
+JARVIS-DFT,\bJARVIS,v2_catalog,False
+JCESR Molecules,\bJCESR\b,v2_catalog,False
+Jean-Claude Bradley Open Melting Point Dataset,Jean-?\s?Claude\s+Bradley|Open\s+Melting\s+Point|Bradley['’]s\s+data,v2_catalog,False
+KAHLE2020,KAHLE2020|Kahle\s+et\s+al,v2_catalog,False
+LASKOWSKI2023,LASKOWSKI2023|Laskowski\s+et\s+al,v2_catalog,False
+LASP Li–Ni–O,\bLASP\b,v2_catalog,False
+MPRelax,\bMP-?Relax\b,v2_catalog,False
+MatPES-r2SCAN,MatPES,v2_catalog,False
+MatSciRE,MatSciRE,v2_catalog,False
+Materials Genome Database (Matgen),\bMatgen\b|Materials\s+Genome\s+Database,v2_catalog,False
+MatterGen training dataset,MatterGen|\bAlex-MP,v2_catalog,False
+Matterverse,Matterverse,v2_catalog,False
+Mcule,\bMcule,v2_catalog,False
+Minnesota Solvation Database (MNSOL),MNSOL|MNSol|Minnesota\s+Solvation,v2_catalog,False
+MolPort,(?i:molport),v2_catalog,False
+MolSets,MolSets,v2_catalog,False
+Moses battery electrode database,Moses\s+et\s+al,v2_catalog,False
+NABLA,\bNABLA\b|nablaDFT,v2_catalog,False
+NCI Chemical Identifier Resolver,Chemical\s+Identifier\s+Resolver|cactus\.nci,v2_catalog,True
+NIST Atomic Spectra Database,Atomic\s+Spectra\s+Database,v2_catalog,True
+NREL Battery Microstructures Library,Battery\s+Microstructures?\s+Library,v2_catalog,False
+OC20,\bOC20\b|Open\s+Catalyst,v2_catalog,False
+ODAC,\bODAC\b,v2_catalog,False
+OMEAD,\bOMEAD\b,v2_catalog,False
+OMol25,OMol25|Open\s+Molecules\s+2025,v2_catalog,False
+Oyaizu polymer electrolyte dataset,Oyaizu,v2_catalog,False
+P3–O3 HEOs dataset,P3\s?[–-]\s?O3\s+HEO,v2_catalog,False
+PARIS III,PARIS\s*III,v2_catalog,False
+PCQM4Mv2,PCQM4M,v2_catalog,False
+Phonon database (Kyoto University),(?i)phonon\s*database|phonondb,v2_catalog,False
+PolyInfo,PoLyInfo|PolyInfo,v2_catalog,False
+Ptable,\bPtable\b|ptable\.com,v2_catalog,True
+PubChemQC CHNOPS500noSalt,CHNOPS500,v2_catalog,False
+PubChemQC database,Pub-?\s?Chem\s*QC,v2_catalog,False
+QM9-GCDQE,GCDQE,v2_catalog,False
+RGD1,\bRGD1\b,v2_catalog,False
+Reaxys,Reaxys,v2_catalog,False
+RedDB,RedDB,v2_catalog,False
+Refractive index database (Zhao-Cole),(?i)refractive\s+index\s+database,v2_catalog,False
+SGTE SSUB,\bSGTE\b|\bSSUB\b,v2_catalog,False
+SMI-TED electrolyte dataset,SMI-?TED,v2_catalog,False
+SPICE,\bSPICE\b,v2_catalog,False
+SPSE,\bSPSE\b,v2_catalog,False
+SWCBM,\bSWCBM\b,v2_catalog,False
+SpringerMaterials database,SpringerMaterials|Springer\s+Materials,v2_catalog,False
+Test_Data,Test_Data,v2_catalog,False
+Thermodynamic Cycle Electrochemical Windows Database (308 solvents),308\s+solvents|(?i:electrochemical\s+windows?\s+database),v2_catalog,False
+Transition1X,Transition1[xX],v2_catalog,False
+USPTO,\bUSPTO\b,v2_catalog,False
+WBM,\bWBM\b,v2_catalog,False
+XJTU,\bXJTU\b,v2_catalog,False
+XenonPy,XenonPy,v2_catalog,True
+eVTOL Battery Dataset,\beVTOL\b,v2_catalog,False
+rMD17,\brMD-?17\b|revised\s+MD-?17,v2_catalog,False
+sAlex,\bsAlex\b,v2_catalog,False
+NOMAD,\bNOMAD\b|Novel\s+Materials\s+Discovery,extra,False
+Materials Cloud,Materials\s+Cloud,extra,False
+MPDS (Pauling File),\bMPDS\b|Pauling\s+File|PAULING\s+FILE,extra,False
+QM7,\bQM7[bB]?\b,extra,False
+QM8,\bQM8\b,extra,False
+ANI-1,\bANI-?1(?:x|ccx)?\b,extra,False
+MD17,(?<![A-Za-z])MD17\b,extra,False
+OE62,\bOE62\b,extra,False
+GEOM,\bGEOM\b,extra,False
+Alexandria,Alexandria\s+(?:[Dd]atabase|[Dd]ataset)|alexandria\.icams,extra,False
+Matbench,Matbench|MatBench,extra,False
+HNEI,\bHNEI\b|Hawaii\s+Natural\s+Energy\s+Institute,extra,False
+Sandia battery data,\bSandia\b|\bSNL\b,extra,False
+Materials Data Facility,Materials\s+Data\s+Facility,extra,False
+OpenKIM,OpenKIM,extra,False
+BatteryML,BatteryML,extra,False
+BatteryLife,BatteryLife\b,extra,False
+MoleculeNet,MoleculeNet,extra,False
+ESOL (Delaney),\bESOL\b,extra,False
+CEPDB (Harvard Clean Energy Project),\bCEPDB\b|Clean\s+Energy\s+Project,extra,False
+PI1M,\bPI1M\b,extra,False
+Polymer Genome,Polymer\s+Genome,extra,False
+NIMS MatNavi,MatNavi,extra,False
+Science Direct,Science\ Direct,v2_catalog,True
+Scopus,Scopus,v2_catalog,True
+Springer Nature,Springer\ Nature,v2_catalog,True
+Web of Science,Web\ of\ Science,v2_catalog,True

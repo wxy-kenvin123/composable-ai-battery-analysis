@@ -1,0 +1,1713 @@
+{
+  "schema": "battery_workflow.run_record/5",
+  "case": "sharing_conditions",
+  "environment": {
+    "python": "3.9.13",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "executable": "<python>"
+  },
+  "objective": "Compare four record-sharing conditions with a fixed optimizer. Apply the literature-rule multiplier to the Nernst–Einstein conductivity estimate.",
+  "contract_tag": "case2-sharing-conditions",
+  "config": {
+    "contract_tag": "case2-sharing-conditions",
+    "status": "exploratory; frozen before the run",
+    "purpose": "Compare four record-sharing conditions with a fixed optimizer. Apply the literature-rule multiplier to the Nernst–Einstein conductivity estimate.",
+    "name": "sharing_conditions",
+    "experiment": "sharing",
+    "data": {
+      "database": "OEDB, Open Electrolyte Database for Batteries",
+      "version": "v2026-05-11",
+      "licence": "CC BY 4.0",
+      "homepage": "https://oedb.jp/",
+      "mcp_endpoint": "https://oedb.jp/mcp",
+      "mcp_server_name": "MCP for Open Electrolyte Database for Batteries (OEDB)",
+      "mcp_server_version": "2.0.0",
+      "mcp_protocol_version": "2024-11-05",
+      "mcp_tools_exposed": [
+        "searchElectrolytes",
+        "getStatistics",
+        "getDistribution",
+        "getCorrelation",
+        "exportData"
+      ],
+      "export_tool": "exportData",
+      "export_filters": null,
+      "export_reported_row_count": 5616,
+      "paper_doi": "10.1038/s41524-026-02093-y",
+      "raw_dir": "<BATTAGENT_OEDB_DIR>",
+      "env_var": "BATTAGENT_OEDB_DIR",
+      "cache_dirname": "oedb_v2026-05-11",
+      "primary_file": "oedb_mcp_exportData_v2026-05-11.csv",
+      "files_sha256": {
+        "mcp_initialize_response.txt": "e6a4584ed351c61eedcadc86f9e37c5cab1c64ecfb62ba60772502599b3964ed",
+        "mcp_tools_list_RAW.json": "14d2547b091077745d692c4c12b7d19e0d6967cc78382d7778f0f603081b3861",
+        "mcp_exportData_csv_RAW.json": "703240143dc8af395ce46973bf974474ba5368275519f5d1b2641ba9b9b5d662",
+        "mcp_exportData_json_RAW.json": "4e51f8e4a0aed9e143395df2dce35f8ab2f692a5179c3ed794511b67e0627461",
+        "oedb_mcp_exportData_v2026-05-11.csv": "08f8b6f7c50a2a3c2b506b873c21f5bcd263ac24de0574a1ffb38bc949ceb234",
+        "oedb_mcp_exportData_v2026-05-11.json": "755483a6e481fc626f44091310f7ade18eb9898b58a40ef271f9c2c8c6826d5b",
+        "oedb-electrolytes-v2026-05-11.csv": "a955f2dd719d2e5dd8ab2082e4c78104541ec0caa548e786662636f07553a462",
+        "electrolytes.arrow": "3deb8e519561a800f42a4c0b18ce865b5724ad14af668c3843aa3c9583a65f51"
+      }
+    },
+    "columns": {
+      "id": "id",
+      "cation": "cation",
+      "anion": "anion",
+      "solvent": "solvent",
+      "concentration": "Concentration (mol/kg)",
+      "ionic_conductivity": "Ionic Conductivity (mS/cm)",
+      "cation_diffusivity": "Cation's Diffusivity (m²/s)",
+      "anion_diffusivity": "Anion's Diffusivity (m²/s)",
+      "viscosity": "Viscosity (mPa·s)",
+      "density": "Density (g/cm³)"
+    },
+    "universe": {
+      "cation": "Li",
+      "n_candidates": 1872,
+      "anions_ordered": [
+        "BETI",
+        "BF4",
+        "ClO4",
+        "DFOB",
+        "FSI",
+        "OTf",
+        "PF6",
+        "TFA",
+        "TFSI"
+      ],
+      "solvents_ordered": [
+        "AN",
+        "Ac",
+        "Ac2O",
+        "BC",
+        "DEC",
+        "DMC",
+        "DMI",
+        "DMSO",
+        "EA",
+        "EB",
+        "EC",
+        "EMC",
+        "EP",
+        "FAN",
+        "FEA",
+        "FEC",
+        "FEMC",
+        "GBL",
+        "GN",
+        "MA",
+        "MB",
+        "MP",
+        "PC",
+        "SN",
+        "TEP",
+        "TMP"
+      ],
+      "concentrations_ordered": [
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0
+      ]
+    },
+    "features": {
+      "dimension": 36,
+      "layout": "one_hot(anion, 9) ++ one_hot(solvent, 26) ++ scaled_concentration(1)",
+      "concentration_scaling": {
+        "method": "fixed min-max from the pinned grid, not from observed data",
+        "min": 0.5,
+        "max": 4.0
+      },
+      "rationale": "Fixed rather than data-derived scaling, so the feature of a candidate never depends on which points happen to have been revealed."
+    },
+    "missing_policy": {
+      "missing_ids": [
+        3010,
+        3011,
+        3370,
+        3428,
+        3503
+      ],
+      "missing_field": "Ionic Conductivity (mS/cm)",
+      "missing_confirmed_in": [
+        "MCP CSV export",
+        "MCP JSON export",
+        "GUI CSV download"
+      ],
+      "candidate_universe_size": 1872,
+      "truth_set_size": 1867,
+      "oracle_return": "data_missing",
+      "counts_against_budget": true,
+      "marks_id_as_revealed": true,
+      "enters_model": false,
+      "gate": "oedb-data-available",
+      "must_report": "the number of times each of the five ids was selected, per arm and per seed"
+    },
+    "objectives": {
+      "mode": "sigma_tplus",
+      "columns": [
+        {
+          "index": 0,
+          "name": "m1",
+          "expression": "-log10(ionic conductivity in mS/cm)",
+          "direction": "minimise"
+        },
+        {
+          "index": 1,
+          "name": "m4",
+          "expression": "-(d_cation / (d_cation + d_anion))",
+          "direction": "minimise"
+        }
+      ]
+    },
+    "hard_failure_protocol": {
+      "file": "hard_fail_sets.json",
+      "sha256": "3bc9f24656af1fc81248c09a63ec48a0b5f56b506a4ed024cde5ae4fb87a747b",
+      "protocols": [
+        {
+          "set": "p80",
+          "n_unprocessable": 374,
+          "n_feasible_labelled": 1493,
+          "candidate_ids_sha256": "ef3824b8610b02a03ebede19c945eb3589fdef1b35a0e783d7464ce15d2c95f0"
+        }
+      ]
+    },
+    "front_census": {
+      "unconstrained_front_size": 14,
+      "blocked_front_size": 6,
+      "blocked_front_ids": [
+        1960,
+        2020,
+        2060,
+        3308,
+        3688,
+        3721
+      ],
+      "feasible_front_size": 8
+    },
+    "feasibility_model": {
+      "type": "L2-regularised logistic regression fitted by iteratively reweighted least squares (Newton), numpy only",
+      "features": "36-dimensional encoding plus an unpenalised intercept",
+      "labels": {
+        "ok": 1,
+        "hard_fail": 0,
+        "data_missing": "excluded from training"
+      },
+      "l2_lambda": 1.0,
+      "class_weight": "balanced: each observation weighted n_total / (2 * n_its_class)",
+      "activation": {
+        "min_positives": 2,
+        "min_negatives": 2,
+        "inactive_pof": 1.0
+      },
+      "pof_floor": 0.05,
+      "pof_veto_threshold": 0.5,
+      "veto_rule": "point",
+      "lcb_kappa": 1.0,
+      "refit": "once per optimised batch, not once per selection",
+      "numerics": {
+        "max_iter": 100,
+        "tol": 1e-08,
+        "solver": "Newton steps with the L2 term added to the Hessian; no random component"
+      },
+      "no_label_guarantee": "the model reads only attempt statuses and candidate features; it never receives m1, m2, m3 or any hidden label"
+    },
+    "sessions": {
+      "n_sessions": 4,
+      "per_session_budget": {
+        "n_init": 5,
+        "n_optimised_batches": 4,
+        "batch_size": 5,
+        "n_optimised_selections": 20,
+        "total": 25
+      },
+      "campaign_total_budget": 100
+    },
+    "initialisation": {
+      "method": "greedy_maximin",
+      "random_seed": "10 * campaign_seed + session_index",
+      "session_index_origin": 1,
+      "tie_break": "smallest id"
+    },
+    "surrogate": {
+      "type": "gaussian_process",
+      "implementation": "pure numpy, in battery_workflow/case_d/surrogate.py",
+      "kernel": "matern_5_2_isotropic",
+      "kernel_formula": "k(x,x') = sigma_f2 * (1 + s + s*s/3) * exp(-s), s = sqrt(5)*||x-x'||/lengthscale",
+      "hyperparameter_fit": "exhaustive grid search maximising the exact log marginal likelihood; no gradient optimiser, so no platform-dependent line search",
+      "grid": {
+        "lengthscale": [
+          0.25,
+          0.5,
+          1.0,
+          2.0,
+          4.0,
+          8.0
+        ],
+        "sigma_f2": [
+          0.25,
+          0.5,
+          1.0,
+          2.0,
+          4.0
+        ],
+        "sigma_n2": [
+          0.0001,
+          0.001,
+          0.01,
+          0.1
+        ]
+      },
+      "grid_tie_break": "lowest flat index in the order (lengthscale, sigma_f2, sigma_n2)",
+      "target_standardisation": "mean and standard deviation of the observed targets only; never the full label set. A zero standard deviation is replaced by 1.0.",
+      "cholesky_jitter": {
+        "start": 1e-10,
+        "growth": 10.0,
+        "max_attempts": 6,
+        "recorded_in_trace": true
+      }
+    },
+    "acquisition": {
+      "scheme": "parego_expected_improvement",
+      "objective_normalisation": "each minimize-form objective is min-max scaled using observed points only; a zero range is replaced by 1.0",
+      "scalarisation": "augmented_chebyshev",
+      "rho": 0.05,
+      "expected_improvement": {
+        "sense": "minimisation",
+        "incumbent": "minimum observed scalarised value in the current round's weighting",
+        "xi": 0.01,
+        "normal_cdf_pdf": "closed form via math.erf; no scipy"
+      },
+      "selection": "argmin over unseen candidates of the negative expected improvement",
+      "tie_break": "largest expected improvement first, then smallest id; whether a tie occurred is recorded in the trace",
+      "weight_source": {
+        "lattice_divisions": 10,
+        "dimension": 2,
+        "n_vectors": 11
+      },
+      "batch": {
+        "batch_size": 5,
+        "weight_selection": "stride",
+        "weight_stride": 8,
+        "weight_start": 0
+      }
+    },
+    "mechanism": {
+      "relation": "nernst_einstein_with_empirical_haven_like_correction",
+      "constants": {
+        "faraday_C_per_mol": 96485.33212,
+        "gas_constant_J_per_mol_K": 8.314462618,
+        "temperature_K": 298.0,
+        "temperature_source": "OEDB Methods: production runs were carried out under NVT conditions at 298 K"
+      },
+      "raw_estimate": "sigma_NE_raw(x) = 1e4 * (F^2 / (R*T)) * b(x) * (D_Li_hat(x) + D_anion_hat(x)) in mS/cm, with b the molality in mol/kg from the candidate key taken as mol/L at 1 kg/L (x1000 to mol/m3) and the S/m result converted to mS/cm (x10)",
+      "diffusivity_inputs": {
+        "D_Li_hat": "posterior mean of a GP fitted on observed -log10(D_Li), inverted back to linear units",
+        "D_anion_hat": "D_Li_hat multiplied by the running median of the observed D_anion / D_Li ratio; the ratio prior before any observation is 1.0"
+      },
+      "haven_like_correction": {
+        "definition": "sigma_NE_raw / sigma_observed, evaluated only on already-revealed points with status ok",
+        "aggregation": "geometric mean in log10 space",
+        "shrinkage": "log10(h) is shrunk toward the prior log10(h0)=0 with weight n/(n+n0)",
+        "n0": 4,
+        "causality": "The value used in round t is computed from rounds 1..t-1 only. The implementation snapshots the correction before the oracle is called, and a test recomputes it independently from the prefix of the observation log."
+      }
+    },
+    "memory": {
+      "rule": "noise_inflation = clip(1 + mean(|residual| over the last k rounds) / residual_scale, 1.0, cap)",
+      "k": 8,
+      "residual_scale": 0.25,
+      "cap": 4.0
+    },
+    "knowledge_combination": "scale_ne_conductivity",
+    "knowledge_channel": "prior",
+    "rule_pack": {
+      "file": "rules/rules_ne_conductivity_scale.json",
+      "sha256": "0ed13d0d1290807e28657188390fb92d647045908ff96d3b6cc1ed80951d3b0a"
+    },
+    "metrics": {
+      "primary": "log_hv_regret_auc",
+      "floor": 1e-06,
+      "also_reported": [
+        "hv_regret_auc",
+        "hv_regret_normalized",
+        "pareto_recall",
+        "hard_fail_attempts_total",
+        "cross_session_duplicate_attempts",
+        "numbered_attempts",
+        "pof_active_batches",
+        "unique_candidates_attempted"
+      ],
+      "evaluator_only": {
+        "access_note": "This block is label-derived. Only OEDBEvaluator may read it. A test asserts that no agent module imports it.",
+        "truth_set_size": 1867,
+        "reference_point": [
+          3.0838996135,
+          13.6559092436,
+          2.8217663081
+        ],
+        "reference_point_rule": "per-coordinate maximum over the truth set in minimize form, extended by 5% of that coordinate's range, rounded to 1e-10",
+        "hv_true": 88.248293938,
+        "hv_true_tolerance": 1e-06,
+        "pareto_ids": [
+          2081,
+          2097,
+          2098,
+          2099,
+          2100,
+          2289,
+          2306,
+          2513,
+          2721,
+          2929,
+          3121,
+          3123,
+          3137,
+          3138,
+          3140,
+          3346
+        ],
+        "top1pct_k": 19,
+        "top1pct_rule": "ceil(0.01 * 1867) points with the smallest equal-weight mean of the min-max normalised minimize-form objectives, ties broken by smallest id",
+        "top1pct_ids": [
+          1890,
+          2084,
+          2098,
+          2099,
+          2100,
+          2101,
+          2289,
+          2306,
+          2307,
+          2513,
+          2514,
+          2705,
+          2721,
+          2929,
+          3121,
+          3122,
+          3137,
+          3138,
+          3140
+        ],
+        "derived_constants_sha256": "55b696ed75296d57654167d45f4f1db309648ed2e60fb3a9eefe1b271b1ca699",
+        "derived_constants_sha256_payload": "sha256 of json.dumps({truth_set_size, reference_point, hv_true, pareto_ids, top1pct_k, top1pct_ids}, sort_keys=True, separators=(',',':')) encoded utf-8"
+      }
+    },
+    "arms": [
+      {
+        "name": "isolated",
+        "km": true,
+        "mkb": true,
+        "mechanism": true,
+        "coordinator": true,
+        "transfer": "none",
+        "success_transfer": "all",
+        "void_own_failures": true,
+        "records_failures_for_successors": false,
+        "failure_regime": "void"
+      },
+      {
+        "name": "pareto_only",
+        "km": true,
+        "mkb": true,
+        "mechanism": true,
+        "coordinator": true,
+        "transfer": "numbers_only",
+        "success_transfer": "pareto",
+        "void_own_failures": true,
+        "records_failures_for_successors": false,
+        "failure_regime": "void"
+      },
+      {
+        "name": "success_only",
+        "km": true,
+        "mkb": true,
+        "mechanism": true,
+        "coordinator": true,
+        "transfer": "numbers_only",
+        "success_transfer": "all",
+        "void_own_failures": true,
+        "records_failures_for_successors": false,
+        "failure_regime": "void"
+      },
+      {
+        "name": "full_shared",
+        "km": true,
+        "mkb": true,
+        "mechanism": true,
+        "coordinator": true,
+        "transfer": "full_learn",
+        "success_transfer": "all",
+        "void_own_failures": false,
+        "records_failures_for_successors": true,
+        "failure_regime": "structured"
+      }
+    ],
+    "protocols": [
+      "p80"
+    ],
+    "seeds": [
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      318,
+      319,
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349,
+      350,
+      351,
+      352,
+      353,
+      354,
+      355,
+      356,
+      357,
+      358,
+      359
+    ],
+    "paired_bootstrap": {
+      "pairing_unit": "seed",
+      "bootstrap_resamples": 10000,
+      "bootstrap_rng_seed": 20260920,
+      "interval": "95% percentile",
+      "comparisons": [
+        {
+          "id": "failure_value_log_scale",
+          "group": "primary",
+          "comparator": "success_only",
+          "reference": "full_shared",
+          "metric": "log_hv_regret_auc",
+          "meaning": "success_only minus full_shared on log_hv_regret_auc",
+          "in_promotion_gate": true
+        },
+        {
+          "id": "failure_value_confirmatory",
+          "group": "primary",
+          "comparator": "success_only",
+          "reference": "full_shared",
+          "metric": "hv_regret_normalized",
+          "meaning": "success_only minus full_shared on hv_regret_normalized",
+          "in_promotion_gate": false
+        },
+        {
+          "id": "failure_value_legacy_scale",
+          "group": "continuity",
+          "comparator": "success_only",
+          "reference": "full_shared",
+          "metric": "hv_regret_auc",
+          "meaning": "success_only minus full_shared on hv_regret_auc",
+          "in_promotion_gate": false
+        },
+        {
+          "id": "ladder_isolated",
+          "group": "ladder",
+          "comparator": "isolated",
+          "reference": "full_shared",
+          "metric": "log_hv_regret_auc",
+          "meaning": "isolated minus full_shared on log_hv_regret_auc",
+          "in_promotion_gate": false
+        },
+        {
+          "id": "ladder_pareto_only",
+          "group": "ladder",
+          "comparator": "pareto_only",
+          "reference": "full_shared",
+          "metric": "log_hv_regret_auc",
+          "meaning": "pareto_only minus full_shared on log_hv_regret_auc",
+          "in_promotion_gate": false
+        },
+        {
+          "id": "ladder_step_1_to_2",
+          "group": "ladder",
+          "comparator": "isolated",
+          "reference": "pareto_only",
+          "metric": "log_hv_regret_auc",
+          "meaning": "isolated minus pareto_only on log_hv_regret_auc",
+          "in_promotion_gate": false
+        },
+        {
+          "id": "ladder_step_2_to_3",
+          "group": "ladder",
+          "comparator": "pareto_only",
+          "reference": "success_only",
+          "metric": "log_hv_regret_auc",
+          "meaning": "pareto_only minus success_only on log_hv_regret_auc",
+          "in_promotion_gate": false
+        },
+        {
+          "id": "ladder_isolated_legacy",
+          "group": "ladder",
+          "comparator": "isolated",
+          "reference": "full_shared",
+          "metric": "hv_regret_auc",
+          "meaning": "isolated minus full_shared on hv_regret_auc",
+          "in_promotion_gate": false
+        },
+        {
+          "id": "ladder_pareto_only_legacy",
+          "group": "ladder",
+          "comparator": "pareto_only",
+          "reference": "full_shared",
+          "metric": "hv_regret_auc",
+          "meaning": "pareto_only minus full_shared on hv_regret_auc",
+          "in_promotion_gate": false
+        },
+        {
+          "id": "answer_changed",
+          "group": "primary",
+          "comparator": "success_only",
+          "reference": "full_shared",
+          "metric": "pareto_recall",
+          "meaning": "success_only minus full_shared on pareto_recall",
+          "in_promotion_gate": false
+        }
+      ]
+    },
+    "allow_log_floor": true,
+    "report_rule_fields": [
+      "knowledge_pack",
+      "knowledge_combination"
+    ],
+    "comparison_gate_flag": false,
+    "sign_check_applicable": false
+  },
+  "seeds": [
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359
+  ],
+  "arms": [
+    "isolated",
+    "pareto_only",
+    "success_only",
+    "full_shared"
+  ],
+  "protocols": [
+    "p80"
+  ],
+  "campaign_total_budget": 100,
+  "observed_batch_sizes": [
+    5
+  ],
+  "floor_clipped_points_total": 31,
+  "front_census": {
+    "p80": {
+      "unconstrained_front_size": 14,
+      "unconstrained_front_ids": [
+        1873,
+        1875,
+        1960,
+        2020,
+        2060,
+        2709,
+        2710,
+        3140,
+        3229,
+        3308,
+        3540,
+        3542,
+        3688,
+        3721
+      ],
+      "blocked_front_size": 6,
+      "blocked_front_ids": [
+        1960,
+        2020,
+        2060,
+        3308,
+        3688,
+        3721
+      ],
+      "feasible_front_size": 8,
+      "feasible_front_ids": [
+        1873,
+        1875,
+        2709,
+        2710,
+        3140,
+        3229,
+        3540,
+        3542
+      ]
+    }
+  },
+  "truth_sizes": {
+    "p80": 1493
+  },
+  "feasible_front_sizes": {
+    "p80": 8
+  },
+  "arm_comparison": [
+    {
+      "protocol": "p80",
+      "arm": "isolated",
+      "n_seeds": 60,
+      "objectives": "sigma_tplus",
+      "campaign_total_budget": 100,
+      "hard_fail_attempts_mean": 5.133333333,
+      "cross_session_duplicates_mean": 36.85,
+      "numbered_attempts_mean": 94.85,
+      "unique_candidates_mean": 63.15,
+      "pof_active_batches_mean": 0.0,
+      "pareto_recall_mean": 0.508333333,
+      "log_hv_regret_auc_mean": -1.525387003,
+      "hv_regret_auc_mean": 0.047000963,
+      "hv_regret_final_mean": 0.018359641,
+      "source": "case2-sharing-conditions"
+    },
+    {
+      "protocol": "p80",
+      "arm": "pareto_only",
+      "n_seeds": 60,
+      "objectives": "sigma_tplus",
+      "campaign_total_budget": 100,
+      "hard_fail_attempts_mean": 3.316666667,
+      "cross_session_duplicates_mean": 29.766666667,
+      "numbered_attempts_mean": 96.683333333,
+      "unique_candidates_mean": 70.233333333,
+      "pof_active_batches_mean": 0.0,
+      "pareto_recall_mean": 0.7,
+      "log_hv_regret_auc_mean": -1.641936005,
+      "hv_regret_auc_mean": 0.044124634,
+      "hv_regret_final_mean": 0.009688591,
+      "source": "case2-sharing-conditions"
+    },
+    {
+      "protocol": "p80",
+      "arm": "success_only",
+      "n_seeds": 60,
+      "objectives": "sigma_tplus",
+      "campaign_total_budget": 100,
+      "hard_fail_attempts_mean": 10.616666667,
+      "cross_session_duplicates_mean": 2.666666667,
+      "numbered_attempts_mean": 89.383333333,
+      "unique_candidates_mean": 97.333333333,
+      "pof_active_batches_mean": 0.0,
+      "pareto_recall_mean": 0.741666667,
+      "log_hv_regret_auc_mean": -1.827040482,
+      "hv_regret_auc_mean": 0.040286154,
+      "hv_regret_final_mean": 0.004432117,
+      "source": "case2-sharing-conditions"
+    },
+    {
+      "protocol": "p80",
+      "arm": "full_shared",
+      "n_seeds": 60,
+      "objectives": "sigma_tplus",
+      "campaign_total_budget": 100,
+      "hard_fail_attempts_mean": 5.966666667,
+      "cross_session_duplicates_mean": 0.0,
+      "numbered_attempts_mean": 94.033333333,
+      "unique_candidates_mean": 100.0,
+      "pof_active_batches_mean": 11.016666667,
+      "pareto_recall_mean": 0.702083333,
+      "log_hv_regret_auc_mean": -1.773887802,
+      "hv_regret_auc_mean": 0.041082998,
+      "hv_regret_final_mean": 0.005162041,
+      "source": "case2-sharing-conditions"
+    }
+  ],
+  "paired_bootstrap": [
+    {
+      "n_pairs": 60,
+      "mean_difference": -0.05315268,
+      "ci95_lower": -0.109437977,
+      "ci95_upper": 0.00444669,
+      "favours_reference": false,
+      "resamples": 10000,
+      "rng_seed": 20260920,
+      "direction": "success_only minus full_shared on log_hv_regret_auc",
+      "protocol": "p80",
+      "comparator": "success_only",
+      "reference": "full_shared",
+      "metric": "log_hv_regret_auc",
+      "meaning": "success_only minus full_shared on log_hv_regret_auc",
+      "group": "primary",
+      "comparison_id": "failure_value_log_scale",
+      "role": "report",
+      "inferability_auc": 0.865497097,
+      "raw_mean_difference": -0.05315268,
+      "mean_numbered_difference": -4.65,
+      "within_arm_slope": -0.003360076,
+      "yield_adjusted_mean_difference": -0.068777031
+    },
+    {
+      "n_pairs": 60,
+      "mean_difference": -0.000729924,
+      "ci95_lower": -0.0018713,
+      "ci95_upper": 0.000446366,
+      "favours_reference": false,
+      "resamples": 10000,
+      "rng_seed": 20260920,
+      "direction": "success_only minus full_shared on hv_regret_normalized",
+      "protocol": "p80",
+      "comparator": "success_only",
+      "reference": "full_shared",
+      "metric": "hv_regret_normalized",
+      "meaning": "success_only minus full_shared on hv_regret_normalized",
+      "group": "primary",
+      "comparison_id": "failure_value_confirmatory",
+      "role": "report",
+      "inferability_auc": 0.865497097,
+      "raw_mean_difference": -0.000729924,
+      "mean_numbered_difference": -4.65,
+      "within_arm_slope": -1.3773e-05,
+      "yield_adjusted_mean_difference": -0.00079397
+    },
+    {
+      "n_pairs": 60,
+      "mean_difference": -0.000796843,
+      "ci95_lower": -0.002043482,
+      "ci95_upper": 0.000494337,
+      "favours_reference": false,
+      "resamples": 10000,
+      "rng_seed": 20260920,
+      "direction": "success_only minus full_shared on hv_regret_auc",
+      "protocol": "p80",
+      "comparator": "success_only",
+      "reference": "full_shared",
+      "metric": "hv_regret_auc",
+      "meaning": "success_only minus full_shared on hv_regret_auc",
+      "group": "continuity",
+      "comparison_id": "failure_value_legacy_scale",
+      "role": "report",
+      "inferability_auc": 0.865497097,
+      "raw_mean_difference": -0.000796843,
+      "mean_numbered_difference": -4.65,
+      "within_arm_slope": 0.001645553,
+      "yield_adjusted_mean_difference": 0.006854977
+    },
+    {
+      "n_pairs": 60,
+      "mean_difference": 0.248500799,
+      "ci95_lower": 0.184233322,
+      "ci95_upper": 0.315550113,
+      "favours_reference": true,
+      "resamples": 10000,
+      "rng_seed": 20260920,
+      "direction": "isolated minus full_shared on log_hv_regret_auc",
+      "protocol": "p80",
+      "comparator": "isolated",
+      "reference": "full_shared",
+      "metric": "log_hv_regret_auc",
+      "meaning": "isolated minus full_shared on log_hv_regret_auc",
+      "group": "ladder",
+      "comparison_id": "ladder_isolated",
+      "role": "report",
+      "inferability_auc": 0.865497097,
+      "raw_mean_difference": 0.248500799,
+      "mean_numbered_difference": 0.816667,
+      "within_arm_slope": -0.006067957,
+      "yield_adjusted_mean_difference": 0.253456297
+    },
+    {
+      "n_pairs": 60,
+      "mean_difference": 0.131951797,
+      "ci95_lower": 0.057088406,
+      "ci95_upper": 0.209329662,
+      "favours_reference": true,
+      "resamples": 10000,
+      "rng_seed": 20260920,
+      "direction": "pareto_only minus full_shared on log_hv_regret_auc",
+      "protocol": "p80",
+      "comparator": "pareto_only",
+      "reference": "full_shared",
+      "metric": "log_hv_regret_auc",
+      "meaning": "pareto_only minus full_shared on log_hv_regret_auc",
+      "group": "ladder",
+      "comparison_id": "ladder_pareto_only",
+      "role": "report",
+      "inferability_auc": 0.865497097,
+      "raw_mean_difference": 0.131951797,
+      "mean_numbered_difference": 2.65,
+      "within_arm_slope": -0.004753076,
+      "yield_adjusted_mean_difference": 0.144547447
+    },
+    {
+      "n_pairs": 60,
+      "mean_difference": 0.116549002,
+      "ci95_lower": 0.069074563,
+      "ci95_upper": 0.165400375,
+      "favours_reference": true,
+      "resamples": 10000,
+      "rng_seed": 20260920,
+      "direction": "isolated minus pareto_only on log_hv_regret_auc",
+      "protocol": "p80",
+      "comparator": "isolated",
+      "reference": "pareto_only",
+      "metric": "log_hv_regret_auc",
+      "meaning": "isolated minus pareto_only on log_hv_regret_auc",
+      "group": "ladder",
+      "comparison_id": "ladder_step_1_to_2",
+      "role": "report",
+      "inferability_auc": 0.865497097,
+      "raw_mean_difference": 0.116549002,
+      "mean_numbered_difference": -1.833333,
+      "within_arm_slope": -0.013194553,
+      "yield_adjusted_mean_difference": 0.092358989
+    },
+    {
+      "n_pairs": 60,
+      "mean_difference": 0.185104477,
+      "ci95_lower": 0.114290434,
+      "ci95_upper": 0.258428573,
+      "favours_reference": true,
+      "resamples": 10000,
+      "rng_seed": 20260920,
+      "direction": "pareto_only minus success_only on log_hv_regret_auc",
+      "protocol": "p80",
+      "comparator": "pareto_only",
+      "reference": "success_only",
+      "metric": "log_hv_regret_auc",
+      "meaning": "pareto_only minus success_only on log_hv_regret_auc",
+      "group": "ladder",
+      "comparison_id": "ladder_step_2_to_3",
+      "role": "report",
+      "inferability_auc": 0.865497097,
+      "raw_mean_difference": 0.185104477,
+      "mean_numbered_difference": 7.3,
+      "within_arm_slope": -0.010486671,
+      "yield_adjusted_mean_difference": 0.261657175
+    },
+    {
+      "n_pairs": 60,
+      "mean_difference": 0.005917965,
+      "ci95_lower": 0.004145675,
+      "ci95_upper": 0.00788186,
+      "favours_reference": true,
+      "resamples": 10000,
+      "rng_seed": 20260920,
+      "direction": "isolated minus full_shared on hv_regret_auc",
+      "protocol": "p80",
+      "comparator": "isolated",
+      "reference": "full_shared",
+      "metric": "hv_regret_auc",
+      "meaning": "isolated minus full_shared on hv_regret_auc",
+      "group": "ladder",
+      "comparison_id": "ladder_isolated_legacy",
+      "role": "report",
+      "inferability_auc": 0.865497097,
+      "raw_mean_difference": 0.005917965,
+      "mean_numbered_difference": 0.816667,
+      "within_arm_slope": -0.000477791,
+      "yield_adjusted_mean_difference": 0.006308161
+    },
+    {
+      "n_pairs": 60,
+      "mean_difference": 0.003041637,
+      "ci95_lower": 0.001469231,
+      "ci95_upper": 0.004861386,
+      "favours_reference": true,
+      "resamples": 10000,
+      "rng_seed": 20260920,
+      "direction": "pareto_only minus full_shared on hv_regret_auc",
+      "protocol": "p80",
+      "comparator": "pareto_only",
+      "reference": "full_shared",
+      "metric": "hv_regret_auc",
+      "meaning": "pareto_only minus full_shared on hv_regret_auc",
+      "group": "ladder",
+      "comparison_id": "ladder_pareto_only_legacy",
+      "role": "report",
+      "inferability_auc": 0.865497097,
+      "raw_mean_difference": 0.003041637,
+      "mean_numbered_difference": 2.65,
+      "within_arm_slope": -0.000990835,
+      "yield_adjusted_mean_difference": 0.005667349
+    },
+    {
+      "n_pairs": 60,
+      "mean_difference": 0.039583333,
+      "ci95_lower": 0.010416667,
+      "ci95_upper": 0.070833333,
+      "favours_reference": true,
+      "resamples": 10000,
+      "rng_seed": 20260920,
+      "direction": "success_only minus full_shared on pareto_recall",
+      "protocol": "p80",
+      "comparator": "success_only",
+      "reference": "full_shared",
+      "metric": "pareto_recall",
+      "meaning": "success_only minus full_shared on pareto_recall",
+      "group": "primary",
+      "comparison_id": "answer_changed",
+      "role": "report",
+      "inferability_auc": 0.865497097
+    }
+  ],
+  "blas": {
+    "numpy_already_imported": false,
+    "env": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "runtime_call": null
+  },
+  "workers": 14,
+  "source_provenance": {
+    "key": "oedb",
+    "tool": "OEDB (Open Electrolyte Database for Batteries)",
+    "audit_paper_id": "n/a; OEDB post-dates the 68-tool audit",
+    "citation": "[@nakamura2026oedb] Nakamura et al., npj Comput. Mater. (2026)",
+    "doi": "10.1038/s41524-026-02093-y",
+    "repository": "https://oedb.jp/mcp",
+    "commit": "data v2026-05-11",
+    "licence": "CC BY 4.0",
+    "redistributable": true,
+    "files_sha256": {
+      "mcp_initialize_response.txt": "e6a4584ed351c61eedcadc86f9e37c5cab1c64ecfb62ba60772502599b3964ed",
+      "mcp_tools_list_RAW.json": "14d2547b091077745d692c4c12b7d19e0d6967cc78382d7778f0f603081b3861",
+      "mcp_exportData_csv_RAW.json": "703240143dc8af395ce46973bf974474ba5368275519f5d1b2641ba9b9b5d662",
+      "mcp_exportData_json_RAW.json": "4e51f8e4a0aed9e143395df2dce35f8ab2f692a5179c3ed794511b67e0627461",
+      "oedb_mcp_exportData_v2026-05-11.csv": "08f8b6f7c50a2a3c2b506b873c21f5bcd263ac24de0574a1ffb38bc949ceb234",
+      "oedb_mcp_exportData_v2026-05-11.json": "755483a6e481fc626f44091310f7ade18eb9898b58a40ef271f9c2c8c6826d5b",
+      "oedb-electrolytes-v2026-05-11.csv": "a955f2dd719d2e5dd8ab2082e4c78104541ec0caa548e786662636f07553a462",
+      "electrolytes.arrow": "3deb8e519561a800f42a4c0b18ce865b5724ad14af668c3843aa3c9583a65f51"
+    },
+    "resolved_root": "<BATTAGENT_OEDB_DIR>",
+    "access_method": {
+      "protocol": "Model Context Protocol",
+      "endpoint": "https://oedb.jp/mcp",
+      "server_name": "MCP for Open Electrolyte Database for Batteries (OEDB)",
+      "server_version": "2.0.0",
+      "protocol_version": "2024-11-05",
+      "tool": "exportData",
+      "filters": null,
+      "reported_row_count": 5616,
+      "note": "OEDB is not a git repository. 'repository' carries the MCP endpoint and 'commit' the published data version."
+    },
+    "structural_checks": {
+      "li_rows": 1872,
+      "n_anions": 9,
+      "n_solvents": 26,
+      "n_concentrations": 8,
+      "duplicate_keys": 0,
+      "cartesian_complete": true,
+      "conductivity_valid": 1867,
+      "conductivity_missing": 5,
+      "nonpositive_total": 0,
+      "missing_ids": [
+        3010,
+        3011,
+        3370,
+        3428,
+        3503
+      ],
+      "checksums_verified": true
+    }
+  },
+  "knowledge_pack": "rules/rules_ne_conductivity_scale.json",
+  "sharing_rules": "case2-sharing-conditions",
+  "selection_hashes": {
+    "full_shared/300": "d13016c64980a96d794e97610a9d75db4b2ba1950ecc8a8cea3496a31c97f761",
+    "full_shared/301": "10f91c537228dee778a781360968fa6efd22affdff0d4e36410758f6369f4e19",
+    "full_shared/302": "24f5f3d776c90e5fa9d111ba3be4b22ae8956481e9641441befdc8eb4eab1797",
+    "full_shared/303": "68f8143943b135e2350387dd1be89eac684733524e976e88e4f99868ee3f015f",
+    "full_shared/304": "c57871f4c7a3cb9739bbd41a5fd954c8416a020422f21c68268da6f3f3001681",
+    "full_shared/305": "caa542931981797cb2f6c70bc67dd7feb2f3d0f2b00362479949dcab4b5d07c1",
+    "full_shared/306": "41eeaadd05bad9c7876904049b627229fbf62c75d0a7d345a8babbf78126c47a",
+    "full_shared/307": "20101a3e9d2dd8ead20bb50c86f3f3ef0537eafabd185489523b95a8c4673479",
+    "full_shared/308": "bc6d64ef5e7df37007054a966131e46b3eb082937261ba2381a6a0784c3ec46b",
+    "full_shared/309": "ab1a5f0d368dec3b2333e94c22e4cd7f2b4015a3c3dfe542fc8d96c7a180e450",
+    "full_shared/310": "fd390569e28c29e42e03efb023a6d19d54f8415b45ae0a6881a0c57efb290ca5",
+    "full_shared/311": "35bacdf5c45eb4b66a9737bda197f54945771f4abd9980550ba633debd575042",
+    "full_shared/312": "d5c5541895d30806b00887140ed34644ef3a8c5edaba71c847073126b69da588",
+    "full_shared/313": "664e3f94e051d7f033dca7a117e9c17c75ac6963f11819c2196ee9af0d0a2ad7",
+    "full_shared/314": "7ac6290f31e58e6b4b32579467ff46e0b2ed41d7ee85cd76b4890e0cd4fff789",
+    "full_shared/315": "48aec955663fd0ea3b68debc38438da898bae835f37536ce046c939487034e53",
+    "full_shared/316": "b2cf51b0fcecc59e3a7ef0454144f6450174586188b9ad19af5743460d7df190",
+    "full_shared/317": "cc41c56454770e03d691d95e6d905f0fc49e485f58e8f5bb4784df2cd729ba8b",
+    "full_shared/318": "1df9a85649cc394c9b36fe8c525e94c74a5ddf87fe814552a7e4af7cb2e182d7",
+    "full_shared/319": "148fc67154a7901584f28175da6c4fc634a3aeb39088acda63de6df91add02da",
+    "full_shared/320": "49a35340ee23d72d5e8cf8e2915d2f9110802c07bc0f66c6d03c2bef46b536dd",
+    "full_shared/321": "9375a51e05ebe965ad7a6e33e33e5b300224031862f49d86a6f979de2db672ed",
+    "full_shared/322": "81ad663a6d5dcdedc455cdd5e90bf0fac02b634f03b355a8d256cba20fcadbf8",
+    "full_shared/323": "c1de8e7febd5ff209aa734d6790d79953d66c3c546e0095cd1adddfb46f827b3",
+    "full_shared/324": "f7fcdea2ace25a1998ca8750b4df96c4fa93e85e1dda2fffc53ad89bbd3d0f59",
+    "full_shared/325": "09047cd75db605038116a74f3f405fe846a91d66201f688c77b729db64a155b6",
+    "full_shared/326": "aad6edc070b2658c6c19d1c305ac805b9357d7d463334af6a7e0df650db364ec",
+    "full_shared/327": "88d18bab9f690c3b448592e09d1b5da7873d078fc060d7f0f9aa4a6e1067e2f6",
+    "full_shared/328": "2f568a47c16ff1012255410775bbda1281b20cd489f3149962c4e56132270060",
+    "full_shared/329": "3b8ae7d39ef33419ef336d7184897c3840f43aca49bea7f233bdb780fa8bc857",
+    "full_shared/330": "85519284d61c2baac6e176a2fc73ff2537ad9afb78591d81dd813d64a9e6508e",
+    "full_shared/331": "a904dc7dd97850d83648ce9de19db8eedd121698ca3611cc17f7e4f6ab7c32fb",
+    "full_shared/332": "85793c21ddc721a57c587a0c84c5bbf38dc756ad5ba3f6405daec856f78ffb9d",
+    "full_shared/333": "94e0b1266ec6b0ee37cfeb06366f9223c1bc27b077a2899ec53ea6271c34c0b1",
+    "full_shared/334": "2f92fd90c7dd54abfe177f784bf70cc84ba08b0a2daaa7b24820e3bb87d9fa59",
+    "full_shared/335": "7519261f7ed991e83d766709afbe69fd11efcbd4cbcf893659f44cdaaaf38a0b",
+    "full_shared/336": "e44cae143088d87431d236fd6ff4a37114cc95f813ebebc6dd85da6c62796540",
+    "full_shared/337": "645edcac3aff68348e20b17714188079b7bb31575ef27d3f501c17a9ec74e548",
+    "full_shared/338": "89c280134367746752b9b34ca17cef9025ce7bb71b0bcaf19bb2695dfa2c4f1f",
+    "full_shared/339": "568e13a51d7bcae0611ce44f9b202cb323cddfa83d8989cad71e7102b80e5d0d",
+    "full_shared/340": "146bcfccce5487a5cce69473e79aa3ec5ae1fe56f23fb9bacaf6606253a6bf5c",
+    "full_shared/341": "355f98444d9b4230104457f2747ad9aaf739b6002e63030c7deff0602f4d50f1",
+    "full_shared/342": "59e130417d5cd48d927dfa08146bc1b8dc8c6fc08871c54f23181afadc32810d",
+    "full_shared/343": "986a873f82ba704d98424c01566441334378a18b60af164fc60ba355d7cad783",
+    "full_shared/344": "d3ca151c5cd1de0ca38f1e671e6cfd7ee0cb6a1a29c8ef941badeb705a832915",
+    "full_shared/345": "780dcf1bda04d7e09dfffb6fb971f6faaa67a10d63d58db72b8669a225e3ca7e",
+    "full_shared/346": "5b75cb9449bc7e692a4e2767b87a68635f34579330299f71921dea03731c1ec5",
+    "full_shared/347": "d2ea3c4c2f1a06f5ec7ae039e82a1ce4889a46dc95e3f237bb76ff457098f8cc",
+    "full_shared/348": "8dd8dc252bb1bdf85355fbc6da5a439635ae88220a0cf11afd259c4a7fbc9a46",
+    "full_shared/349": "3742a1509148ab0e15eb73b6f0a0a2a082fdd41cab94a446189462aeaedd902b",
+    "full_shared/350": "ec59c256c508979606874626c882946c949fa4c4e6efa9e938f3a7d67d0c12ab",
+    "full_shared/351": "d9813ad9176deb97fd4ad2337c06bee80ae067ecee83ea0c9da8a6bcaa1c8a51",
+    "full_shared/352": "ca7b3838abd26992b59f944b74be4a95b439da68d71ae5343e65e07d6fb59d87",
+    "full_shared/353": "fda9020437afe83732f39eedd061c9e68900493063806b5049927908c42d01e7",
+    "full_shared/354": "3d1939bb86acd7d2696fcb363f895689ae8b8ad2cac0ff5ae5cf38336ffa6107",
+    "full_shared/355": "356d1508f968636834ba798e4193067068af65116f7740bedb9936e9f99a3c35",
+    "full_shared/356": "b5c4dfcecfe4b164ff4e245817b33d9706d96268dea455bf65cceb9509b5f27d",
+    "full_shared/357": "3d8f34d3d97bd365ac0883b486107621540bd746d5301c3ad5bf623f3c33ee07",
+    "full_shared/358": "1311a61af6ba4bdfdfd379d983596e8cdacefe83c50abfe69ca32c536940c858",
+    "full_shared/359": "53d09b5d39f65fa90ad0f7d8c5513874804150528eaf6efccd4e055f73079b72",
+    "isolated/300": "e74b65934b923db8d9d2a53fcd56ef0695ab773b07f5587422baa22c6894c6c4",
+    "isolated/301": "238e3c5cd3d203e8598e4498934fd0e3d65f44189d49a514d4bdea2e3d0624d6",
+    "isolated/302": "45b3256ca390e7376cf9a79dbc7dccae10cf050de5c6a3853cd4c17bf968e121",
+    "isolated/303": "cab9c33cd3aa9ac2925960da35520d6b86d180f5e5927495cafebdae4bc915d7",
+    "isolated/304": "8c553d106c4e8bfb7d98bb7de29440830cc9938977caf9fe5cfffe23d3176aed",
+    "isolated/305": "a52836dd503234a0b7010140f97db72bb68b5b3cfdc9872fd1c6d3f89b7ee7c6",
+    "isolated/306": "e8313cdf716a298c00ca38397d4c051cbfdc5cb702522ec4785f0176117ee218",
+    "isolated/307": "535d77784a97e1c9e49ef4316e40036898eba48e3f6ce917447381253a4afd7b",
+    "isolated/308": "10b4cdd40a4609bc1f7dfde21ba79c159641025352931bf93106109f2f2670f8",
+    "isolated/309": "8cf31e4d0dd5c076d8ca5cb881da1313e9dce9cf4c3a5870e9e2a0a0e9ca4b60",
+    "isolated/310": "3256f4f51bc90d7006f56d0ae9011bb14569472768f8fcb3739e92db5640d819",
+    "isolated/311": "90b7dfaacdc0882b5086d7b25da70decc12c094edd9b76f6e32e4c1ed94362a6",
+    "isolated/312": "a6e13e7ad5fe6fcc8722cfe7c70eb466dc3b28f07466b2c174ba38682ea76c5d",
+    "isolated/313": "4b80547488e11eaf80bcd28f06e14e6405687d8dd3ad920f9ad0b45927d5cde4",
+    "isolated/314": "c661ec13bfa3afb06c09a36c65869f947425491be6a3ce780f26d98846788fd2",
+    "isolated/315": "c0eeaafed9ef899c4d27428b9098e7431e69099960037870351e84bbb4f76d10",
+    "isolated/316": "0960efadbe1416507533f896342bdb41856ee9b74ee1269f344605a053b43728",
+    "isolated/317": "de7870754836d8da9416cdde32c6fded216a74b475fc5b6c2cd14285ab5c9676",
+    "isolated/318": "8a140e3226638533ccfc0d027d74b287ca0c77f399832ce518ef876fb3a15f80",
+    "isolated/319": "32d1eef6c02a39a9efa2ccbfb6db6355efd19fb36eea0b6744763f3240dc7d25",
+    "isolated/320": "56ae355b5ce0a73c51569f43317fc85663b379876682c5b0f6cf55d16a4d003f",
+    "isolated/321": "dd320a7d311642c2183122d8fc2ab7292a60b646a1a77fab5bf6fc2549dfca6c",
+    "isolated/322": "74031832511b6a69481c21a4236afef5e5e9e6bf7d521136e2925011d9553643",
+    "isolated/323": "c2f614eb1ec3495c448c2fff0f7051811385ff164190dd36fb7b61e4f5191a71",
+    "isolated/324": "7f42624b02d6888fedfa911a3a2310956d784b5dabea4f9275b50b16c2536126",
+    "isolated/325": "890bb15978a7acc7bf168028fa65c00fcb4557a14d9ac900a944e3097865b5f2",
+    "isolated/326": "750713f984ecd0c82e171efaa8cf8538efeea77b50e27d6bee0856198bfded84",
+    "isolated/327": "1c2be7bfd395faa638f30f638cfc455298531c695da8bd210ea3e767e61ecac6",
+    "isolated/328": "00565e456517eecdd27e220b39dba1859135d33b468b9c41349f1d9a68146e28",
+    "isolated/329": "0936ae9e19b6612ffda7a16d3ac2ec55247af4c06f5f2ee2c40044ad07eabff6",
+    "isolated/330": "7b48266892caa83adfc863c6e229c408b6913c5b2d1b2cf30da85be393aed211",
+    "isolated/331": "0a16b0d607fd12c3797c5563abd733ca2bb740984ca645d4252c14a7effb4b35",
+    "isolated/332": "105d5403786140809098e777598a624a8a3b74564f3e3ecc513ed05f9b2964cd",
+    "isolated/333": "9e7470068f5fa15a22cea045e16727744c0c132c861a55de3c42f378a3d022e4",
+    "isolated/334": "dbba7a22734b700cd873ec0ad00380338f130187c9b13b43d29d9494b834e5b8",
+    "isolated/335": "f599eda1f23ecbbbbe86d18086e67d5b4f790c90b7c869901c0995438091c803",
+    "isolated/336": "6c3c1b8a6cac77f4758247f6f9c1ab4cf6ae6ed5df474bdd8d4ca467138e97b6",
+    "isolated/337": "d7033b6cc4ef9b2e38d42de1c4bce5687fa7a5716ded34ed60187e35edb6a4a4",
+    "isolated/338": "c6aae6363d0369d155996fdcb288468e4d39e447b34a4461c9280d26cac8c518",
+    "isolated/339": "cf16a3c3e9a55c3bedb1e61da8a6425c08d2d36caf2806112986694a5da57325",
+    "isolated/340": "401f1ab9ad142370c7d28755e3dab3f33d13259259dfd8d0cfeae809e2a763aa",
+    "isolated/341": "f84b56c3bf3032455ef72ec20e0136b723c6164687aedce9f322e704d510b817",
+    "isolated/342": "11d87c007e350811d37578b217c4773959d7361a1926f343e554b973479879e7",
+    "isolated/343": "6a3aa480df8b326e1afc5f1a1ccbe69e108e58a9da0d72ba3ae0325972a01d95",
+    "isolated/344": "6b2b88aad359c1c3ee51cea8b9b77d34737cb65834b4700f5d31acfeb904f1c4",
+    "isolated/345": "1511585d938c71997e0383f326cf270efa7bd9b46ff4a30c8ec2746d5f4efc52",
+    "isolated/346": "8b528615e7f67f7dd123c70740a2b0a85227aa8e4e7a3c17296dba9f4cf50827",
+    "isolated/347": "d10695b53950936a66cf18afd4dbb24020e0e2d7706920d06ff21b30123cab49",
+    "isolated/348": "1da3c537985b7144b1239c633067c3a759702e04b02da79f49a40dba0b51e421",
+    "isolated/349": "5cbbac2f8561613cb2888d27c35b9745b32fe39aff427d0c288cd92ddff81c47",
+    "isolated/350": "5ab46d413cb655dfdd252f2857817a62fb9bd65ef5758cfc89a63ff5fcbe3d70",
+    "isolated/351": "e9b776f41050288be5fd4e5f421cd16865cdbd5d89baae269a51395d4e56daac",
+    "isolated/352": "fce930efa59d4439eab6a381140aaffcf954e3cc79d95f68ec1a8beda9389c83",
+    "isolated/353": "eb2aae88efa4a03e51572664c3d848435bdaf0f41553ccc29e6faa002f29fbef",
+    "isolated/354": "95f4cff6a42f4ca2bef2ed2f17d8e173ed1c1ca8e723cc2b2a27de213ed7ce0c",
+    "isolated/355": "ad17e763b4033f3729358e60e4bbbe1ef2adb9a355e03e65cec7281bbeafbb6c",
+    "isolated/356": "b5fc17aa4de158be3b3adc0f687e69d528942401282dbb5f21133dfe495e6c38",
+    "isolated/357": "f57a3401e78386acdd595eca77d347497101566f7d5948abea674f786536f6cd",
+    "isolated/358": "9a89ca51afe4a6ffc53ced6d18ae543bddf771367996c9cbed70f7a5c5d22176",
+    "isolated/359": "cfc4be8f5d724f7d74a6d58718ab4d4130a02c8540a45a0615681e7a383d7842",
+    "pareto_only/300": "0631ab67f3595ed489bc26a15047a9b9b77b085e0d7510e51ffe8bec5faabdc5",
+    "pareto_only/301": "9daf948a255231ec9c1bfd59c90c5bdd634f79474e8db3551cbdd95379725768",
+    "pareto_only/302": "307006c1c554b9baa46e39ede5662a4888fdd1077f860a7667e5c8a2744d9678",
+    "pareto_only/303": "9c0797f6c4e70ff868fda4cb5334e99ad12f8e62835ad491cc131faa2c277ade",
+    "pareto_only/304": "2bd295e27f2eba63763cfe8ca4a2c614c847d8237e619140de6cece90eaa7e82",
+    "pareto_only/305": "e8c2e452390b2ba5b7aca00101b5e6e4f1c4c37d19e1475c4be6106b31c0e098",
+    "pareto_only/306": "06068eaab31a6b75b60839ffe255ff9d14ee50d27fecc0a0a86b6884ecb830d1",
+    "pareto_only/307": "e656c9fd608654c3ae2e8b2be7ff246546185a33b75e4c26deae2bf718fe40bb",
+    "pareto_only/308": "400d0f4f7901b9e1a57664005a46a4cc2258151a0288787491cd8cf79603df92",
+    "pareto_only/309": "0251873b568664d85fc0177d37e7d0078340a552b2d818e4186d770f5c0efdf6",
+    "pareto_only/310": "e6aadb3c5cb7d5e9e42e204e47b90f6c3374975b7658572334c153a2d9b06da0",
+    "pareto_only/311": "02e279d62a0fde067e511da2522d0dbad315b9f51508e92ef98e86b928d8b55d",
+    "pareto_only/312": "3d24bbfb00dfe06cb3f478855b10316fe29e3ecb4cf8af3c2915ec0ca5c4c630",
+    "pareto_only/313": "f78fa786c6e621c09ae0ce1b7cb0eb8bdd7e86cfdee64947e7207feb298dcf4f",
+    "pareto_only/314": "cc22859848ee652671de77b848f368d3f8d12e6c243c8c5e234711f301858a8a",
+    "pareto_only/315": "f3a823be69f7ffd86f57b864c7f06f82dcefadf351a241fb8fe7fca002c5b9c2",
+    "pareto_only/316": "10f31c78f26f4b37af61f72071f9778ef4fa0f7fa5bddd16cc558acdba45cd42",
+    "pareto_only/317": "6e079abab2af529717c33dbe7f6b785eb557d286612e5a887e833686dd1d1538",
+    "pareto_only/318": "61ae426c5548fd84c848c4be1cc3cc320b0f9a2b89649e3a155a08d976bab5db",
+    "pareto_only/319": "907bee25647efd718d9bdcd493c794425fd9eb3943aa11648669e090f76fcb15",
+    "pareto_only/320": "d1e7ede0f32c9aeec693632e0ea859b69509f1c638bedf292967b35e5c359433",
+    "pareto_only/321": "ee074b134d761eac8cdd6efbb8b9fb18a4de91b044c1f76938da4dc3ee9446e0",
+    "pareto_only/322": "0e80d6c710ecd09cf4c1ea3540817643feaa089cfef710b26db4f64b0948d247",
+    "pareto_only/323": "bad5ad80b9cf045349f5567a43a7eaaaf89ecf72534764875949f612d976946b",
+    "pareto_only/324": "e2c0e14a0586c7c4d047b187103f782d61f423051c3060c0b53a4cebb33181c8",
+    "pareto_only/325": "df0884a8f0d8ffad564f109d8c172b91ef0e5d804647d0086d36764431d98ad6",
+    "pareto_only/326": "69ac14ef7c23b9b0c52b8ed13febd3d973c19110883f0ddc6f56f6ad0f7a77a7",
+    "pareto_only/327": "532d2d3e7a6fdab1ada0ba5986490cc33246713b0e8c6062eeb14e3039e1475d",
+    "pareto_only/328": "095cf15ad50a12972e43dee89b077cf9ef2b2c742ea8339f3e483869f429c551",
+    "pareto_only/329": "3a5562c81656f5d4f1fb41cfd7537703cf5e270a24646e4633211291033df5cd",
+    "pareto_only/330": "559ad05ab41939f275a8856d2f7e1992b64337680f02c1e2b803d63839e63f43",
+    "pareto_only/331": "51b61f8fa906f8ec580c3a5b410d4c2a7c2bef4bcf122183b77fb8e7d9c00a98",
+    "pareto_only/332": "49f47c3c3ee77e55a1bee6a3c33ae5ec66b96e6b99f524029cbad69eae9637aa",
+    "pareto_only/333": "569f982c511db7c856da63dd5b7b746b9ce6b08c48e20f27bb60126b191b8480",
+    "pareto_only/334": "0e5e7bd8736db8ede8987d76caa48575c48a6c30e32a0f8efb24f92f81f86f28",
+    "pareto_only/335": "e4f1aa9ad2c43ec0244f491fd8dd4c4857ce126114342cad81cc359c4066883e",
+    "pareto_only/336": "07fb9ec5cfc2a0131e4c558a21ef85bc1b8f29eabb3fbd4d4c9354bf0891cdc3",
+    "pareto_only/337": "9a65a93d6ce6d9b1ba81e4879f3f4324b3815435892667c2782f341fb2818128",
+    "pareto_only/338": "c1d40ede91c558eebe8f1ea6fa1978379ee4f34d57ff0b5c5825cdf52814c3a9",
+    "pareto_only/339": "5ec255acff914a7a7abeb2177ac0481caa5eb88098d105f646dc06f5513d3d99",
+    "pareto_only/340": "42ad8a19ece001cb6f1c1d1d279706087ddba37914424a97020f99c6c7cd63ce",
+    "pareto_only/341": "2ff120a30ae7bb6f710fdd5f3a7bb84847c247e7fd538c1759290719a35b4b77",
+    "pareto_only/342": "be7fd86442fae9b6f0e587ebe5eaa6c76953b0b7df46dd9887821c381c15e66c",
+    "pareto_only/343": "851aa710ee53590e9c2915690a450715b703770be0876adc0a78efa4370f0402",
+    "pareto_only/344": "f428b12da5b98880fa629e3fafd0058546a6e39f405c4de42054310de7a6e785",
+    "pareto_only/345": "f8a3182148a4eb9adf62eb80895d89a328b2d1bba2449061e32f7b62494a88ab",
+    "pareto_only/346": "2fd544f42c4439d1310b61ecebe8b076b07ca87235e3591938fce0f719a8b672",
+    "pareto_only/347": "722a5433c503f41a19e03e509ec8d0e003314a9287d4661961ee8f44edd562d9",
+    "pareto_only/348": "a78654a82e641793b78a75520142e517bb9fe41fe184274977ae30a20956be81",
+    "pareto_only/349": "9a6c7cf78b14fc0184e0202b25bbac3ec6e0e41cc678851f2cb6c62309f6dc37",
+    "pareto_only/350": "474b875390be42b557a3073e2ccec1a6aede54b51b44b654d5e3fe7c7f01edc2",
+    "pareto_only/351": "3ca8f633ebd39ab8889f7630f10a89ac75323aa684a39a4fd7f82697a5d54f75",
+    "pareto_only/352": "a878de65c28b7637e12136ac2350c2a013c9e5bb724e99650c3bef8e7a9f9efe",
+    "pareto_only/353": "c5a2cca70ac7457cac883f0af207fa3dcf82135cc42e85869278afc776037b55",
+    "pareto_only/354": "6c5c77bbccd58d1851a5a6b7d2013459d4385906d4f1746ea445f0d7a338e902",
+    "pareto_only/355": "aabc99556c616842debb32fb1ab9fc8e25c1df83c9aeb760311a42a78582cfbb",
+    "pareto_only/356": "f0e083c5178223480d689a92ffd5356379deccaa2edceb736ed470c7edbb8ff3",
+    "pareto_only/357": "e0615f221b253a4fdc936441ee888707f3f331d5a0730cff3c5d78d67c4f0c65",
+    "pareto_only/358": "25377cd38de5f8076ae8cad44e0338b196d9654db7db992dbaa303fdfee58dd9",
+    "pareto_only/359": "804591d1768411ba76d0862ec33a5063b95fc0c05c57febf92c5ac60444ec2a6",
+    "success_only/300": "f990bd3c29cf6f1ad9d976dfb9180862394c75328ecab78c79713dc95dfe182d",
+    "success_only/301": "5df0fe49e27be9ba0f4dda4a8ec233503315de88f32456213ec78d696ac95cd0",
+    "success_only/302": "8dc1567e958ab63d613c23c0aab86b92d6a619f4d437ae87b3a0a03d661ad8c2",
+    "success_only/303": "fdd190d15ca24dd6eb4cf5de91ff4b78cfe7b1bdd653d4e5e2cc5a9a17bcf4ce",
+    "success_only/304": "51d6d5c5cf568d217a5cd9e0a00990890abb182bff7f5aab9eed81a12453ff53",
+    "success_only/305": "e1402d34d993d226fa837359912ca3a75632a1c82b350476b1e66ce7a3db7047",
+    "success_only/306": "18d913ee8c2f8fb2e1efef84192632506e4d600831f9c3b74ba8c0a2894de230",
+    "success_only/307": "cbc890501c25f1cb0bc3f170669faf53e01d6c157a9d11176bca845fea9ade35",
+    "success_only/308": "5a4474c77488c09a3276ab64b0a802647213b5b663c94ebeabbffed62794be8d",
+    "success_only/309": "0b17cac23b2c030a9da02704aed57a5b16c52aba27ad41a1e8f16352452523cf",
+    "success_only/310": "8d1427dbe447b723f1b802b6706695ca16653272467afc9253a80aa46ac0fbf8",
+    "success_only/311": "06a1155b5af5b42f09c6b2f135a0bd6c52c5c35769c62ce3306a4bf038aaeb19",
+    "success_only/312": "1b2e3c8c43598619cc0d13abd0e7d8bbbf3d5a4765dcc71df5e949d1ed68be22",
+    "success_only/313": "ecdfada58dacf12c9214d399aa1ae1efe1997b530dc5ab021f1ca04798282e22",
+    "success_only/314": "479427ab121f242740c36b9015be053b90a28f1817d27df96e8c62b7f5791caf",
+    "success_only/315": "d2d8aa05242882d3a02f7f0fc914e0b60c4c3bb5fcd15cd5b06eb0b151353161",
+    "success_only/316": "aa1f25a1055e9a0570fb5cde4ad74ab7b1e5f3e89cb7eef9b53e0102caf3f372",
+    "success_only/317": "0915fd0a2cad67618289c6e98b033b92136adb99befffcaad5c8f8c265706275",
+    "success_only/318": "2c3ab56c655854f566c4b9cf1ed03290ef6ae4378e074cc395e749f6e078a46c",
+    "success_only/319": "8a12997a3b8e9cd1f7f280f16aca6db2ee68b084d1742c0b980d18da468388f8",
+    "success_only/320": "85403b1ca57722d032b57479e652c50ca271ba82e027e701c7cf73c7c32172b5",
+    "success_only/321": "9586dc07ec89551d62de3778217313f054b4a07b04242abad8230c4bf4d52d11",
+    "success_only/322": "05c9621c65696c909ad99c912b4193924ea64d920210b7a3183e801ba4a755c0",
+    "success_only/323": "b7eb15dcd58469985dcf0b6a2f4c3fcacb2427dad95f3a86e4803806bbc7b9bb",
+    "success_only/324": "99de2359a2feb32184cacbfb38886e04447996626e9df322e575a288bd7f54e1",
+    "success_only/325": "a274854a1db3445c74a63c9f885355df8fafe4951059733ba6f6a16ee5e8ecac",
+    "success_only/326": "19aafde4085df3f0777f8fcb9b8c5702f35b0f12b4731b6e805f9fc819a8fff9",
+    "success_only/327": "567b4039ef91746be858fb062b32cf6ce18cd1b5c7713cf82091f347786baf2a",
+    "success_only/328": "ad3a27e29a61417b9fd2ad1d1663f0e3f5631750580d07340f9c08ae952db86a",
+    "success_only/329": "b557cebcfd98030cd10734315382c41ca0df342e54285da1a07a699daa641272",
+    "success_only/330": "75fc06a50027fcc0d9eaced81dde8373081584fcba4bf652b07cfa0938cc9e7c",
+    "success_only/331": "9be4253225f437fb0e8a2c810566fe58b3e92aefb9c0a3d50fe71c861c97a1f6",
+    "success_only/332": "5c1d889f7f56267fd4dd80488eaa908592ec219d9404d9c796a71be27a752489",
+    "success_only/333": "22293e5b8bbc950a7643c0ee52b3d70adffefbdd260eea7f8f1bbbe68c66a9a8",
+    "success_only/334": "880ff66f57eec69c832f04c2f97debd1b0a811f4525ccbd4e328ee9b3bbf7aaf",
+    "success_only/335": "7b8b9be65ed8f4fa397b5bd7642607555e837ca8cde9186cff27945bafa6d2b9",
+    "success_only/336": "b709a17697e7eac1029f43b13f41bf6cc9e82302cc0b2cb2157c233d2e3f6a29",
+    "success_only/337": "ca735255ad19bbaa387038b096410d9b415c955c084d5e3127629fc3e461043e",
+    "success_only/338": "9638e818a32e0cbb65361936b4105c278f5cb51ec2df5574e0ff9748f254653b",
+    "success_only/339": "7f87705d6ce30b582df319d9e5b82f805adfd9e24d0066b3e860eaf6f715a8a7",
+    "success_only/340": "02f87b47e52c06e586e77bf540786521d34526e85102fdb544c4a022d557af64",
+    "success_only/341": "ea443cec26e6bac6021923a325e5108681f40c8fe07d10b6ea8691bbbf7e5a84",
+    "success_only/342": "83edb3afe3baadf18ac38eabb835faec3016d9d2e0c2589da5fbdfb686a8cfcf",
+    "success_only/343": "340167410a22928703158d82c14797a5696b48c1b321f869e4da4b3b09d73d21",
+    "success_only/344": "0ca3af8d268bcf85b3aaced0f545fbf7f60a38bcd95a3c94d072d614b4a23b8a",
+    "success_only/345": "7425afbf9a18f61bbcaf23ed02ea1f413239b91c4e2cc806de0774c63250d38e",
+    "success_only/346": "799e54e36facc067bd5426e09347522b784a3bd31a361b460d694900a834d8d7",
+    "success_only/347": "71060dc392d365fa4c2148941da0a631bb8c46b41d4c2a1f540bf9a4ee1dab48",
+    "success_only/348": "1f34e1784261a45b529ac2830f26b09cab7a785826bbfebc62a9f4a8af6785c4",
+    "success_only/349": "0bfb73752a406b587a23e569c7d6556583f651cee622c2364dd8d3e77ef9f5b0",
+    "success_only/350": "d77b3f754bc6f27ae30b53e6985fc0e2798828b4d046b561ea91fdb63734290b",
+    "success_only/351": "2e0f65bdbb12e94b2cece2288ffab82b8894b0c72a6d4d1ac6dabc136d76869c",
+    "success_only/352": "f9df22d2b04c460b4e569d4c7251abc107428c2307e6cec2e3d66c21d6c78d4e",
+    "success_only/353": "27ed97b531e67afe59bee51b70001e14152eb6eb24af7c7511097e442820b33a",
+    "success_only/354": "50612182e5009205aa6ba58039e3b66127c27233f7894cdb1856c869a1df81ed",
+    "success_only/355": "c503af981823470c9b75cfba85e6a530da006a247563bacd3edb0baef0ada1b7",
+    "success_only/356": "2f9bbcb6d3fc60378819f0fca1d70d0efad89fd406e3e4445436ad0a600b5897",
+    "success_only/357": "52d8d6ffee5eb66f8c3e7c04f0b13ff6c2d31570fe0e2f5831da9303623fbc42",
+    "success_only/358": "ab22e5da64e86a4e991421efc85fc77ee9c305847c133951b44c250fbdb1bb7d",
+    "success_only/359": "4f55670d04cb17e659c6943825241c5c8b2fd96046fb1ebe24929533d514b0a6"
+  },
+  "identity_check": {
+    "300": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "301": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "302": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "303": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "304": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "305": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "306": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "307": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "308": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "309": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "310": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "311": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "312": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "313": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "314": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "315": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "316": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "317": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "318": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "319": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "320": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "321": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "322": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "323": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "324": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "325": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "326": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "327": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "328": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "329": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "330": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "331": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "332": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "333": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "334": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "335": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "336": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "337": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "338": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "339": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "340": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "341": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "342": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "343": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "344": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "345": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "346": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "347": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "348": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "349": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "350": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "351": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "352": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "353": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "354": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "355": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "356": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "357": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "358": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    },
+    "359": {
+      "n_new": 100,
+      "n_old": 100,
+      "identical": true,
+      "first_difference": null
+    }
+  }
+}
